@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "bow_01",
+      "name": "Łuk z Leszczyny",
+      "type": "bow",
+      "value": 31,
+      "asset_path": "/Game/Art/Procedural/bow_01"
+    },
+    {
+      "id": "bow_02",
+      "name": "Łuk Przewoźnika",
+      "type": "bow",
+      "value": 42,
+      "asset_path": "/Game/Art/Procedural/bow_02"
+    },
+    {
+      "id": "bow_03",
+      "name": "Krzaczasty Łuk",
+      "type": "bow",
+      "value": 53,
+      "asset_path": "/Game/Art/Procedural/bow_03"
+    },
+    {
+      "id": "bow_04",
+      "name": "Łuk Mokrej Cięciwy",
+      "type": "bow",
+      "value": 64,
+      "asset_path": "/Game/Art/Procedural/bow_04"
+    },
+    {
+      "id": "bow_05",
+      "name": "Łuk Wartownika",
+      "type": "bow",
+      "value": 75,
+      "asset_path": "/Game/Art/Procedural/bow_05"
+    },
+    {
+      "id": "bow_06",
+      "name": "Łuk Kłusownika",
+      "type": "bow",
+      "value": 86,
+      "asset_path": "/Game/Art/Procedural/bow_06"
+    },
+    {
+      "id": "bow_07",
+      "name": "Łuk Złamanego Rogu",
+      "type": "bow",
+      "value": 97,
+      "asset_path": "/Game/Art/Procedural/bow_07"
+    },
+    {
+      "id": "bow_08",
+      "name": "Łuk Bagnika",
+      "type": "bow",
+      "value": 108,
+      "asset_path": "/Game/Art/Procedural/bow_08"
+    },
+    {
+      "id": "bow_09",
+      "name": "Łuk Kamiennej Zatoki",
+      "type": "bow",
+      "value": 119,
+      "asset_path": "/Game/Art/Procedural/bow_09"
+    },
+    {
+      "id": "bow_10",
+      "name": "Cisowy Wyrok",
+      "type": "bow",
+      "value": 130,
+      "asset_path": "/Game/Art/Procedural/bow_10"
+    }
+  ]
+}

@@ -1,0 +1,2020 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "schedule_sta_01",
+      "npc_id": "npc_sta_01",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_01",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_02",
+      "npc_id": "npc_sta_02",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_02",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_03",
+      "npc_id": "npc_sta_03",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_03",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_04",
+      "npc_id": "npc_sta_04",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_04",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_05",
+      "npc_id": "npc_sta_05",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_05",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_06",
+      "npc_id": "npc_sta_06",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_06",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_07",
+      "npc_id": "npc_sta_07",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_07",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_08",
+      "npc_id": "npc_sta_08",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_08",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_09",
+      "npc_id": "npc_sta_09",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_09",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_10",
+      "npc_id": "npc_sta_10",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_10",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_11",
+      "npc_id": "npc_sta_11",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_11",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_12",
+      "npc_id": "npc_sta_12",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_12",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_13",
+      "npc_id": "npc_sta_13",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_13",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_14",
+      "npc_id": "npc_sta_14",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_14",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_15",
+      "npc_id": "npc_sta_15",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_15",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_16",
+      "npc_id": "npc_sta_16",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_16",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_17",
+      "npc_id": "npc_sta_17",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_17",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_18",
+      "npc_id": "npc_sta_18",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_18",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_19",
+      "npc_id": "npc_sta_19",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_19",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_sta_20",
+      "npc_id": "npc_sta_20",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_stary_porzadek",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_stary_porzadek",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_stary_porzadek",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_sta_20",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_01",
+      "npc_id": "npc_now_01",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_01",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_02",
+      "npc_id": "npc_now_02",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_02",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_03",
+      "npc_id": "npc_now_03",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_03",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_04",
+      "npc_id": "npc_now_04",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_04",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_05",
+      "npc_id": "npc_now_05",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_05",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_06",
+      "npc_id": "npc_now_06",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_06",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_07",
+      "npc_id": "npc_now_07",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_07",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_08",
+      "npc_id": "npc_now_08",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_08",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_09",
+      "npc_id": "npc_now_09",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_09",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_10",
+      "npc_id": "npc_now_10",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_10",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_11",
+      "npc_id": "npc_now_11",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_11",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_12",
+      "npc_id": "npc_now_12",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_12",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_13",
+      "npc_id": "npc_now_13",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_13",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_14",
+      "npc_id": "npc_now_14",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_14",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_15",
+      "npc_id": "npc_now_15",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_15",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_16",
+      "npc_id": "npc_now_16",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_16",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_17",
+      "npc_id": "npc_now_17",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_17",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_18",
+      "npc_id": "npc_now_18",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_18",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_19",
+      "npc_id": "npc_now_19",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_19",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_now_20",
+      "npc_id": "npc_now_20",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_nowy_brzeg",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_nowy_brzeg",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_nowy_brzeg",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_now_20",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_01",
+      "npc_id": "npc_neu_01",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_01",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_02",
+      "npc_id": "npc_neu_02",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_02",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_03",
+      "npc_id": "npc_neu_03",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_03",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_04",
+      "npc_id": "npc_neu_04",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_04",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_05",
+      "npc_id": "npc_neu_05",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_05",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_06",
+      "npc_id": "npc_neu_06",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_06",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_07",
+      "npc_id": "npc_neu_07",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_07",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_08",
+      "npc_id": "npc_neu_08",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_08",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_09",
+      "npc_id": "npc_neu_09",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_09",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_10",
+      "npc_id": "npc_neu_10",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_10",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_11",
+      "npc_id": "npc_neu_11",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_11",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_12",
+      "npc_id": "npc_neu_12",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_12",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_13",
+      "npc_id": "npc_neu_13",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_13",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_14",
+      "npc_id": "npc_neu_14",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_14",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_15",
+      "npc_id": "npc_neu_15",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_15",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_16",
+      "npc_id": "npc_neu_16",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_16",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_17",
+      "npc_id": "npc_neu_17",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_17",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_18",
+      "npc_id": "npc_neu_18",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_18",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_19",
+      "npc_id": "npc_neu_19",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_19",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_20",
+      "npc_id": "npc_neu_20",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_20",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_21",
+      "npc_id": "npc_neu_21",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_21",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_22",
+      "npc_id": "npc_neu_22",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_22",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_23",
+      "npc_id": "npc_neu_23",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_23",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_24",
+      "npc_id": "npc_neu_24",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_24",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    },
+    {
+      "id": "schedule_neu_25",
+      "npc_id": "npc_neu_25",
+      "slots": [
+        {
+          "from": "06:00",
+          "to": "12:00",
+          "marker": "work_neutralni",
+          "activity": "work"
+        },
+        {
+          "from": "12:00",
+          "to": "14:00",
+          "marker": "meal_neutralni",
+          "activity": "eat"
+        },
+        {
+          "from": "14:00",
+          "to": "21:00",
+          "marker": "patrol_neutralni",
+          "activity": "patrol"
+        },
+        {
+          "from": "21:00",
+          "to": "06:00",
+          "marker": "bed_npc_neu_25",
+          "activity": "sleep"
+        }
+      ],
+      "fallback": "teleport_out_of_sight"
+    }
+  ]
+}

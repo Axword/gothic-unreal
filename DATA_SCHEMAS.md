@@ -1,0 +1,2 @@
+# Dane i ID
+Wszystkie pliki posiadają root `schema_version: 1`, `records: []`; każdy rekord ma globalnie stabilne `id` snake_case. `record_file.schema.json` waliduje wspólny kontrakt. Pliki `items_*`, `npcs`, schedules, monsters/spawns, quests, dialogues, locations, loot, trainers, spells i balance są rozdzielone według domeny. Pole kończące się `_id` jest referencją kontrolowaną przez loader. `savegame.json` to dokumentacja, nie dane Content runtime.

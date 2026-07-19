@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "new_trial_1",
+      "name": "new_trial próba 1",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 120
+      }
+    },
+    {
+      "id": "new_trial_2",
+      "name": "new_trial próba 2",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 140
+      }
+    },
+    {
+      "id": "new_trial_3",
+      "name": "new_trial próba 3",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 160
+      }
+    },
+    {
+      "id": "new_trial_4",
+      "name": "new_trial próba 4",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 180
+      }
+    },
+    {
+      "id": "new_trial_5",
+      "name": "new_trial próba 5",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 200
+      }
+    }
+  ]
+}

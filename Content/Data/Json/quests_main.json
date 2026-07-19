@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "main_przybysz",
+      "name": "List bez pieczęci",
+      "stages": [
+        {
+          "id": "arrival",
+          "text": "Przybyłeś z listem."
+        },
+        {
+          "id": "choice",
+          "text": "Wybierz stronę."
+        },
+        {
+          "id": "epilogue",
+          "text": "Kraina pamięta wybór."
+        }
+      ]
+    }
+  ]
+}

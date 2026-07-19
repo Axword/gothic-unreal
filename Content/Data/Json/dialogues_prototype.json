@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "dialogue_biel_intro",
+      "speaker_id": "npc_neu_01",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "List śmierdzi cudzą ręką. Jak chcesz, pomogę go przeczytać.",
+          "choices": [
+            {
+              "text": "Pomóż mi.",
+              "action": "start:main_przybysz"
+            },
+            {
+              "text": "Nie teraz.",
+              "action": "exit"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "trainer_rymar",
+      "npc_id": "npc_sta_02",
+      "skill": "sword",
+      "cost": 40
+    },
+    {
+      "id": "trainer_nita",
+      "npc_id": "npc_now_01",
+      "skill": "theft",
+      "cost": 35
+    },
+    {
+      "id": "trainer_biel",
+      "npc_id": "npc_neu_01",
+      "skill": "magic",
+      "cost": 80
+    }
+  ]
+}

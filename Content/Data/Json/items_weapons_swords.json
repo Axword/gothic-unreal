@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "sword_01",
+      "name": "Rdzawe Żądło",
+      "type": "sword",
+      "value": 31,
+      "asset_path": "/Game/Art/Procedural/sword_01"
+    },
+    {
+      "id": "sword_02",
+      "name": "Nóż Strażnika",
+      "type": "sword",
+      "value": 42,
+      "asset_path": "/Game/Art/Procedural/sword_02"
+    },
+    {
+      "id": "sword_03",
+      "name": "Siekacz Zatoki",
+      "type": "sword",
+      "value": 53,
+      "asset_path": "/Game/Art/Procedural/sword_03"
+    },
+    {
+      "id": "sword_04",
+      "name": "Młotkowy Tasak",
+      "type": "sword",
+      "value": 64,
+      "asset_path": "/Game/Art/Procedural/sword_04"
+    },
+    {
+      "id": "sword_05",
+      "name": "Szabla Piołunu",
+      "type": "sword",
+      "value": 75,
+      "asset_path": "/Game/Art/Procedural/sword_05"
+    },
+    {
+      "id": "sword_06",
+      "name": "Klin Warty",
+      "type": "sword",
+      "value": 86,
+      "asset_path": "/Game/Art/Procedural/sword_06"
+    },
+    {
+      "id": "sword_07",
+      "name": "Miecz Górnika",
+      "type": "sword",
+      "value": 97,
+      "asset_path": "/Game/Art/Procedural/sword_07"
+    },
+    {
+      "id": "sword_08",
+      "name": "Żelazny Pazur",
+      "type": "sword",
+      "value": 108,
+      "asset_path": "/Game/Art/Procedural/sword_08"
+    },
+    {
+      "id": "sword_09",
+      "name": "Kieł Poborcy",
+      "type": "sword",
+      "value": 119,
+      "asset_path": "/Game/Art/Procedural/sword_09"
+    },
+    {
+      "id": "sword_10",
+      "name": "Ostrze Celnika",
+      "type": "sword",
+      "value": 130,
+      "asset_path": "/Game/Art/Procedural/sword_10"
+    },
+    {
+      "id": "sword_11",
+      "name": "Krawędź Smoły",
+      "type": "sword",
+      "value": 141,
+      "asset_path": "/Game/Art/Procedural/sword_11"
+    },
+    {
+      "id": "sword_12",
+      "name": "Kord Przypływu",
+      "type": "sword",
+      "value": 152,
+      "asset_path": "/Game/Art/Procedural/sword_12"
+    },
+    {
+      "id": "sword_13",
+      "name": "Stalowa Modlitwa",
+      "type": "sword",
+      "value": 163,
+      "asset_path": "/Game/Art/Procedural/sword_13"
+    },
+    {
+      "id": "sword_14",
+      "name": "Wyrzut Sumienia",
+      "type": "sword",
+      "value": 174,
+      "asset_path": "/Game/Art/Procedural/sword_14"
+    },
+    {
+      "id": "sword_15",
+      "name": "Topór Bez Dzwonu",
+      "type": "sword",
+      "value": 185,
+      "asset_path": "/Game/Art/Procedural/sword_15"
+    },
+    {
+      "id": "sword_16",
+      "name": "Krzywa Przysięga",
+      "type": "sword",
+      "value": 196,
+      "asset_path": "/Game/Art/Procedural/sword_16"
+    },
+    {
+      "id": "sword_17",
+      "name": "Czarny Rygiel",
+      "type": "sword",
+      "value": 207,
+      "asset_path": "/Game/Art/Procedural/sword_17"
+    },
+    {
+      "id": "sword_18",
+      "name": "Miecz Trzcin",
+      "type": "sword",
+      "value": 218,
+      "asset_path": "/Game/Art/Procedural/sword_18"
+    },
+    {
+      "id": "sword_19",
+      "name": "Sól i Popiół",
+      "type": "sword",
+      "value": 229,
+      "asset_path": "/Game/Art/Procedural/sword_19"
+    },
+    {
+      "id": "sword_20",
+      "name": "Głos Skały",
+      "type": "sword",
+      "value": 240,
+      "asset_path": "/Game/Art/Procedural/sword_20"
+    }
+  ]
+}

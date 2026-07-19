@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "balance_core",
+      "hp_per_level": 12,
+      "learning_points_per_level": 10,
+      "crime_witness_range": 1200
+    }
+  ]
+}

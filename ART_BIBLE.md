@@ -1,0 +1,2 @@
+# Art bible
+Low/mid-poly, ręcznie stylizowane i surowe: grafit `#25272A`, mokra zieleń `#3D5042`, sól `#B6B1A0`, rdza `#744331`, akcent magiczny `#78A7B5`. Mocne niskie światło kierunkowe i głębokie cienie; czytelne sylwetki. Rygiel: proste piony, płaszcze i emblemat rygla. Wolny Brzeg: skośne łaty, lina, ochra. Proceduralne placeholdery w `/Game/Art/Procedural` muszą zostać zastąpione własnymi meshami: budynki modułowe, 30 broni, 4 pancerze, 6 potworów, rośliny, ikony i VFX. Budżet: 2k tris postać, 1k potwór, 500 prop; instancing roślin, LOD/HLOD.

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "monster_1",
+      "name": "Wilczak solny",
+      "biome": "forest",
+      "behavior": "pack"
+    },
+    {
+      "id": "monster_2",
+      "name": "Krabnik",
+      "biome": "coast",
+      "behavior": "tank"
+    },
+    {
+      "id": "monster_3",
+      "name": "Topielec",
+      "biome": "swamp",
+      "behavior": "ambush"
+    },
+    {
+      "id": "monster_4",
+      "name": "Skalnik",
+      "biome": "quarry",
+      "behavior": "melee"
+    },
+    {
+      "id": "monster_5",
+      "name": "Mroczek",
+      "biome": "night",
+      "behavior": "night"
+    },
+    {
+      "id": "monster_6",
+      "name": "Plujec bagienny",
+      "biome": "swamp",
+      "behavior": "ranged"
+    }
+  ]
+}

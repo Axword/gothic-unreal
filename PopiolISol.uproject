@@ -1,0 +1,7 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.4",
+  "Category": "Games",
+  "Description": "Popiół i Sól - JSON-driven action RPG vertical slice",
+  "Modules": [{"Name":"PopiolISol","Type":"Runtime","LoadingPhase":"Default"}]
+}

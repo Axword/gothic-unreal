@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "side_1",
+      "name": "side próba 1",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 120
+      }
+    },
+    {
+      "id": "side_2",
+      "name": "side próba 2",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 140
+      }
+    },
+    {
+      "id": "side_3",
+      "name": "side próba 3",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 160
+      }
+    },
+    {
+      "id": "side_4",
+      "name": "side próba 4",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 180
+      }
+    },
+    {
+      "id": "side_5",
+      "name": "side próba 5",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 200
+      }
+    },
+    {
+      "id": "side_6",
+      "name": "side próba 6",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 220
+      }
+    },
+    {
+      "id": "side_7",
+      "name": "side próba 7",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 240
+      }
+    },
+    {
+      "id": "side_8",
+      "name": "side próba 8",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 260
+      }
+    },
+    {
+      "id": "side_9",
+      "name": "side próba 9",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 280
+      }
+    },
+    {
+      "id": "side_10",
+      "name": "side próba 10",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 300
+      }
+    }
+  ]
+}
