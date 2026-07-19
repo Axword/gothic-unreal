@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "spawn_1",
+      "monster_id": "monster_1",
+      "location_id": "loc_1"
+    },
+    {
+      "id": "spawn_2",
+      "monster_id": "monster_2",
+      "location_id": "loc_2"
+    },
+    {
+      "id": "spawn_3",
+      "monster_id": "monster_3",
+      "location_id": "loc_3"
+    },
+    {
+      "id": "spawn_4",
+      "monster_id": "monster_4",
+      "location_id": "loc_4"
+    },
+    {
+      "id": "spawn_5",
+      "monster_id": "monster_5",
+      "location_id": "loc_5"
+    },
+    {
+      "id": "spawn_6",
+      "monster_id": "monster_6",
+      "location_id": "loc_6"
+    }
+  ]
+}

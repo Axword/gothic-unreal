@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "currency_salt",
+      "name": "solniki",
+      "type": "misc",
+      "asset_path": "/Game/Art/Icons/icon_currency_salt"
+    },
+    {
+      "id": "lockpick",
+      "name": "wytrych",
+      "type": "misc",
+      "asset_path": "/Game/Art/Icons/icon_lockpick"
+    },
+    {
+      "id": "arrow",
+      "name": "strzała",
+      "type": "misc",
+      "asset_path": "/Game/Art/Icons/icon_arrow"
+    },
+    {
+      "id": "key_watch",
+      "name": "klucz wartowni",
+      "type": "misc",
+      "asset_path": "/Game/Art/Icons/icon_key_watch"
+    },
+    {
+      "id": "quest_letter",
+      "name": "list bez pieczęci",
+      "type": "misc",
+      "asset_path": "/Game/Art/Icons/icon_quest_letter"
+    },
+    {
+      "id": "quest_shard",
+      "name": "odłamek szczeliny",
+      "type": "misc",
+      "asset_path": "/Game/Art/Icons/icon_quest_shard"
+    }
+  ]
+}

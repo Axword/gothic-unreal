@@ -1,0 +1,355 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "old_trial_1",
+      "name": "Waga rygla",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 120,
+        "currency_salt": 20
+      },
+      "brief": "Rymar każe odzyskać skradzioną wagę z Traktu Popiołu.",
+      "start_conditions": [
+        {
+          "type": "quest_stage",
+          "quest_id": "main_przybysz",
+          "stage": "arrival"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "find_or_buy",
+          "text": "Rymar każe odzyskać skradzioną wagę z Traktu Popiołu.",
+          "methods": [
+            "combat",
+            "persuasion",
+            "bribe",
+            "stealth"
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "id": "honest",
+          "description": "Możesz pobić złodzieja, odkupić wagę lub przekonać go listem.",
+          "reputation": {
+            "stary_porzadek": 1
+          }
+        },
+        {
+          "id": "dirty",
+          "description": "Szybsza droga zostawia dług.",
+          "reputation": {
+            "nowy_brzeg": 1
+          }
+        }
+      ],
+      "failure_conditions": [
+        {
+          "type": "essential_npc_dead",
+          "result": "failed"
+        }
+      ],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Rymar każe odzyskać skradzioną wagę z Traktu Popiołu."
+        },
+        {
+          "stage": "done",
+          "text": "Dług został zapisany w cudzej pamięci."
+        }
+      ]
+    },
+    {
+      "id": "old_trial_2",
+      "name": "Cisza w wartowni",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 120,
+        "currency_salt": 20
+      },
+      "brief": "Nocny wartownik zniknął przy palisadzie.",
+      "start_conditions": [
+        {
+          "type": "quest_stage",
+          "quest_id": "main_przybysz",
+          "stage": "arrival"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "investigate",
+          "text": "Nocny wartownik zniknął przy palisadzie.",
+          "methods": [
+            "combat",
+            "persuasion",
+            "bribe",
+            "stealth"
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "id": "honest",
+          "description": "Dowód winy można znaleźć albo wymusić zeznanie.",
+          "reputation": {
+            "stary_porzadek": 1
+          }
+        },
+        {
+          "id": "dirty",
+          "description": "Szybsza droga zostawia dług.",
+          "reputation": {
+            "nowy_brzeg": 1
+          }
+        }
+      ],
+      "failure_conditions": [
+        {
+          "type": "essential_npc_dead",
+          "result": "failed"
+        }
+      ],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Nocny wartownik zniknął przy palisadzie."
+        },
+        {
+          "stage": "done",
+          "text": "Dług został zapisany w cudzej pamięci."
+        }
+      ]
+    },
+    {
+      "id": "old_trial_3",
+      "name": "Sól dla chorych",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 120,
+        "currency_salt": 20
+      },
+      "brief": "Brakuje soli do opatrunków w Rygielu.",
+      "start_conditions": [
+        {
+          "type": "quest_stage",
+          "quest_id": "main_przybysz",
+          "stage": "arrival"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "gather",
+          "text": "Brakuje soli do opatrunków w Rygielu.",
+          "methods": [
+            "combat",
+            "persuasion",
+            "bribe",
+            "stealth"
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "id": "honest",
+          "description": "Oddaj zapas, ukradnij go Brzegowi albo wskaż ukryty skład.",
+          "reputation": {
+            "stary_porzadek": 1
+          }
+        },
+        {
+          "id": "dirty",
+          "description": "Szybsza droga zostawia dług.",
+          "reputation": {
+            "nowy_brzeg": 1
+          }
+        }
+      ],
+      "failure_conditions": [
+        {
+          "type": "essential_npc_dead",
+          "result": "failed"
+        }
+      ],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Brakuje soli do opatrunków w Rygielu."
+        },
+        {
+          "stage": "done",
+          "text": "Dług został zapisany w cudzej pamięci."
+        }
+      ]
+    },
+    {
+      "id": "old_trial_4",
+      "name": "Prawo kamienia",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 120,
+        "currency_salt": 20
+      },
+      "brief": "Górnik odmawia pracy pod groźbą zawalonej ściany.",
+      "start_conditions": [
+        {
+          "type": "quest_stage",
+          "quest_id": "main_przybysz",
+          "stage": "arrival"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "negotiate",
+          "text": "Górnik odmawia pracy pod groźbą zawalonej ściany.",
+          "methods": [
+            "combat",
+            "persuasion",
+            "bribe",
+            "stealth"
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "id": "honest",
+          "description": "Walka, zapłata albo zabezpieczenie tunelu.",
+          "reputation": {
+            "stary_porzadek": 1
+          }
+        },
+        {
+          "id": "dirty",
+          "description": "Szybsza droga zostawia dług.",
+          "reputation": {
+            "nowy_brzeg": 1
+          }
+        }
+      ],
+      "failure_conditions": [
+        {
+          "type": "essential_npc_dead",
+          "result": "failed"
+        }
+      ],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Górnik odmawia pracy pod groźbą zawalonej ściany."
+        },
+        {
+          "stage": "done",
+          "text": "Dług został zapisany w cudzej pamięci."
+        }
+      ]
+    },
+    {
+      "id": "old_trial_5",
+      "name": "Pieczęć bez pana",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 120,
+        "currency_salt": 20
+      },
+      "brief": "Straż chce przejąć list zesłańca.",
+      "start_conditions": [
+        {
+          "type": "quest_stage",
+          "quest_id": "main_przybysz",
+          "stage": "arrival"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "choose",
+          "text": "Straż chce przejąć list zesłańca.",
+          "methods": [
+            "combat",
+            "persuasion",
+            "bribe",
+            "stealth"
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "id": "honest",
+          "description": "Przekaż list, sfałszuj odpis lub zachowaj go dla siebie.",
+          "reputation": {
+            "stary_porzadek": 1
+          }
+        },
+        {
+          "id": "dirty",
+          "description": "Szybsza droga zostawia dług.",
+          "reputation": {
+            "nowy_brzeg": 1
+          }
+        }
+      ],
+      "failure_conditions": [
+        {
+          "type": "essential_npc_dead",
+          "result": "failed"
+        }
+      ],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Straż chce przejąć list zesłańca."
+        },
+        {
+          "stage": "done",
+          "text": "Dług został zapisany w cudzej pamięci."
+        }
+      ]
+    }
+  ]
+}

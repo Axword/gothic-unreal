@@ -1,0 +1,655 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "npc_sta_01",
+      "name": "Warda",
+      "faction": "stary_porzadek",
+      "role": "strażnik",
+      "level": 1,
+      "schedule_id": "schedule_sta_01",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_02",
+      "name": "Rymar",
+      "faction": "stary_porzadek",
+      "role": "kupiec",
+      "level": 2,
+      "schedule_id": "schedule_sta_02",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_03",
+      "name": "Gont",
+      "faction": "stary_porzadek",
+      "role": "robotnik",
+      "level": 3,
+      "schedule_id": "schedule_sta_03",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_04",
+      "name": "Mira",
+      "faction": "stary_porzadek",
+      "role": "nauczyciel",
+      "level": 4,
+      "schedule_id": "schedule_sta_04",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_05",
+      "name": "Płosz",
+      "faction": "stary_porzadek",
+      "role": "strażnik",
+      "level": 5,
+      "schedule_id": "schedule_sta_05",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_06",
+      "name": "Kuna",
+      "faction": "stary_porzadek",
+      "role": "kupiec",
+      "level": 1,
+      "schedule_id": "schedule_sta_06",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_07",
+      "name": "Dzwon",
+      "faction": "stary_porzadek",
+      "role": "robotnik",
+      "level": 2,
+      "schedule_id": "schedule_sta_07",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_08",
+      "name": "Sabat",
+      "faction": "stary_porzadek",
+      "role": "nauczyciel",
+      "level": 3,
+      "schedule_id": "schedule_sta_08",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_09",
+      "name": "Kreda",
+      "faction": "stary_porzadek",
+      "role": "strażnik",
+      "level": 4,
+      "schedule_id": "schedule_sta_09",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_10",
+      "name": "Rost",
+      "faction": "stary_porzadek",
+      "role": "kupiec",
+      "level": 5,
+      "schedule_id": "schedule_sta_10",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_11",
+      "name": "Śluz",
+      "faction": "stary_porzadek",
+      "role": "robotnik",
+      "level": 1,
+      "schedule_id": "schedule_sta_11",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_12",
+      "name": "Zimor",
+      "faction": "stary_porzadek",
+      "role": "nauczyciel",
+      "level": 2,
+      "schedule_id": "schedule_sta_12",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_13",
+      "name": "Babka",
+      "faction": "stary_porzadek",
+      "role": "strażnik",
+      "level": 3,
+      "schedule_id": "schedule_sta_13",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_14",
+      "name": "Klin",
+      "faction": "stary_porzadek",
+      "role": "kupiec",
+      "level": 4,
+      "schedule_id": "schedule_sta_14",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_15",
+      "name": "Wrona",
+      "faction": "stary_porzadek",
+      "role": "robotnik",
+      "level": 5,
+      "schedule_id": "schedule_sta_15",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_16",
+      "name": "Bicz",
+      "faction": "stary_porzadek",
+      "role": "nauczyciel",
+      "level": 1,
+      "schedule_id": "schedule_sta_16",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_17",
+      "name": "Oset",
+      "faction": "stary_porzadek",
+      "role": "strażnik",
+      "level": 2,
+      "schedule_id": "schedule_sta_17",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_18",
+      "name": "Pazur",
+      "faction": "stary_porzadek",
+      "role": "kupiec",
+      "level": 3,
+      "schedule_id": "schedule_sta_18",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_19",
+      "name": "Fela",
+      "faction": "stary_porzadek",
+      "role": "robotnik",
+      "level": 4,
+      "schedule_id": "schedule_sta_19",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_sta_20",
+      "name": "Borys",
+      "faction": "stary_porzadek",
+      "role": "nauczyciel",
+      "level": 5,
+      "schedule_id": "schedule_sta_20",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_01",
+      "name": "Nita",
+      "faction": "nowy_brzeg",
+      "role": "strażnik",
+      "level": 1,
+      "schedule_id": "schedule_now_01",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_02",
+      "name": "Kawka",
+      "faction": "nowy_brzeg",
+      "role": "kupiec",
+      "level": 2,
+      "schedule_id": "schedule_now_02",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_03",
+      "name": "Huk",
+      "faction": "nowy_brzeg",
+      "role": "robotnik",
+      "level": 3,
+      "schedule_id": "schedule_now_03",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_04",
+      "name": "Sarna",
+      "faction": "nowy_brzeg",
+      "role": "nauczyciel",
+      "level": 4,
+      "schedule_id": "schedule_now_04",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_05",
+      "name": "Miedź",
+      "faction": "nowy_brzeg",
+      "role": "strażnik",
+      "level": 5,
+      "schedule_id": "schedule_now_05",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_06",
+      "name": "Rdzawy",
+      "faction": "nowy_brzeg",
+      "role": "kupiec",
+      "level": 1,
+      "schedule_id": "schedule_now_06",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_07",
+      "name": "Jaga",
+      "faction": "nowy_brzeg",
+      "role": "robotnik",
+      "level": 2,
+      "schedule_id": "schedule_now_07",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_08",
+      "name": "Skiba",
+      "faction": "nowy_brzeg",
+      "role": "nauczyciel",
+      "level": 3,
+      "schedule_id": "schedule_now_08",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_09",
+      "name": "Gapa",
+      "faction": "nowy_brzeg",
+      "role": "strażnik",
+      "level": 4,
+      "schedule_id": "schedule_now_09",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_10",
+      "name": "Wicher",
+      "faction": "nowy_brzeg",
+      "role": "kupiec",
+      "level": 5,
+      "schedule_id": "schedule_now_10",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_11",
+      "name": "Łata",
+      "faction": "nowy_brzeg",
+      "role": "robotnik",
+      "level": 1,
+      "schedule_id": "schedule_now_11",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_12",
+      "name": "Mól",
+      "faction": "nowy_brzeg",
+      "role": "nauczyciel",
+      "level": 2,
+      "schedule_id": "schedule_now_12",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_13",
+      "name": "Brawa",
+      "faction": "nowy_brzeg",
+      "role": "strażnik",
+      "level": 3,
+      "schedule_id": "schedule_now_13",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_14",
+      "name": "Kłos",
+      "faction": "nowy_brzeg",
+      "role": "kupiec",
+      "level": 4,
+      "schedule_id": "schedule_now_14",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_15",
+      "name": "Dora",
+      "faction": "nowy_brzeg",
+      "role": "robotnik",
+      "level": 5,
+      "schedule_id": "schedule_now_15",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_16",
+      "name": "Pikuś",
+      "faction": "nowy_brzeg",
+      "role": "nauczyciel",
+      "level": 1,
+      "schedule_id": "schedule_now_16",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_17",
+      "name": "Mara",
+      "faction": "nowy_brzeg",
+      "role": "strażnik",
+      "level": 2,
+      "schedule_id": "schedule_now_17",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_18",
+      "name": "Czart",
+      "faction": "nowy_brzeg",
+      "role": "kupiec",
+      "level": 3,
+      "schedule_id": "schedule_now_18",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_19",
+      "name": "Bina",
+      "faction": "nowy_brzeg",
+      "role": "robotnik",
+      "level": 4,
+      "schedule_id": "schedule_now_19",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_now_20",
+      "name": "Kret",
+      "faction": "nowy_brzeg",
+      "role": "nauczyciel",
+      "level": 5,
+      "schedule_id": "schedule_now_20",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_01",
+      "name": "Biel",
+      "faction": "neutralni",
+      "role": "strażnik",
+      "level": 1,
+      "schedule_id": "schedule_neu_01",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_02",
+      "name": "Kostka",
+      "faction": "neutralni",
+      "role": "kupiec",
+      "level": 2,
+      "schedule_id": "schedule_neu_02",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_03",
+      "name": "Żagiel",
+      "faction": "neutralni",
+      "role": "robotnik",
+      "level": 3,
+      "schedule_id": "schedule_neu_03",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_04",
+      "name": "Oprych",
+      "faction": "neutralni",
+      "role": "nauczyciel",
+      "level": 4,
+      "schedule_id": "schedule_neu_04",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_05",
+      "name": "Panna",
+      "faction": "neutralni",
+      "role": "strażnik",
+      "level": 5,
+      "schedule_id": "schedule_neu_05",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_06",
+      "name": "Kłosik",
+      "faction": "neutralni",
+      "role": "kupiec",
+      "level": 1,
+      "schedule_id": "schedule_neu_06",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_07",
+      "name": "Pakuła",
+      "faction": "neutralni",
+      "role": "robotnik",
+      "level": 2,
+      "schedule_id": "schedule_neu_07",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_08",
+      "name": "Grom",
+      "faction": "neutralni",
+      "role": "nauczyciel",
+      "level": 3,
+      "schedule_id": "schedule_neu_08",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_09",
+      "name": "Węgiel",
+      "faction": "neutralni",
+      "role": "strażnik",
+      "level": 4,
+      "schedule_id": "schedule_neu_09",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_10",
+      "name": "Syk",
+      "faction": "neutralni",
+      "role": "kupiec",
+      "level": 5,
+      "schedule_id": "schedule_neu_10",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_11",
+      "name": "Fosa",
+      "faction": "neutralni",
+      "role": "robotnik",
+      "level": 1,
+      "schedule_id": "schedule_neu_11",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_12",
+      "name": "Karp",
+      "faction": "neutralni",
+      "role": "nauczyciel",
+      "level": 2,
+      "schedule_id": "schedule_neu_12",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_13",
+      "name": "Miotła",
+      "faction": "neutralni",
+      "role": "strażnik",
+      "level": 3,
+      "schedule_id": "schedule_neu_13",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_14",
+      "name": "Zadra",
+      "faction": "neutralni",
+      "role": "kupiec",
+      "level": 4,
+      "schedule_id": "schedule_neu_14",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_15",
+      "name": "Lipa",
+      "faction": "neutralni",
+      "role": "robotnik",
+      "level": 5,
+      "schedule_id": "schedule_neu_15",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_16",
+      "name": "Kruk",
+      "faction": "neutralni",
+      "role": "nauczyciel",
+      "level": 1,
+      "schedule_id": "schedule_neu_16",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_17",
+      "name": "Duda",
+      "faction": "neutralni",
+      "role": "strażnik",
+      "level": 2,
+      "schedule_id": "schedule_neu_17",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_18",
+      "name": "Pazik",
+      "faction": "neutralni",
+      "role": "kupiec",
+      "level": 3,
+      "schedule_id": "schedule_neu_18",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_19",
+      "name": "Mewa",
+      "faction": "neutralni",
+      "role": "robotnik",
+      "level": 4,
+      "schedule_id": "schedule_neu_19",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_20",
+      "name": "Szept",
+      "faction": "neutralni",
+      "role": "nauczyciel",
+      "level": 5,
+      "schedule_id": "schedule_neu_20",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_21",
+      "name": "Guz",
+      "faction": "neutralni",
+      "role": "strażnik",
+      "level": 1,
+      "schedule_id": "schedule_neu_21",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_22",
+      "name": "Igiełka",
+      "faction": "neutralni",
+      "role": "kupiec",
+      "level": 2,
+      "schedule_id": "schedule_neu_22",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_23",
+      "name": "Nawóz",
+      "faction": "neutralni",
+      "role": "robotnik",
+      "level": 3,
+      "schedule_id": "schedule_neu_23",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_24",
+      "name": "Ropa",
+      "faction": "neutralni",
+      "role": "nauczyciel",
+      "level": 4,
+      "schedule_id": "schedule_neu_24",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    },
+    {
+      "id": "npc_neu_25",
+      "name": "Ćma",
+      "faction": "neutralni",
+      "role": "strażnik",
+      "level": 5,
+      "schedule_id": "schedule_neu_25",
+      "attitude": "wary",
+      "crime_reaction": "warning_alarm"
+    }
+  ]
+}

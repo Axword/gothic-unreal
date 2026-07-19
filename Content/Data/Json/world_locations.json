@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "loc_1",
+      "name": "Twierdza Rygiel",
+      "type": "region"
+    },
+    {
+      "id": "loc_2",
+      "name": "Wolny Brzeg",
+      "type": "region"
+    },
+    {
+      "id": "loc_3",
+      "name": "Trakt Popiołu",
+      "type": "region"
+    },
+    {
+      "id": "loc_4",
+      "name": "Las Zasłon",
+      "type": "region"
+    },
+    {
+      "id": "loc_5",
+      "name": "Bagno Szczypca",
+      "type": "region"
+    },
+    {
+      "id": "loc_6",
+      "name": "Kamieniołom Głuchy",
+      "type": "region"
+    },
+    {
+      "id": "loc_7",
+      "name": "Plaża Solna",
+      "type": "region"
+    },
+    {
+      "id": "loc_8",
+      "name": "Szczelina Milczącego",
+      "type": "region"
+    }
+  ]
+}

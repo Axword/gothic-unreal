@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "trophy_01",
+      "name": "Skóra wilczaka",
+      "type": "trophy",
+      "value": 31,
+      "asset_path": "/Game/Art/Icons/icon_trophy_01"
+    },
+    {
+      "id": "trophy_02",
+      "name": "Gruczoł świtu",
+      "type": "trophy",
+      "value": 42,
+      "asset_path": "/Game/Art/Icons/icon_trophy_02"
+    },
+    {
+      "id": "trophy_03",
+      "name": "Róg żmijaka",
+      "type": "trophy",
+      "value": 53,
+      "asset_path": "/Game/Art/Icons/icon_trophy_03"
+    },
+    {
+      "id": "trophy_04",
+      "name": "Pancerz krabnika",
+      "type": "trophy",
+      "value": 64,
+      "asset_path": "/Game/Art/Icons/icon_trophy_04"
+    },
+    {
+      "id": "trophy_05",
+      "name": "Pióro mroczka",
+      "type": "trophy",
+      "value": 75,
+      "asset_path": "/Game/Art/Icons/icon_trophy_05"
+    },
+    {
+      "id": "trophy_06",
+      "name": "Oko topielca",
+      "type": "trophy",
+      "value": 86,
+      "asset_path": "/Game/Art/Icons/icon_trophy_06"
+    },
+    {
+      "id": "trophy_07",
+      "name": "Kieł skalnika",
+      "type": "trophy",
+      "value": 97,
+      "asset_path": "/Game/Art/Icons/icon_trophy_07"
+    },
+    {
+      "id": "trophy_08",
+      "name": "Rdzeń solnego ducha",
+      "type": "trophy",
+      "value": 108,
+      "asset_path": "/Game/Art/Icons/icon_trophy_08"
+    }
+  ]
+}

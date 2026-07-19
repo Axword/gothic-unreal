@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "plant_01",
+      "name": "Gorzka trzcina",
+      "type": "plant",
+      "value": 8,
+      "asset_path": "/Game/Art/Icons/icon_plant_01",
+      "source_mesh_path": "Content/Art/SourceModels/plant_01.obj",
+      "effect": "odtruwa wodę",
+      "mass": 0.1
+    },
+    {
+      "id": "plant_02",
+      "name": "Siny mak",
+      "type": "plant",
+      "value": 11,
+      "asset_path": "/Game/Art/Icons/icon_plant_02",
+      "source_mesh_path": "Content/Art/SourceModels/plant_02.obj",
+      "effect": "krótki buff odporności",
+      "mass": 0.1
+    },
+    {
+      "id": "plant_03",
+      "name": "Pazur bagna",
+      "type": "plant",
+      "value": 14,
+      "asset_path": "/Game/Art/Icons/icon_plant_03",
+      "source_mesh_path": "Content/Art/SourceModels/plant_03.obj",
+      "effect": "składnik mikstur życia",
+      "mass": 0.1
+    },
+    {
+      "id": "plant_04",
+      "name": "Sól morska",
+      "type": "plant",
+      "value": 17,
+      "asset_path": "/Game/Art/Icons/icon_plant_04",
+      "source_mesh_path": "Content/Art/SourceModels/plant_04.obj",
+      "effect": "sól do rytuałów",
+      "mass": 0.1
+    },
+    {
+      "id": "plant_05",
+      "name": "Żar-ziele",
+      "type": "plant",
+      "value": 20,
+      "asset_path": "/Game/Art/Icons/icon_plant_05",
+      "source_mesh_path": "Content/Art/SourceModels/plant_05.obj",
+      "effect": "składnik ognia",
+      "mass": 0.1
+    },
+    {
+      "id": "plant_06",
+      "name": "Mleczna grzybnia",
+      "type": "plant",
+      "value": 23,
+      "asset_path": "/Game/Art/Icons/icon_plant_06",
+      "source_mesh_path": "Content/Art/SourceModels/plant_06.obj",
+      "effect": "materiał na maść",
+      "mass": 0.1
+    },
+    {
+      "id": "plant_07",
+      "name": "Dzwonek skał",
+      "type": "plant",
+      "value": 26,
+      "asset_path": "/Game/Art/Icons/icon_plant_07",
+      "source_mesh_path": "Content/Art/SourceModels/plant_07.obj",
+      "effect": "składnik lodu",
+      "mass": 0.1
+    },
+    {
+      "id": "plant_08",
+      "name": "Korzeń cierpki",
+      "type": "plant",
+      "value": 29,
+      "asset_path": "/Game/Art/Icons/icon_plant_08",
+      "source_mesh_path": "Content/Art/SourceModels/plant_08.obj",
+      "effect": "wzmacnia wytrychy",
+      "mass": 0.1
+    },
+    {
+      "id": "plant_09",
+      "name": "Nocna mięta",
+      "type": "plant",
+      "value": 32,
+      "asset_path": "/Game/Art/Icons/icon_plant_09",
+      "source_mesh_path": "Content/Art/SourceModels/plant_09.obj",
+      "effect": "uspokaja bestie",
+      "mass": 0.1
+    },
+    {
+      "id": "plant_10",
+      "name": "Krwawy wrzos",
+      "type": "plant",
+      "value": 35,
+      "asset_path": "/Game/Art/Icons/icon_plant_10",
+      "source_mesh_path": "Content/Art/SourceModels/plant_10.obj",
+      "effect": "barwnik i bandaż",
+      "mass": 0.1
+    }
+  ]
+}

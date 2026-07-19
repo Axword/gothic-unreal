@@ -1,0 +1,2 @@
+# Questy i dialogi
+`main_przybysz: arrival → choice → epilogue`. Kandydackie łańcuchy: `old_trial_1..5` oraz `new_trial_1..5`; poboczne `side_1..10`. Wybór przysięgi ustawia trwałą flagę `faction_choice` i zamyka przeciwny łańcuch. JSON `dialogues_prototype` pokazuje bezpieczne wyjście i akcję startu questa. Każdy docelowy węzeł opisuje tekst, wybory, warunki (`flag`, `item`, `reputation`, `skill`) i akcje; UI nie interpretuje tekstu jako kodu.

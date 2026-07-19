@@ -1,0 +1,425 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "side_1",
+      "name": "Kości na plaży",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 80,
+        "currency_salt": 10
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
+    },
+    {
+      "id": "side_2",
+      "name": "Zimna herbata",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 90,
+        "currency_salt": 11
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
+    },
+    {
+      "id": "side_3",
+      "name": "Pies bez obroży",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 100,
+        "currency_salt": 12
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
+    },
+    {
+      "id": "side_4",
+      "name": "Studnia z solą",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 110,
+        "currency_salt": 13
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
+    },
+    {
+      "id": "side_5",
+      "name": "Kieł dla dziecka",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 120,
+        "currency_salt": 14
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
+    },
+    {
+      "id": "side_6",
+      "name": "Cisza pod kamieniem",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 130,
+        "currency_salt": 15
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
+    },
+    {
+      "id": "side_7",
+      "name": "Złamany kompas",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 140,
+        "currency_salt": 16
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
+    },
+    {
+      "id": "side_8",
+      "name": "Dym nad trzciną",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 150,
+        "currency_salt": 17
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
+    },
+    {
+      "id": "side_9",
+      "name": "Ostatnia sieć",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 160,
+        "currency_salt": 18
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
+    },
+    {
+      "id": "side_10",
+      "name": "Szept pod skórą",
+      "stages": [
+        {
+          "id": "start",
+          "text": "Zbierz ślad i wróć."
+        },
+        {
+          "id": "done",
+          "text": "Sprawa ma swój koniec."
+        }
+      ],
+      "rewards": {
+        "xp": 170,
+        "currency_salt": 19
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
+    }
+  ]
+}

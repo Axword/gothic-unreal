@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "spell_ember",
+      "name": "Żarowy pocisk",
+      "mana": 15,
+      "cast_time": 0.6
+    },
+    {
+      "id": "spell_frost",
+      "name": "Słony mróz",
+      "mana": 20,
+      "cast_time": 0.8
+    }
+  ]
+}

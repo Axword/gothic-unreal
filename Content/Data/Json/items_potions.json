@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "potion_01",
+      "name": "Mikstura życia",
+      "type": "potion",
+      "value": 31,
+      "asset_path": "/Game/Art/Icons/icon_potion_01",
+      "effect": "leczy 45 HP",
+      "duration_seconds": 0,
+      "mass": 0.3
+    },
+    {
+      "id": "potion_02",
+      "name": "Mikstura many",
+      "type": "potion",
+      "value": 42,
+      "asset_path": "/Game/Art/Icons/icon_potion_02",
+      "effect": "odnawia 35 many",
+      "duration_seconds": 0,
+      "mass": 0.3
+    },
+    {
+      "id": "potion_03",
+      "name": "Gorzka odtrutka",
+      "type": "potion",
+      "value": 53,
+      "asset_path": "/Game/Art/Icons/icon_potion_03",
+      "effect": "usuwa truciznę",
+      "duration_seconds": 0,
+      "mass": 0.3
+    },
+    {
+      "id": "potion_04",
+      "name": "Wywar siły",
+      "type": "potion",
+      "value": 64,
+      "asset_path": "/Game/Art/Icons/icon_potion_04",
+      "effect": "+5 siły na 5 min",
+      "duration_seconds": 300,
+      "mass": 0.3
+    },
+    {
+      "id": "potion_05",
+      "name": "Olej ciszy",
+      "type": "potion",
+      "value": 75,
+      "asset_path": "/Game/Art/Icons/icon_potion_05",
+      "effect": "cisza kroków na 60 s",
+      "duration_seconds": 300,
+      "mass": 0.3
+    },
+    {
+      "id": "potion_06",
+      "name": "Eliksir zimna",
+      "type": "potion",
+      "value": 86,
+      "asset_path": "/Game/Art/Icons/icon_potion_06",
+      "effect": "odporność na zimno na 5 min",
+      "duration_seconds": 300,
+      "mass": 0.3
+    }
+  ]
+}
