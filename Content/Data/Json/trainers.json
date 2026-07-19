@@ -18,6 +18,24 @@
       "npc_id": "npc_neu_01",
       "skill": "magic",
       "cost": 80
+    },
+    {
+      "id": "trainer_gont",
+      "npc_id": "npc_sta_03",
+      "skill": "lockpick",
+      "cost": 30
+    },
+    {
+      "id": "trainer_mira",
+      "npc_id": "npc_sta_04",
+      "skill": "bow",
+      "cost": 45
+    },
+    {
+      "id": "trainer_plosz",
+      "npc_id": "npc_sta_05",
+      "skill": "skinning",
+      "cost": 35
     }
   ]
 }

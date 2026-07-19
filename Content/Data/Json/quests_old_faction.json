@@ -3,87 +3,132 @@
   "records": [
     {
       "id": "old_trial_1",
-      "name": "old_trial próba 1",
+      "name": "Zaginiony patrol w Lesie Zasłon",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Warda poprosiła o odnalezienie strażników zaginionych w Lesie Zasłon.",
+          "objectives": [
+            {
+              "description": "Zbadaj obóz w Lesie Zasłon",
+              "target_id": "loc_4"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Patrol odnaleziony, raport złożony w Twierdzy Rygiel."
         }
       ],
       "rewards": {
-        "xp": 120
+        "xp": 150,
+        "item_ids": [
+          "sword_02"
+        ]
       }
     },
     {
       "id": "old_trial_2",
-      "name": "old_trial próba 2",
+      "name": "Dostawa soli z Kamieniołomu Głuchego",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Rymar oczekuje na wóz z solą z Kamieniołomu Głuchego.",
+          "objectives": [
+            {
+              "description": "Dopilnuj załadunku soli w Kamieniołomie",
+              "target_id": "loc_6"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Dostawa dotarła bezpiecznie do Rymara."
         }
       ],
       "rewards": {
-        "xp": 140
+        "xp": 160,
+        "item_ids": [
+          "currency_salt"
+        ]
       }
     },
     {
       "id": "old_trial_3",
-      "name": "old_trial próba 3",
+      "name": "Tajemnica starej skrzyni L/R",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Gont szuka klucza lub wytrycha, by otworzyć starą skrzynię w zbrojowni.",
+          "objectives": [
+            {
+              "description": "Otwórz skrzynię prototypową",
+              "target_id": "chest_prototype"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zamek ustąpił, klucz do wieży został odzyskany."
         }
       ],
       "rewards": {
-        "xp": 160
+        "xp": 170,
+        "item_ids": [
+          "key_watch"
+        ]
       }
     },
     {
       "id": "old_trial_4",
-      "name": "old_trial próba 4",
+      "name": "Polowanie na Wilczaki solne",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Płosz wyznaczył nagrodę za przetrzebienie watahy Wilczaków.",
+          "objectives": [
+            {
+              "description": "Pokonaj Wilczaka solnego",
+              "target_id": "monster_1"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Trofea z Wilczaków przekazane Płoszowi."
         }
       ],
       "rewards": {
-        "xp": 180
+        "xp": 180,
+        "item_ids": [
+          "trophy_01"
+        ]
       }
     },
     {
       "id": "old_trial_5",
-      "name": "old_trial próba 5",
+      "name": "Wybór porządku: Przysięga Rygla",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Warda oceni Twoje zasługi dla Starego Porządku i przyjmie przysięgę.",
+          "objectives": [
+            {
+              "description": "Złóż przysięgę przed Wardą",
+              "target_id": "npc_sta_01"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zostałeś oficjalnym członkiem Starego Porządku. Droga do Wolnego Brzegu zablokowana."
         }
       ],
       "rewards": {
-        "xp": 200
+        "xp": 300,
+        "item_ids": [
+          "armor_straz_podstawowa"
+        ]
       }
     }
   ]

@@ -3,172 +3,262 @@
   "records": [
     {
       "id": "side_1",
-      "name": "side próba 1",
+      "name": "Zgubiony sztylet robotnika",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Odnajdź nóż zgubiony na Trakcie Popiołu.",
+          "objectives": [
+            {
+              "description": "Odnajdź nóż zgubiony na Trakcie Popiołu.",
+              "target_id": "loc_3"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zadanie ukończone: Zgubiony sztylet robotnika. Nagroda odebrana."
         }
       ],
       "rewards": {
-        "xp": 120
+        "xp": 120,
+        "item_ids": [
+          "sword_03"
+        ]
       }
     },
     {
       "id": "side_2",
-      "name": "side próba 2",
+      "name": "Solny wywar dla chorego",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Dostarcz leczniczą miksturę strażnikowi w lesie.",
+          "objectives": [
+            {
+              "description": "Dostarcz leczniczą miksturę strażnikowi w lesie.",
+              "target_id": "potion_01"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zadanie ukończone: Solny wywar dla chorego. Nagroda odebrana."
         }
       ],
       "rewards": {
-        "xp": 140
+        "xp": 130,
+        "item_ids": [
+          "potion_03"
+        ]
       }
     },
     {
       "id": "side_3",
-      "name": "side próba 3",
+      "name": "Oczyszczenie podejścia do kamieniołomu",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Przepędź Skalnika z drogi do kamieniołomu.",
+          "objectives": [
+            {
+              "description": "Przepędź Skalnika z drogi do kamieniołomu.",
+              "target_id": "monster_4"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zadanie ukończone: Oczyszczenie podejścia do kamieniołomu. Nagroda odebrana."
         }
       ],
       "rewards": {
-        "xp": 160
+        "xp": 140,
+        "item_ids": [
+          "currency_salt"
+        ]
       }
     },
     {
       "id": "side_4",
-      "name": "side próba 4",
+      "name": "Zioła na sen z Bagna Szczypca",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Pozyskaj bagienne ziele dla wycieńczonego kupca.",
+          "objectives": [
+            {
+              "description": "Pozyskaj bagienne ziele dla wycieńczonego kupca.",
+              "target_id": "loc_5"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zadanie ukończone: Zioła na sen z Bagna Szczypca. Nagroda odebrana."
         }
       ],
       "rewards": {
-        "xp": 180
+        "xp": 150,
+        "item_ids": [
+          "plant_04"
+        ]
       }
     },
     {
       "id": "side_5",
-      "name": "side próba 5",
+      "name": "Nocny mara przy Solnej Skazie",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Zbadaj obecność Mroczka koło Szczeliny Milczącego nocą.",
+          "objectives": [
+            {
+              "description": "Zbadaj obecność Mroczka koło Szczeliny Milczącego nocą.",
+              "target_id": "monster_5"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zadanie ukończone: Nocny mara przy Solnej Skazie. Nagroda odebrana."
         }
       ],
       "rewards": {
-        "xp": 200
+        "xp": 160,
+        "item_ids": [
+          "trophy_05"
+        ]
       }
     },
     {
       "id": "side_6",
-      "name": "side próba 6",
+      "name": "Zbroja z wolnego handlu",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Wynegocjuj lepszy skórzany kaftan od rybaków z Wolnego Brzegu.",
+          "objectives": [
+            {
+              "description": "Wynegocjuj lepszy skórzany kaftan od rybaków z Wolnego Brzegu.",
+              "target_id": "loc_2"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zadanie ukończone: Zbroja z wolnego handlu. Nagroda odebrana."
         }
       ],
       "rewards": {
-        "xp": 220
+        "xp": 170,
+        "item_ids": [
+          "armor_wolni_lepsza"
+        ]
       }
     },
     {
       "id": "side_7",
-      "name": "side próba 7",
+      "name": "Szybki łuk dla myśliwego",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Przynieś wytrzymały łuk myśliwemu polującemu na Plujce bagienne.",
+          "objectives": [
+            {
+              "description": "Przynieś wytrzymały łuk myśliwemu polującemu na Plujce bagienne.",
+              "target_id": "bow_03"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zadanie ukończone: Szybki łuk dla myśliwego. Nagroda odebrana."
         }
       ],
       "rewards": {
-        "xp": 240
+        "xp": 180,
+        "item_ids": [
+          "currency_salt"
+        ]
       }
     },
     {
       "id": "side_8",
-      "name": "side próba 8",
+      "name": "Wytrychy z przemytu",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Odbierz paczkę wytrychów ukrytą w skrytce przy plaży.",
+          "objectives": [
+            {
+              "description": "Odbierz paczkę wytrychów ukrytą w skrytce przy plaży.",
+              "target_id": "loc_7"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zadanie ukończone: Wytrychy z przemytu. Nagroda odebrana."
         }
       ],
       "rewards": {
-        "xp": 260
+        "xp": 190,
+        "item_ids": [
+          "lockpick"
+        ]
       }
     },
     {
       "id": "side_9",
-      "name": "side próba 9",
+      "name": "Zęby Topielca na talizman",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Zdobycie trofeum z Topielca z Bagna Szczypca.",
+          "objectives": [
+            {
+              "description": "Zdobycie trofeum z Topielca z Bagna Szczypca.",
+              "target_id": "monster_3"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zadanie ukończone: Zęby Topielca na talizman. Nagroda odebrana."
         }
       ],
       "rewards": {
-        "xp": 280
+        "xp": 200,
+        "item_ids": [
+          "trophy_03"
+        ]
       }
     },
     {
       "id": "side_10",
-      "name": "side próba 10",
+      "name": "Echa w Szczelinie Milczącego",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Zbadaj anomalie magiczne w pobliżu epicentrum Solnej Skazy.",
+          "objectives": [
+            {
+              "description": "Zbadaj anomalie magiczne w pobliżu epicentrum Solnej Skazy.",
+              "target_id": "loc_8"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zadanie ukończone: Echa w Szczelinie Milczącego. Nagroda odebrana."
         }
       ],
       "rewards": {
-        "xp": 300
+        "xp": 250,
+        "item_ids": [
+          "potion_04"
+        ]
       }
     }
   ]

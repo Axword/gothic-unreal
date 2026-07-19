@@ -7,14 +7,178 @@
       "nodes": [
         {
           "id": "start",
-          "text": "List śmierdzi cudzą ręką. Jak chcesz, pomogę go przeczytać.",
+          "text": "List śmierdzi cudzą ręką. Widzę na nim znak zza morza. Jak chcesz, pomogę go przeczytać i zdradzę tajemnice magii Solnej Skazy.",
           "choices": [
             {
-              "text": "Pomóż mi.",
+              "text": "Pomóż mi z listem i powiedz o obozach.",
               "action": "start:main_przybysz"
             },
             {
-              "text": "Nie teraz.",
+              "text": "Naucz mnie podstaw magii (Koszt: 80).",
+              "action": "learn:magic"
+            },
+            {
+              "text": "Odejdź.",
+              "action": "exit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dialogue_warda_old_camp",
+      "speaker_id": "npc_sta_01",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Twierdza Rygiel stoi twardo w obliczu Solnej Skazy. Prawo i dyscyplina to nasz jedyny ratunek. Chcesz się wykazać?",
+          "choices": [
+            {
+              "text": "Zbadam zaginiony patrol w Lesie Zasłon.",
+              "action": "start:old_trial_1"
+            },
+            {
+              "text": "Zgłaszam gotowość do złożenia przysięgi Staremu Porządkowi.",
+              "action": "choice_faction:stary_porzadek"
+            },
+            {
+              "text": "Na razie dziękuję.",
+              "action": "exit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dialogue_rymar_merchant",
+      "speaker_id": "npc_sta_02",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Towary z kamieniołomu i broń kuźnicza. Szukasz solidnego ostrza, czy chcesz podnieść swoje umiejętności szermiercze?",
+          "choices": [
+            {
+              "text": "Pokaż mi swoje towary.",
+              "action": "trade"
+            },
+            {
+              "text": "Trenuj moją walkę mieczem (Koszt: 40).",
+              "action": "learn:sword"
+            },
+            {
+              "text": "Do widzenia.",
+              "action": "exit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dialogue_gont_worker",
+      "speaker_id": "npc_sta_03",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Ciężka praca przy naprawie bram miejskich. Jeśli masz zwinne palce, mogę pokazać Ci, jak radzić sobie z zaciętymi zamkami w starych skrzyniach.",
+          "choices": [
+            {
+              "text": "Naucz mnie otwierania zamków (Koszt: 30).",
+              "action": "learn:lockpick"
+            },
+            {
+              "text": "Wracaj do roboty.",
+              "action": "exit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dialogue_mira_teacher",
+      "speaker_id": "npc_sta_04",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Oko musi być spokojne jak woda w zatoce, zanim puścisz cięciwę. Mogę wyćwiczyć twoją zręczność i celność łuczniczą.",
+          "choices": [
+            {
+              "text": "Naucz mnie strzelania z łuku (Koszt: 45).",
+              "action": "learn:bow"
+            },
+            {
+              "text": "Zajmijmy się czymś innym.",
+              "action": "exit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dialogue_plosz_guard",
+      "speaker_id": "npc_sta_05",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Wilczaki solne podchodzą pod same mury Twierdzy. Zanim pójdziesz na polowanie, powinieneś wiedzieć, jak pozyskiwać z nich cenne trofea.",
+          "choices": [
+            {
+              "text": "Naucz mnie skórowania i pozyskiwania trofeów (Koszt: 35).",
+              "action": "learn:skinning"
+            },
+            {
+              "text": "Zajmę się Wilczakami.",
+              "action": "start:old_trial_4"
+            },
+            {
+              "text": "Później.",
+              "action": "exit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dialogue_nita_new_camp",
+      "speaker_id": "npc_now_01",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Wolny Brzeg nie kłania się Ryglowi ani jego podatkom. Bierzemy to, co nasze z morza i ze składy straży. Chcesz dołączyć do Nowego Porządku?",
+          "choices": [
+            {
+              "text": "Zbadam dla Ciebie obronę nabrzeża.",
+              "action": "start:new_trial_1"
+            },
+            {
+              "text": "Naucz mnie kradzieży i cichego poruszania (Koszt: 35).",
+              "action": "learn:theft"
+            },
+            {
+              "text": "Chcę zapieczętować Pakt Wolnych i wybrać Nowy Porządek.",
+              "action": "choice_faction:nowy_porzadek"
+            },
+            {
+              "text": "Muszę to przemyśleć.",
+              "action": "exit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dialogue_epilogue_milczacy",
+      "speaker_id": "npc_neu_02",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Solna Skaza pulsuje w głębi Szczeliny Milczącego. Twój wybór obozu na zawsze zmienił losy tego wybrzeża. Czas na ostateczne rozstrzygnięcie.",
+          "choices": [
+            {
+              "text": "Stawiam czoła przeznaczeniu (Zakończ grę).",
+              "action": "trigger_epilogue"
+            },
+            {
+              "text": "Daj mi jeszcze chwilę.",
               "action": "exit"
             }
           ]

@@ -15,4 +15,5 @@ public:
  UFUNCTION(BlueprintCallable) bool RemoveItem(const FString& ItemId,int32 Count=1);
  UFUNCTION(BlueprintPure) int32 CountItem(const FString& ItemId)const;
  UFUNCTION(BlueprintCallable) bool EquipWeapon(const FString& ItemId);
+ UFUNCTION(BlueprintCallable) bool EquipWeaponWithStats(const FString& ItemId,int32 PlayerStrength,int32 PlayerDexterity,int32 RequiredStrength,int32 RequiredDexterity);
 };

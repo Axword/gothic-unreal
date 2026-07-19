@@ -14,6 +14,7 @@ UCLASS(Blueprintable) class POPIOLISOL_API APISLockedChest:public AActor { GENER
  UPROPERTY(EditAnywhere,BlueprintReadOnly) FString Sequence=TEXT("LRL");
  UPROPERTY(VisibleAnywhere,BlueprintReadOnly) bool bOpened=false;
  UFUNCTION(BlueprintCallable) bool BeginLockpick(int32 PlayerRank);
+ UFUNCTION(BlueprintCallable) bool BeginLockpickWithInventory(int32 PlayerRank,UPISInventoryComponent* Inventory);
  UFUNCTION(BlueprintCallable) bool SubmitLockTurn(bool bRight,UPISInventoryComponent* Inventory);
  UFUNCTION(BlueprintCallable) bool OpenWithKey(const FString& KeyId);
  UFUNCTION(BlueprintPure) FString Prompt()const;

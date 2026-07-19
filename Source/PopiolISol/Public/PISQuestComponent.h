@@ -7,8 +7,12 @@ USTRUCT(BlueprintType) struct FPISQuestState { GENERATED_BODY() UPROPERTY(EditAn
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FPISQuestChanged,const FPISQuestState&, State);
 UCLASS(ClassGroup=(PIS),meta=(BlueprintSpawnableComponent)) class POPIOLISOL_API UPISQuestComponent:public UActorComponent { GENERATED_BODY() public:
  UPROPERTY(BlueprintAssignable) FPISQuestChanged OnQuestChanged; UPROPERTY(VisibleAnywhere,BlueprintReadOnly) TArray<FPISQuestState> States;
+ UPROPERTY(VisibleAnywhere,BlueprintReadOnly) FString ActiveFaction;
  UFUNCTION(BlueprintCallable) bool StartQuest(const FString& QuestId,const FString& StartStage=TEXT("start"));
  UFUNCTION(BlueprintCallable) bool SetStage(const FString& QuestId,const FString& StageId);
  UFUNCTION(BlueprintCallable) bool FinishQuest(const FString& QuestId,bool bSucceeded=true);
+ UFUNCTION(BlueprintCallable) bool ChooseFaction(const FString& FactionId);
+ UFUNCTION(BlueprintCallable) bool LockQuest(const FString& QuestId);
+ UFUNCTION(BlueprintPure) bool IsQuestLocked(const FString& QuestId)const;
  UFUNCTION(BlueprintPure) EPISQuestStatus GetStatus(const FString& QuestId)const;
 };

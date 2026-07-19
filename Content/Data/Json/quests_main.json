@@ -7,15 +7,33 @@
       "stages": [
         {
           "id": "arrival",
-          "text": "Przybyłeś z listem."
+          "text": "Przybyłeś na wybrzeże z tajemniczym listem od nieznawcy.",
+          "objectives": [
+            {
+              "description": "Porozmawiaj z Bielem na plaży",
+              "target_id": "npc_neu_01"
+            }
+          ]
         },
         {
           "id": "choice",
-          "text": "Wybierz stronę."
+          "text": "Zaproponowano Ci wybór między Starym Porządkiem z Twierdzy Rygiel a Nowym Porządkiem z Wolnego Brzegu.",
+          "objectives": [
+            {
+              "description": "Udaj się do wybranego obozu i ukończ próby kandydackie",
+              "target_id": "loc_1"
+            }
+          ]
         },
         {
           "id": "epilogue",
-          "text": "Kraina pamięta wybór."
+          "text": "Kraina Pamięta wybór. Solna Skaza została opanowana przez porządek, któremu przysiągłeś wierność.",
+          "objectives": [
+            {
+              "description": "Staw czoła ostatecznemu przeznaczeniu",
+              "target_id": "loc_8"
+            }
+          ]
         }
       ]
     }

@@ -3,3 +3,4 @@ bool UPISInventoryComponent::AddItem(const FString& Id,int32 N){if(Id.IsEmpty()|
 bool UPISInventoryComponent::RemoveItem(const FString& Id,int32 N){if(N<=0)return false;for(int32 i=0;i<Items.Num();++i)if(Items[i].ItemId==Id){if(Items[i].Count<N)return false;Items[i].Count-=N;if(!Items[i].Count)Items.RemoveAt(i);if(EquippedWeaponId==Id&&CountItem(Id)==0)EquippedWeaponId.Empty();return true;}return false;}
 int32 UPISInventoryComponent::CountItem(const FString& Id)const{for(const auto&S:Items)if(S.ItemId==Id)return S.Count;return 0;}
 bool UPISInventoryComponent::EquipWeapon(const FString& Id){if(CountItem(Id)<1)return false;EquippedWeaponId=Id;return true;}
+bool UPISInventoryComponent::EquipWeaponWithStats(const FString& Id,int32 PStr,int32 PDex,int32 ReqStr,int32 ReqDex){if(CountItem(Id)<1||PStr<ReqStr||PDex<ReqDex)return false;EquippedWeaponId=Id;return true;}

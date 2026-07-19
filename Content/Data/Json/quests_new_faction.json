@@ -3,87 +3,132 @@
   "records": [
     {
       "id": "new_trial_1",
-      "name": "new_trial próba 1",
+      "name": "Przeprawa do Wolnego Brzegu",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Nita zleca rozpoznanie umocnień nabrzeża przy Wolnym Brzegu.",
+          "objectives": [
+            {
+              "description": "Zbadaj obronę Wolnego Brzegu",
+              "target_id": "loc_2"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Raport z rozpoznania nabrzeża zadowolił Nitę."
         }
       ],
       "rewards": {
-        "xp": 120
+        "xp": 150,
+        "item_ids": [
+          "bow_02"
+        ]
       }
     },
     {
       "id": "new_trial_2",
-      "name": "new_trial próba 2",
+      "name": "Kradzież z magazynu Straży",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Nita potrzebuje zapasów wytrychów z magazynu Rymara.",
+          "objectives": [
+            {
+              "description": "Pozyskaj towary od Rymara",
+              "target_id": "npc_sta_02"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zapasy trafiły w ręce Wolnych Sztormowników."
         }
       ],
       "rewards": {
-        "xp": 140
+        "xp": 160,
+        "item_ids": [
+          "lockpick"
+        ]
       }
     },
     {
       "id": "new_trial_3",
-      "name": "new_trial próba 3",
+      "name": "Bagienne zioła dla alchemika",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Zbierz rzadkie zioła rosnące w oparach Bagna Szczypca.",
+          "objectives": [
+            {
+              "description": "Odnajdź rzadką roślinę alchemiczną",
+              "target_id": "plant_03"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zioła z bagien przekazane zielarzowi w Nowym Obozie."
         }
       ],
       "rewards": {
-        "xp": 160
+        "xp": 170,
+        "item_ids": [
+          "potion_02"
+        ]
       }
     },
     {
       "id": "new_trial_4",
-      "name": "new_trial próba 4",
+      "name": "Polowanie na Krabnika",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Ogromny Krabnik blokuje połów na Plaży Solnej.",
+          "objectives": [
+            {
+              "description": "Zgładź pancernego Krabnika",
+              "target_id": "monster_2"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Skorupa Krabnika przyniesiona jako dowód zwycięstwa."
         }
       ],
       "rewards": {
-        "xp": 180
+        "xp": 180,
+        "item_ids": [
+          "trophy_02"
+        ]
       }
     },
     {
       "id": "new_trial_5",
-      "name": "new_trial próba 5",
+      "name": "Wybór porządku: Pakt Wolnych",
       "stages": [
         {
           "id": "start",
-          "text": "Zbierz ślad i wróć."
+          "text": "Nita oferuje pełne członkostwo w Nowym Porządku i wolność od prawa Rygla.",
+          "objectives": [
+            {
+              "description": "Zapieczętuj Pakt z Nitą",
+              "target_id": "npc_now_01"
+            }
+          ]
         },
         {
           "id": "done",
-          "text": "Sprawa ma swój koniec."
+          "text": "Zostałeś zaprzysiężony w Nowym Porządku. Ścieżka Starego Porządku zablokowana."
         }
       ],
       "rewards": {
-        "xp": 200
+        "xp": 300,
+        "item_ids": [
+          "armor_wolni_podstawowa"
+        ]
       }
     }
   ]

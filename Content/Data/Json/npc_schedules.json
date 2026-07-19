@@ -9,28 +9,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_01",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_02",
@@ -40,28 +45,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_02",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_03",
@@ -71,28 +81,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_03",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_04",
@@ -102,28 +117,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_04",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_05",
@@ -133,28 +153,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_05",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_06",
@@ -164,28 +189,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_06",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_07",
@@ -195,28 +225,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_07",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_08",
@@ -226,28 +261,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_08",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_09",
@@ -257,28 +297,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_09",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_10",
@@ -288,28 +333,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_10",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_11",
@@ -319,28 +369,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_11",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_12",
@@ -350,28 +405,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_12",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_13",
@@ -381,28 +441,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_13",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_14",
@@ -412,28 +477,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_14",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_15",
@@ -443,28 +513,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_15",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_16",
@@ -474,28 +549,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_16",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_17",
@@ -505,28 +585,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_17",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_18",
@@ -536,28 +621,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_18",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_19",
@@ -567,28 +657,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_19",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_sta_20",
@@ -598,28 +693,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_stary_porzadek",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_1"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_stary_porzadek",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_1"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_stary_porzadek",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_1"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_sta_20",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_1"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_1",
+      "fallback_location_id": "loc_1"
     },
     {
       "id": "schedule_now_01",
@@ -629,28 +729,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_01",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_02",
@@ -660,28 +765,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_02",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_03",
@@ -691,28 +801,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_03",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_04",
@@ -722,28 +837,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_04",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_05",
@@ -753,28 +873,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_05",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_06",
@@ -784,28 +909,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_06",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_07",
@@ -815,28 +945,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_07",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_08",
@@ -846,28 +981,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_08",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_09",
@@ -877,28 +1017,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_09",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_10",
@@ -908,28 +1053,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_10",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_11",
@@ -939,28 +1089,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_11",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_12",
@@ -970,28 +1125,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_12",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_13",
@@ -1001,28 +1161,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_13",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_14",
@@ -1032,28 +1197,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_14",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_15",
@@ -1063,28 +1233,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_15",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_16",
@@ -1094,28 +1269,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_16",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_17",
@@ -1125,28 +1305,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_17",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_18",
@@ -1156,28 +1341,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_18",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_19",
@@ -1187,28 +1377,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_19",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_now_20",
@@ -1218,28 +1413,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_nowy_brzeg",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_2"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_nowy_brzeg",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_2"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_nowy_brzeg",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_2"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_now_20",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_2"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_2",
+      "fallback_location_id": "loc_2"
     },
     {
       "id": "schedule_neu_01",
@@ -1249,28 +1449,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_01",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_02",
@@ -1280,28 +1485,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_02",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_03",
@@ -1311,28 +1521,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_03",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_04",
@@ -1342,28 +1557,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_04",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_05",
@@ -1373,28 +1593,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_05",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_06",
@@ -1404,28 +1629,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_06",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_07",
@@ -1435,28 +1665,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_07",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_08",
@@ -1466,28 +1701,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_08",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_09",
@@ -1497,28 +1737,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_09",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_10",
@@ -1528,28 +1773,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_10",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_11",
@@ -1559,28 +1809,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_11",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_12",
@@ -1590,28 +1845,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_12",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_13",
@@ -1621,28 +1881,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_13",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_14",
@@ -1652,28 +1917,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_14",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_15",
@@ -1683,28 +1953,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_15",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_16",
@@ -1714,28 +1989,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_16",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_17",
@@ -1745,28 +2025,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_17",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_18",
@@ -1776,28 +2061,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_18",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_19",
@@ -1807,28 +2097,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_19",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_20",
@@ -1838,28 +2133,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_20",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_21",
@@ -1869,28 +2169,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_21",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_22",
@@ -1900,28 +2205,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_22",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_23",
@@ -1931,28 +2241,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_23",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_24",
@@ -1962,28 +2277,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_24",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     },
     {
       "id": "schedule_neu_25",
@@ -1993,28 +2313,33 @@
           "from": "06:00",
           "to": "12:00",
           "marker": "work_neutralni",
-          "activity": "work"
+          "activity": "work",
+          "location_id": "loc_3"
         },
         {
           "from": "12:00",
           "to": "14:00",
           "marker": "meal_neutralni",
-          "activity": "eat"
+          "activity": "eat",
+          "location_id": "loc_3"
         },
         {
           "from": "14:00",
           "to": "21:00",
           "marker": "patrol_neutralni",
-          "activity": "patrol"
+          "activity": "patrol",
+          "location_id": "loc_3"
         },
         {
           "from": "21:00",
           "to": "06:00",
           "marker": "bed_npc_neu_25",
-          "activity": "sleep"
+          "activity": "sleep",
+          "location_id": "loc_3"
         }
       ],
-      "fallback": "teleport_out_of_sight"
+      "fallback": "loc_3",
+      "fallback_location_id": "loc_3"
     }
   ]
 }

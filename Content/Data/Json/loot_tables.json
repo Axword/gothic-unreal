@@ -13,6 +13,84 @@
           "count": 3
         }
       ]
+    },
+    {
+      "id": "loot_monster_1",
+      "entries": [
+        {
+          "item": "trophy_01",
+          "count": 1
+        },
+        {
+          "item": "currency_salt",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "loot_monster_2",
+      "entries": [
+        {
+          "item": "trophy_02",
+          "count": 1
+        },
+        {
+          "item": "currency_salt",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "loot_monster_3",
+      "entries": [
+        {
+          "item": "trophy_03",
+          "count": 1
+        },
+        {
+          "item": "currency_salt",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "loot_monster_4",
+      "entries": [
+        {
+          "item": "trophy_04",
+          "count": 1
+        },
+        {
+          "item": "currency_salt",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "loot_monster_5",
+      "entries": [
+        {
+          "item": "trophy_05",
+          "count": 1
+        },
+        {
+          "item": "currency_salt",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "loot_monster_6",
+      "entries": [
+        {
+          "item": "trophy_06",
+          "count": 1
+        },
+        {
+          "item": "currency_salt",
+          "count": 5
+        }
+      ]
     }
   ]
 }

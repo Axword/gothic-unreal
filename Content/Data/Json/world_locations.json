@@ -40,6 +40,11 @@
       "id": "loc_8",
       "name": "Szczelina Milczącego",
       "type": "region"
+    },
+    {
+      "id": "teleport_out_of_sight",
+      "name": "Awaryjny punkt odrodzenia poza widokiem",
+      "type": "fallback"
     }
   ]
 }

@@ -5,37 +5,67 @@
       "id": "monster_1",
       "name": "Wilczak solny",
       "biome": "forest",
-      "behavior": "pack"
+      "behavior": "pack",
+      "hp": 45,
+      "damage": 12,
+      "xp": 50,
+      "trophy_id": "trophy_01",
+      "loot_table_id": "loot_monster_1"
     },
     {
       "id": "monster_2",
       "name": "Krabnik",
       "biome": "coast",
-      "behavior": "tank"
+      "behavior": "tank",
+      "hp": 120,
+      "damage": 25,
+      "xp": 150,
+      "trophy_id": "trophy_02",
+      "loot_table_id": "loot_monster_2"
     },
     {
       "id": "monster_3",
       "name": "Topielec",
       "biome": "swamp",
-      "behavior": "ambush"
+      "behavior": "ambush",
+      "hp": 60,
+      "damage": 18,
+      "xp": 80,
+      "trophy_id": "trophy_03",
+      "loot_table_id": "loot_monster_3"
     },
     {
       "id": "monster_4",
       "name": "Skalnik",
       "biome": "quarry",
-      "behavior": "melee"
+      "behavior": "melee",
+      "hp": 90,
+      "damage": 22,
+      "xp": 120,
+      "trophy_id": "trophy_04",
+      "loot_table_id": "loot_monster_4"
     },
     {
       "id": "monster_5",
       "name": "Mroczek",
       "biome": "night",
-      "behavior": "night"
+      "behavior": "night",
+      "hp": 75,
+      "damage": 20,
+      "xp": 100,
+      "trophy_id": "trophy_05",
+      "loot_table_id": "loot_monster_5"
     },
     {
       "id": "monster_6",
       "name": "Plujec bagienny",
       "biome": "swamp",
-      "behavior": "ranged"
+      "behavior": "ranged",
+      "hp": 50,
+      "damage": 15,
+      "xp": 70,
+      "trophy_id": "trophy_06",
+      "loot_table_id": "loot_monster_6"
     }
   ]
 }

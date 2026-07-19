@@ -5,13 +5,17 @@
       "id": "spell_ember",
       "name": "Żarowy pocisk",
       "mana": 15,
-      "cast_time": 0.6
+      "cast_time": 0.6,
+      "damage": 25,
+      "asset_path": "/Game/Art/Procedural/spell_ember"
     },
     {
       "id": "spell_frost",
       "name": "Słony mróz",
       "mana": 20,
-      "cast_time": 0.8
+      "cast_time": 0.8,
+      "damage": 35,
+      "asset_path": "/Game/Art/Procedural/spell_frost"
     }
   ]
 }
