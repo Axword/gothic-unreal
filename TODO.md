@@ -15,6 +15,6 @@
 
 ## P0 — elementy wykryte w audycie danych
 - [ ] Zmienić `loot_tables.records[].entries[].item` na `item_id` i rozszerzyć oba walidatory na tablice referencji.
-- [ ] Rozbudować wszystkie rekordy przedmiotów o gameplayowe pola wymagane w specyfikacji (obrażenia, wymagania, masa, efekty); obecny katalog jest głównie indeksem zawartości.
-- [ ] Nadać 21 questom właściwe cele, warunki, alternatywne rozwiązania, porażki, nagrody i wpisy dziennika; obecne rekordy są szkieletami.
-- [ ] Rozbudować dialogi poza jednym prototypem oraz implementować interpreter warunków i akcji.
+- [~] Dodano podstawowe pola dla broni, pancerzy, roślin i mikstur; uzupełnić odporności/tabele łupów oraz obsługę tych pól runtime.
+- [~] Questy zawierają cele, gałęzie, porażki, nagrody i dziennik; wdrożyć ich warunki i konsekwencje w runtime.
+- [~] Są trzy dialogi JSON; rozbudować obsadę i zaimplementować interpreter warunków/akcji.

@@ -12,8 +12,16 @@ for fn in glob.glob('Content/Data/Json/*.json'):
   if not isinstance(ident,str) or not re.match(r'^[a-z0-9_]+$',ident): errors.append(f'{fn}: invalid id {ident!r}')
   elif ident in records: errors.append(f'{fn}: duplicate ID {ident}')
   else: records[ident]=x
+REF_KEYS={'npc_id','monster_id','location_id','schedule_id','speaker_id','quest_id','item_id'}
+def refs(value, path=''):
+ if isinstance(value,dict):
+  for k,v in value.items():
+   if k in REF_KEYS and isinstance(v,str) and v: yield k,v,path+'/'+k
+   yield from refs(v,path+'/'+k)
+ elif isinstance(value,list):
+  for i,v in enumerate(value): yield from refs(v,path+f'[{i}]')
 for ident,x in records.items():
- for key,val in x.items():
-  if key.endswith('_id') and isinstance(val,str) and val and val not in records: errors.append(f'{ident}: missing reference {key}={val}')
+ for key,val,path in refs(x):
+  if val not in records: errors.append(f'{ident}: missing reference {path}={val}')
 print(f'validated {len(records)} records; '+('FAILED' if errors else 'OK'))
 print('\n'.join(errors)); sys.exit(bool(errors))

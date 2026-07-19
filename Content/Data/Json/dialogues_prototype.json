@@ -10,12 +10,149 @@
           "text": "List śmierdzi cudzą ręką. Jak chcesz, pomogę go przeczytać.",
           "choices": [
             {
+              "id": "help",
               "text": "Pomóż mi.",
-              "action": "start:main_przybysz"
+              "conditions": [
+                {
+                  "type": "item",
+                  "item_id": "quest_letter"
+                }
+              ],
+              "actions": [
+                {
+                  "type": "start_quest",
+                  "quest_id": "main_przybysz"
+                }
+              ],
+              "next": "warning"
             },
             {
+              "id": "leave",
               "text": "Nie teraz.",
-              "action": "exit"
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "warning",
+          "text": "Czytaj powoli. Słowa czasem gryzą mocniej niż psy.",
+          "choices": [
+            {
+              "id": "done",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "set_flag",
+                  "flag": "biel_trusted"
+                }
+              ]
+            },
+            {
+              "id": "exit",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dialogue_rymar_trial",
+      "speaker_id": "npc_sta_02",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Masz ręce. To już więcej niż większość zesłańców. Chcesz je zatrzymać?",
+          "choices": [
+            {
+              "id": "work",
+              "text": "Jaka robota?",
+              "actions": [
+                {
+                  "type": "start_quest",
+                  "quest_id": "old_trial_1"
+                }
+              ],
+              "next": "terms"
+            },
+            {
+              "id": "leave",
+              "text": "Nie dziś.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "terms",
+          "text": "Waga wraca cała. Człowiek od wagi może wrócić w kawałkach.",
+          "choices": [
+            {
+              "id": "accept",
+              "text": "Przyjąłem.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dialogue_nita_trial",
+      "speaker_id": "npc_now_01",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Wolny Brzeg jest wolny, dopóki umiesz biegać szybciej od rachunku.",
+          "choices": [
+            {
+              "id": "boat",
+              "text": "Słyszałem o łodzi.",
+              "actions": [
+                {
+                  "type": "start_quest",
+                  "quest_id": "new_trial_1"
+                }
+              ],
+              "next": "terms"
+            },
+            {
+              "id": "leave",
+              "text": "Zostaw mnie.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "terms",
+          "text": "Przyprowadź łódź. Strażnika nie musisz.",
+          "choices": [
+            {
+              "id": "accept",
+              "text": "Rozumiem.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
             }
           ]
         }

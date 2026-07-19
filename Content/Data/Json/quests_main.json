@@ -17,7 +17,54 @@
           "id": "epilogue",
           "text": "Kraina pamięta wybór."
         }
-      ]
+      ],
+      "brief": "Zesłaniec z listem bez pieczęci musi wybrać komu zaufa.",
+      "objectives": [
+        {
+          "id": "meet",
+          "text": "Poznaj reguły Rygla i Brzegu."
+        },
+        {
+          "id": "omen",
+          "text": "Zbadaj ślady Szczeliny Milczącego."
+        },
+        {
+          "id": "right",
+          "text": "Zdobądź prawo do przysięgi."
+        },
+        {
+          "id": "choose",
+          "text": "Wybierz frakcję; druga ścieżka zostanie zamknięta."
+        }
+      ],
+      "branches": [
+        {
+          "id": "rygiel",
+          "sets_flag": "faction_choice:stary_porzadek"
+        },
+        {
+          "id": "brzeg",
+          "sets_flag": "faction_choice:nowy_brzeg"
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "arrival",
+          "text": "List nie ma pieczęci, ale ma ciężar."
+        },
+        {
+          "stage": "choice",
+          "text": "Dwa obozy chcą twoich rąk."
+        },
+        {
+          "stage": "epilogue",
+          "text": "Szczelina pamięta wybór."
+        }
+      ],
+      "rewards": {
+        "xp": 500
+      }
     }
   ]
 }

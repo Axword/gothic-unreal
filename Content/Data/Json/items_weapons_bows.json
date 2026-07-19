@@ -7,7 +7,12 @@
       "type": "bow",
       "value": 31,
       "asset_path": "/Game/Art/Icons/icon_bow_01",
-      "source_mesh_path": "Content/Art/SourceModels/bow_01.obj"
+      "source_mesh_path": "Content/Art/SourceModels/bow_01.obj",
+      "damage": 10,
+      "dexterity_required": 0,
+      "draw_seconds": 0.8500000000000001,
+      "mass": 0.8500000000000001,
+      "weapon_class": "bow"
     },
     {
       "id": "bow_02",
@@ -15,7 +20,12 @@
       "type": "bow",
       "value": 42,
       "asset_path": "/Game/Art/Icons/icon_bow_02",
-      "source_mesh_path": "Content/Art/SourceModels/bow_02.obj"
+      "source_mesh_path": "Content/Art/SourceModels/bow_02.obj",
+      "damage": 12,
+      "dexterity_required": 4,
+      "draw_seconds": 0.8500000000000001,
+      "mass": 0.9,
+      "weapon_class": "bow"
     },
     {
       "id": "bow_03",
@@ -23,7 +33,12 @@
       "type": "bow",
       "value": 53,
       "asset_path": "/Game/Art/Icons/icon_bow_03",
-      "source_mesh_path": "Content/Art/SourceModels/bow_03.obj"
+      "source_mesh_path": "Content/Art/SourceModels/bow_03.obj",
+      "damage": 14,
+      "dexterity_required": 8,
+      "draw_seconds": 0.8500000000000001,
+      "mass": 0.9500000000000001,
+      "weapon_class": "bow"
     },
     {
       "id": "bow_04",
@@ -31,7 +46,12 @@
       "type": "bow",
       "value": 64,
       "asset_path": "/Game/Art/Icons/icon_bow_04",
-      "source_mesh_path": "Content/Art/SourceModels/bow_04.obj"
+      "source_mesh_path": "Content/Art/SourceModels/bow_04.obj",
+      "damage": 16,
+      "dexterity_required": 12,
+      "draw_seconds": 0.8500000000000001,
+      "mass": 1.0,
+      "weapon_class": "bow"
     },
     {
       "id": "bow_05",
@@ -39,7 +59,12 @@
       "type": "bow",
       "value": 75,
       "asset_path": "/Game/Art/Icons/icon_bow_05",
-      "source_mesh_path": "Content/Art/SourceModels/bow_05.obj"
+      "source_mesh_path": "Content/Art/SourceModels/bow_05.obj",
+      "damage": 18,
+      "dexterity_required": 16,
+      "draw_seconds": 0.8500000000000001,
+      "mass": 1.05,
+      "weapon_class": "bow"
     },
     {
       "id": "bow_06",
@@ -47,7 +72,12 @@
       "type": "bow",
       "value": 86,
       "asset_path": "/Game/Art/Icons/icon_bow_06",
-      "source_mesh_path": "Content/Art/SourceModels/bow_06.obj"
+      "source_mesh_path": "Content/Art/SourceModels/bow_06.obj",
+      "damage": 20,
+      "dexterity_required": 20,
+      "draw_seconds": 0.8,
+      "mass": 1.1,
+      "weapon_class": "bow"
     },
     {
       "id": "bow_07",
@@ -55,7 +85,12 @@
       "type": "bow",
       "value": 97,
       "asset_path": "/Game/Art/Icons/icon_bow_07",
-      "source_mesh_path": "Content/Art/SourceModels/bow_07.obj"
+      "source_mesh_path": "Content/Art/SourceModels/bow_07.obj",
+      "damage": 22,
+      "dexterity_required": 24,
+      "draw_seconds": 0.75,
+      "mass": 1.1500000000000001,
+      "weapon_class": "bow"
     },
     {
       "id": "bow_08",
@@ -63,7 +98,12 @@
       "type": "bow",
       "value": 108,
       "asset_path": "/Game/Art/Icons/icon_bow_08",
-      "source_mesh_path": "Content/Art/SourceModels/bow_08.obj"
+      "source_mesh_path": "Content/Art/SourceModels/bow_08.obj",
+      "damage": 24,
+      "dexterity_required": 28,
+      "draw_seconds": 0.7000000000000001,
+      "mass": 1.2000000000000002,
+      "weapon_class": "bow"
     },
     {
       "id": "bow_09",
@@ -71,7 +111,12 @@
       "type": "bow",
       "value": 119,
       "asset_path": "/Game/Art/Icons/icon_bow_09",
-      "source_mesh_path": "Content/Art/SourceModels/bow_09.obj"
+      "source_mesh_path": "Content/Art/SourceModels/bow_09.obj",
+      "damage": 26,
+      "dexterity_required": 32,
+      "draw_seconds": 0.6500000000000001,
+      "mass": 1.25,
+      "weapon_class": "bow"
     },
     {
       "id": "bow_10",
@@ -79,7 +124,12 @@
       "type": "bow",
       "value": 130,
       "asset_path": "/Game/Art/Icons/icon_bow_10",
-      "source_mesh_path": "Content/Art/SourceModels/bow_10.obj"
+      "source_mesh_path": "Content/Art/SourceModels/bow_10.obj",
+      "damage": 28,
+      "dexterity_required": 36,
+      "draw_seconds": 0.6000000000000001,
+      "mass": 1.3,
+      "weapon_class": "bow"
     }
   ]
 }

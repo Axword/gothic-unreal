@@ -3,7 +3,7 @@
   "records": [
     {
       "id": "side_1",
-      "name": "side próba 1",
+      "name": "Kości na plaży",
       "stages": [
         {
           "id": "start",
@@ -15,12 +15,37 @@
         }
       ],
       "rewards": {
-        "xp": 120
-      }
+        "xp": 80,
+        "currency_salt": 10
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
     },
     {
       "id": "side_2",
-      "name": "side próba 2",
+      "name": "Zimna herbata",
       "stages": [
         {
           "id": "start",
@@ -32,12 +57,37 @@
         }
       ],
       "rewards": {
-        "xp": 140
-      }
+        "xp": 90,
+        "currency_salt": 11
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
     },
     {
       "id": "side_3",
-      "name": "side próba 3",
+      "name": "Pies bez obroży",
       "stages": [
         {
           "id": "start",
@@ -49,12 +99,37 @@
         }
       ],
       "rewards": {
-        "xp": 160
-      }
+        "xp": 100,
+        "currency_salt": 12
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
     },
     {
       "id": "side_4",
-      "name": "side próba 4",
+      "name": "Studnia z solą",
       "stages": [
         {
           "id": "start",
@@ -66,12 +141,37 @@
         }
       ],
       "rewards": {
-        "xp": 180
-      }
+        "xp": 110,
+        "currency_salt": 13
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
     },
     {
       "id": "side_5",
-      "name": "side próba 5",
+      "name": "Kieł dla dziecka",
       "stages": [
         {
           "id": "start",
@@ -83,12 +183,37 @@
         }
       ],
       "rewards": {
-        "xp": 200
-      }
+        "xp": 120,
+        "currency_salt": 14
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
     },
     {
       "id": "side_6",
-      "name": "side próba 6",
+      "name": "Cisza pod kamieniem",
       "stages": [
         {
           "id": "start",
@@ -100,12 +225,37 @@
         }
       ],
       "rewards": {
-        "xp": 220
-      }
+        "xp": 130,
+        "currency_salt": 15
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
     },
     {
       "id": "side_7",
-      "name": "side próba 7",
+      "name": "Złamany kompas",
       "stages": [
         {
           "id": "start",
@@ -117,12 +267,37 @@
         }
       ],
       "rewards": {
-        "xp": 240
-      }
+        "xp": 140,
+        "currency_salt": 16
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
     },
     {
       "id": "side_8",
-      "name": "side próba 8",
+      "name": "Dym nad trzciną",
       "stages": [
         {
           "id": "start",
@@ -134,12 +309,37 @@
         }
       ],
       "rewards": {
-        "xp": 260
-      }
+        "xp": 150,
+        "currency_salt": 17
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
     },
     {
       "id": "side_9",
-      "name": "side próba 9",
+      "name": "Ostatnia sieć",
       "stages": [
         {
           "id": "start",
@@ -151,12 +351,37 @@
         }
       ],
       "rewards": {
-        "xp": 280
-      }
+        "xp": 160,
+        "currency_salt": 18
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
     },
     {
       "id": "side_10",
-      "name": "side próba 10",
+      "name": "Szept pod skórą",
       "stages": [
         {
           "id": "start",
@@ -168,8 +393,33 @@
         }
       ],
       "rewards": {
-        "xp": 300
-      }
+        "xp": 170,
+        "currency_salt": 19
+      },
+      "brief": "Mała sprawa, która pachnie większym kłopotem.",
+      "start_conditions": [],
+      "objectives": [
+        {
+          "id": "resolve",
+          "text": "Znajdź rozwiązanie na własną rękę.",
+          "methods": [
+            "combat",
+            "explore",
+            "trade"
+          ]
+        }
+      ],
+      "failure_conditions": [],
+      "journal": [
+        {
+          "stage": "start",
+          "text": "Ktoś czegoś chce."
+        },
+        {
+          "stage": "done",
+          "text": "Świat niczego nie oddaje za darmo."
+        }
+      ]
     }
   ]
 }

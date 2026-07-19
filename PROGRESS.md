@@ -13,3 +13,5 @@
 - Komponenty C++ wymagają osadzenia na postaci/Blueprintach w edytorze.
 ## Następny krok
 P0: stworzyć mapę i blueprintowy vertical slice: 3 NPC, chest/lock, wilczak, miecz, Żarowy pocisk oraz `main_przybysz`.
+- Katalogi broni, pancerzy, roślin i mikstur mają teraz podstawowe pola gameplayowe; 21 questów ma opisane cele, gałęzie, porażki, dziennik i nagrody.
+- Dostępne są trzy przykładowe dialogi JSON (Biel, Rymar, Nita), gotowe pod interpreter runtime.

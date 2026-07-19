@@ -26,3 +26,8 @@
 ## 2026-07-19 — Audyt zakresu i dokumentacji
 - Rozszerzono README, DATA_SCHEMAS i raport audytu o faktyczny stan importu, danych oraz znane ograniczenia.
 - Skorygowano liczbę questów: 21 (1 + 5 + 5 + 10), nie 22.
+
+## 2026-07-19 — Iteration 0.4: dane grywalnego przepływu
+- Rozbudowano katalog przedmiotów o statystyki i wymagania oraz 21 questów o cele, dziennik, gałęzie, porażki i nagrody.
+- Dodano trzy dialogi z bezpiecznym wyjściem, warunkami i akcjami startu questów.
+- Walidator CLI rekurencyjnie sprawdza teraz zagnieżdżone referencje `item_id` i `quest_id`.

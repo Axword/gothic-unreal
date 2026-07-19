@@ -6,28 +6,48 @@
       "name": "Kurtka Straży Solnej",
       "type": "armor",
       "asset_path": "/Game/Art/Icons/icon_armor_straz_podstawowa",
-      "source_mesh_path": "Content/Art/SourceModels/armor_straz_podstawowa.obj"
+      "source_mesh_path": "Content/Art/SourceModels/armor_straz_podstawowa.obj",
+      "armor": 15,
+      "resist_physical": 7,
+      "resist_frost": 2,
+      "mass": 5,
+      "available_to_player": true
     },
     {
       "id": "armor_straz_lepsza",
       "name": "Pancerz Rygla",
       "type": "armor",
       "asset_path": "/Game/Art/Icons/icon_armor_straz_lepsza",
-      "source_mesh_path": "Content/Art/SourceModels/armor_straz_lepsza.obj"
+      "source_mesh_path": "Content/Art/SourceModels/armor_straz_lepsza.obj",
+      "armor": 22,
+      "resist_physical": 10,
+      "resist_frost": 4,
+      "mass": 6,
+      "available_to_player": true
     },
     {
       "id": "armor_wolni_podstawowa",
       "name": "Kaftan Wolnego Brzegu",
       "type": "armor",
       "asset_path": "/Game/Art/Icons/icon_armor_wolni_podstawowa",
-      "source_mesh_path": "Content/Art/SourceModels/armor_wolni_podstawowa.obj"
+      "source_mesh_path": "Content/Art/SourceModels/armor_wolni_podstawowa.obj",
+      "armor": 29,
+      "resist_physical": 13,
+      "resist_frost": 6,
+      "mass": 7,
+      "available_to_player": true
     },
     {
       "id": "armor_wolni_lepsza",
       "name": "Płaszcz Sztormownika",
       "type": "armor",
       "asset_path": "/Game/Art/Icons/icon_armor_wolni_lepsza",
-      "source_mesh_path": "Content/Art/SourceModels/armor_wolni_lepsza.obj"
+      "source_mesh_path": "Content/Art/SourceModels/armor_wolni_lepsza.obj",
+      "armor": 36,
+      "resist_physical": 16,
+      "resist_frost": 8,
+      "mass": 8,
+      "available_to_player": true
     }
   ]
 }
