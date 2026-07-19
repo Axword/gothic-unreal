@@ -1,7 +1,7 @@
 # TODO
 ## P0 — bloker grywalności
 - [ ] Użyć UE Editor do stworzenia `/Game/Maps/Prototype`, GameMode, Enhanced Input i postaci.
-- [ ] Inventory/interaction/chest + sekwencyjny lockpick; quest/dialogue runtime i UMG.
+- [~] Inventory/quest state/chest + sekwencyjny lockpick: logika C++ gotowa; brakuje interakcji, lootu, dialog runtime i UMG.
 - [ ] Combat miecz/łuk/magia, AI, NavMesh, 3 NPC routines and 1 monster.
 - [ ] Wersjonowany JSON save/load + test round trip.
 ## P1 — vertical slice do pełnej gry
