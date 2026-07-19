@@ -3,6 +3,7 @@
 - Struktura projektu, dokumentacja, dane kanoniczne JSON i niezależna walidacja.
 - 65 nazwanych NPC ze slotami praca/jedzenie/patrol/sen; bazowy zegar C++.
 - C++: ID-only inventory, quest state machine, skrzynia z sekwencyjnym zamkiem i pocisk czaru.
+- Audyt dokumentacji i minimów danych; poprawiono obsługę dokumentacyjnego savegame w loaderze UE.
 - Wymagane minima katalogowe (20 mieczy, 10 łuków, 4 pancerze, 10 roślin, 6 mikstur, 6 potworów, 22 questy).
 ## W toku / nieuznane za ukończone
 - Mapa Prototype, postać, Enhanced Input, UI, AI, save/load i assety.

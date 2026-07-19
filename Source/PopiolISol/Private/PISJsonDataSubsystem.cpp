@@ -9,6 +9,7 @@ bool UPISJsonDataSubsystem::LoadFile(const FString& Filename,TArray<FString>& Er
  FString Text; if(!FFileHelper::LoadFileToString(Text,*Filename)){Errors.Add(Filename+TEXT(": cannot read"));return false;}
  TSharedPtr<FJsonObject> Root; auto Reader=TJsonReaderFactory<>::Create(Text);
  if(!FJsonSerializer::Deserialize(Reader,Root)||!Root.IsValid()){Errors.Add(Filename+TEXT(": invalid JSON"));return false;}
+ bool bDocumentationOnly=false; Root->TryGetBoolField(TEXT("documentation_only"),bDocumentationOnly); if(bDocumentationOnly) return true;
  const TArray<TSharedPtr<FJsonValue>>* Entries; if(!Root->TryGetArrayField(TEXT("records"),Entries)){Errors.Add(Filename+TEXT(": missing records array"));return false;}
  for(const auto& Value:*Entries){auto Obj=Value->AsObject(); FString Id; if(!Obj.IsValid()||!Obj->TryGetStringField(TEXT("id"),Id)||Id.IsEmpty()){Errors.Add(Filename+TEXT(": record without id"));continue;} if(Records.Contains(Id)) Errors.Add(Filename+TEXT(": duplicate id ")+Id); else Records.Add(Id,Obj);}
  return true;

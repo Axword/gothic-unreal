@@ -9,3 +9,7 @@
 - Dodano komponenty ekwipunku i przejść questów, z eventem dla UMG/Blueprintów.
 - Dodano aktora skrzyni z trzyruchowym zamkiem L/P i kosztem wytrycha oraz pocisk czaru z obrażeniami.
 - Dodano testy automatyczne inventory i przepływu questa.
+
+## 2026-07-19 — Dokumentation audit
+- Sprawdzono komplet obowiązkowych Markdownów i zgodność deklarowanych minimów z JSON.
+- Loader C++ pomija teraz dokumentacyjny `savegame.json`, zgodnie z walidatorem CLI i opisem schematu.
