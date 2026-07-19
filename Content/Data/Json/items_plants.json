@@ -6,70 +6,70 @@
       "name": "Gorzka trzcina",
       "type": "plant",
       "value": 31,
-      "asset_path": "/Game/Art/Procedural/plant_01"
+      "asset_path": "/Game/Art/Icons/icon_plant_01"
     },
     {
       "id": "plant_02",
       "name": "Siny mak",
       "type": "plant",
       "value": 42,
-      "asset_path": "/Game/Art/Procedural/plant_02"
+      "asset_path": "/Game/Art/Icons/icon_plant_02"
     },
     {
       "id": "plant_03",
       "name": "Pazur bagna",
       "type": "plant",
       "value": 53,
-      "asset_path": "/Game/Art/Procedural/plant_03"
+      "asset_path": "/Game/Art/Icons/icon_plant_03"
     },
     {
       "id": "plant_04",
       "name": "Sól morska",
       "type": "plant",
       "value": 64,
-      "asset_path": "/Game/Art/Procedural/plant_04"
+      "asset_path": "/Game/Art/Icons/icon_plant_04"
     },
     {
       "id": "plant_05",
       "name": "Żar-ziele",
       "type": "plant",
       "value": 75,
-      "asset_path": "/Game/Art/Procedural/plant_05"
+      "asset_path": "/Game/Art/Icons/icon_plant_05"
     },
     {
       "id": "plant_06",
       "name": "Mleczna grzybnia",
       "type": "plant",
       "value": 86,
-      "asset_path": "/Game/Art/Procedural/plant_06"
+      "asset_path": "/Game/Art/Icons/icon_plant_06"
     },
     {
       "id": "plant_07",
       "name": "Dzwonek skał",
       "type": "plant",
       "value": 97,
-      "asset_path": "/Game/Art/Procedural/plant_07"
+      "asset_path": "/Game/Art/Icons/icon_plant_07"
     },
     {
       "id": "plant_08",
       "name": "Korzeń cierpki",
       "type": "plant",
       "value": 108,
-      "asset_path": "/Game/Art/Procedural/plant_08"
+      "asset_path": "/Game/Art/Icons/icon_plant_08"
     },
     {
       "id": "plant_09",
       "name": "Nocna mięta",
       "type": "plant",
       "value": 119,
-      "asset_path": "/Game/Art/Procedural/plant_09"
+      "asset_path": "/Game/Art/Icons/icon_plant_09"
     },
     {
       "id": "plant_10",
       "name": "Krwawy wrzos",
       "type": "plant",
       "value": 130,
-      "asset_path": "/Game/Art/Procedural/plant_10"
+      "asset_path": "/Game/Art/Icons/icon_plant_10"
     }
   ]
 }

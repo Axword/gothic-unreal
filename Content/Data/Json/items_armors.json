@@ -5,25 +5,25 @@
       "id": "armor_straz_podstawowa",
       "name": "Kurtka Straży Solnej",
       "type": "armor",
-      "asset_path": "/Game/Art/Procedural/armor_straz_podstawowa"
+      "asset_path": "/Game/Art/Icons/icon_armor_straz_podstawowa"
     },
     {
       "id": "armor_straz_lepsza",
       "name": "Pancerz Rygla",
       "type": "armor",
-      "asset_path": "/Game/Art/Procedural/armor_straz_lepsza"
+      "asset_path": "/Game/Art/Icons/icon_armor_straz_lepsza"
     },
     {
       "id": "armor_wolni_podstawowa",
       "name": "Kaftan Wolnego Brzegu",
       "type": "armor",
-      "asset_path": "/Game/Art/Procedural/armor_wolni_podstawowa"
+      "asset_path": "/Game/Art/Icons/icon_armor_wolni_podstawowa"
     },
     {
       "id": "armor_wolni_lepsza",
       "name": "Płaszcz Sztormownika",
       "type": "armor",
-      "asset_path": "/Game/Art/Procedural/armor_wolni_lepsza"
+      "asset_path": "/Game/Art/Icons/icon_armor_wolni_lepsza"
     }
   ]
 }

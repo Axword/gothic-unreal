@@ -6,42 +6,42 @@
       "name": "Mikstura życia",
       "type": "potion",
       "value": 31,
-      "asset_path": "/Game/Art/Procedural/potion_01"
+      "asset_path": "/Game/Art/Icons/icon_potion_01"
     },
     {
       "id": "potion_02",
       "name": "Mikstura many",
       "type": "potion",
       "value": 42,
-      "asset_path": "/Game/Art/Procedural/potion_02"
+      "asset_path": "/Game/Art/Icons/icon_potion_02"
     },
     {
       "id": "potion_03",
       "name": "Gorzka odtrutka",
       "type": "potion",
       "value": 53,
-      "asset_path": "/Game/Art/Procedural/potion_03"
+      "asset_path": "/Game/Art/Icons/icon_potion_03"
     },
     {
       "id": "potion_04",
       "name": "Wywar siły",
       "type": "potion",
       "value": 64,
-      "asset_path": "/Game/Art/Procedural/potion_04"
+      "asset_path": "/Game/Art/Icons/icon_potion_04"
     },
     {
       "id": "potion_05",
       "name": "Olej ciszy",
       "type": "potion",
       "value": 75,
-      "asset_path": "/Game/Art/Procedural/potion_05"
+      "asset_path": "/Game/Art/Icons/icon_potion_05"
     },
     {
       "id": "potion_06",
       "name": "Eliksir zimna",
       "type": "potion",
       "value": 86,
-      "asset_path": "/Game/Art/Procedural/potion_06"
+      "asset_path": "/Game/Art/Icons/icon_potion_06"
     }
   ]
 }

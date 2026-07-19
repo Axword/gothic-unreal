@@ -13,3 +13,8 @@
 ## 2026-07-19 — Dokumentation audit
 - Sprawdzono komplet obowiązkowych Markdownów i zgodność deklarowanych minimów z JSON.
 - Loader C++ pomija teraz dokumentacyjny `savegame.json`, zgodnie z walidatorem CLI i opisem schematu.
+
+## 2026-07-19 — Iteration 0.2: źródła wizualne
+- Dodano 72 własne, proceduralne ikony PNG 128×128 oraz wersjonowany generator bez zależności zewnętrznych.
+- Dodano 5 plansz koncepcyjnych dla świata, stworów, pancerzy, broni i UI.
+- Ścieżki assetów w katalogach JSON wskazują teraz importowalne ikony `/Game/Art/Icons/icon_<id>`.

@@ -7,6 +7,7 @@
 ## P1 — vertical slice do pełnej gry
 - [ ] UMG HUD/menu/journal/stats, crime witnesses, trainers, skinning.
 - [ ] Wszystkie zadania i dialogi z warunkami/konsekwencjami.
-- [ ] Dwie osady i pozostałe biomy, 6 potworów, authored art/audio/VFX.
+- [~] Ikony źródłowe PNG i koncepcje są gotowe; zaimportować Texture2D i spiąć z UMG.
+- [ ] Dwie osady i pozostałe biomy, meshe 3D 6 potworów, authored audio/VFX.
 ## P2
 - [ ] Balans, LOD/HLOD, accessibility/options, full smoke regression and packaged Win64 build.
