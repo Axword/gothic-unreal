@@ -1,20 +1,21 @@
-# Audyt dokumentacji — 2026-07-19
+# Audyt dokumentacji i zawartości — 2026-07-19
 
-## Wynik
-Wymagane 13 plików Markdown istnieje. Nazwy, ścieżki danych i deklarowane liczebności zostały porównane z repozytorium.
-
+## Kontrole wykonane
 | Kontrola | Wynik |
 |---|---|
-| Wymagane dokumenty | OK — 13/13 |
-| Walidator JSON | OK — 243 rekordy |
+| Obowiązkowe dokumenty Markdown | OK — 13/13 |
+| Walidator danych | OK — 243 rekordy |
 | NPC / harmonogramy | OK — 65 / 65 |
 | Miecze / łuki / pancerze | OK — 20 / 10 / 4 |
 | Rośliny / mikstury / stwory / czary | OK — 10 / 6 / 6 / 2 |
-| Questy stare / nowe / poboczne / główne | OK — 5 / 5 / 10 / 1 |
-| Binarna mapa, Blueprinty, assety, build | Nie istnieją — poprawnie zaznaczone jako P0 lub praca w toku |
+| Questy | OK — **21**: 1 główny + 5 + 5 + 10 |
+| Ikony / source meshe / concepts | OK — 72 / 60 / 5 |
 
-## Znaleziona i naprawiona rozbieżność
-`savegame.json` jest przykładem dokumentacji schematu, a nie plikiem z `records`. Walidator Python już go pomijał, ale loader UE wcześniej próbował go interpretować jak dane kanoniczne. Loader C++ teraz rozpoznaje `documentation_only: true` i pomija taki plik. Dzięki temu raport runtime i walidator CLI mają tę samą semantykę.
+## Poprawione opisy
+Poprzedni wpis `22 questy` był błędny — rzeczywista i wymagana suma wynosi 21. Usunięto sugestię, że placeholderowe ścieżki `/Game/Art/Procedural` nadal są jedynym kierunkiem assetów: katalog zawiera teraz importowalne PNG/OBJ, ale nie `.uasset`.
 
-## Świadome ograniczenia
-README nie obiecuje mapy ani builda. `DefaultEngine.ini` wskazuje planowaną mapę `/Game/Maps/Prototype`; dopóki mapa nie zostanie utworzona w UE Editor, projekt nie jest uruchamialnym vertical slice. Pozostaje to najważniejszym P0, a nie błąd dokumentacji.
+## Uczciwy stan projektu
+Nie, projekt nie ma jeszcze „wszystkiego” z docelowej specyfikacji. Brakuje przede wszystkim mapy/Blueprintów, rzeczywistych assetów UE po imporcie, grywalnego Character/Enhanced Input, UI, AI, dialog runtime, save/load, pełnej walki i animacji. Te pozycje są wyszczególnione w `TODO.md` oraz nie są deklarowane jako ukończone w `PROGRESS.md`.
+
+## Zgodność loadera
+`savegame.json` jest dokumentacyjny i oznaczony `documentation_only`; loader C++ i walidator CLI pomijają go spójnie.

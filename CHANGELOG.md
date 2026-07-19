@@ -22,3 +22,7 @@
 ## 2026-07-19 — Iteration 0.3: modele źródłowe
 - Dodano 60 własnych modeli OBJ low-poly i MTL: bronie, pancerze, stwory, rośliny oraz propsy świata.
 - Dodano generator geometrii i instrukcję importu do UE; JSON zawiera ścieżki source mesh dla odpowiednich rekordów.
+
+## 2026-07-19 — Audyt zakresu i dokumentacji
+- Rozszerzono README, DATA_SCHEMAS i raport audytu o faktyczny stan importu, danych oraz znane ograniczenia.
+- Skorygowano liczbę questów: 21 (1 + 5 + 5 + 10), nie 22.

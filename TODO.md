@@ -12,3 +12,9 @@
 - [ ] Dwie osady i pozostałe biomy, authored audio/VFX.
 ## P2
 - [ ] Balans, LOD/HLOD, accessibility/options, full smoke regression and packaged Win64 build.
+
+## P0 — elementy wykryte w audycie danych
+- [ ] Zmienić `loot_tables.records[].entries[].item` na `item_id` i rozszerzyć oba walidatory na tablice referencji.
+- [ ] Rozbudować wszystkie rekordy przedmiotów o gameplayowe pola wymagane w specyfikacji (obrażenia, wymagania, masa, efekty); obecny katalog jest głównie indeksem zawartości.
+- [ ] Nadać 21 questom właściwe cele, warunki, alternatywne rozwiązania, porażki, nagrody i wpisy dziennika; obecne rekordy są szkieletami.
+- [ ] Rozbudować dialogi poza jednym prototypem oraz implementować interpreter warunków i akcji.
