@@ -6,140 +6,160 @@
       "name": "Rdzawe Żądło",
       "type": "sword",
       "value": 31,
-      "asset_path": "/Game/Art/Icons/icon_sword_01"
+      "asset_path": "/Game/Art/Icons/icon_sword_01",
+      "source_mesh_path": "Content/Art/SourceModels/sword_01.obj"
     },
     {
       "id": "sword_02",
       "name": "Nóż Strażnika",
       "type": "sword",
       "value": 42,
-      "asset_path": "/Game/Art/Icons/icon_sword_02"
+      "asset_path": "/Game/Art/Icons/icon_sword_02",
+      "source_mesh_path": "Content/Art/SourceModels/sword_02.obj"
     },
     {
       "id": "sword_03",
       "name": "Siekacz Zatoki",
       "type": "sword",
       "value": 53,
-      "asset_path": "/Game/Art/Icons/icon_sword_03"
+      "asset_path": "/Game/Art/Icons/icon_sword_03",
+      "source_mesh_path": "Content/Art/SourceModels/sword_03.obj"
     },
     {
       "id": "sword_04",
       "name": "Młotkowy Tasak",
       "type": "sword",
       "value": 64,
-      "asset_path": "/Game/Art/Icons/icon_sword_04"
+      "asset_path": "/Game/Art/Icons/icon_sword_04",
+      "source_mesh_path": "Content/Art/SourceModels/sword_04.obj"
     },
     {
       "id": "sword_05",
       "name": "Szabla Piołunu",
       "type": "sword",
       "value": 75,
-      "asset_path": "/Game/Art/Icons/icon_sword_05"
+      "asset_path": "/Game/Art/Icons/icon_sword_05",
+      "source_mesh_path": "Content/Art/SourceModels/sword_05.obj"
     },
     {
       "id": "sword_06",
       "name": "Klin Warty",
       "type": "sword",
       "value": 86,
-      "asset_path": "/Game/Art/Icons/icon_sword_06"
+      "asset_path": "/Game/Art/Icons/icon_sword_06",
+      "source_mesh_path": "Content/Art/SourceModels/sword_06.obj"
     },
     {
       "id": "sword_07",
       "name": "Miecz Górnika",
       "type": "sword",
       "value": 97,
-      "asset_path": "/Game/Art/Icons/icon_sword_07"
+      "asset_path": "/Game/Art/Icons/icon_sword_07",
+      "source_mesh_path": "Content/Art/SourceModels/sword_07.obj"
     },
     {
       "id": "sword_08",
       "name": "Żelazny Pazur",
       "type": "sword",
       "value": 108,
-      "asset_path": "/Game/Art/Icons/icon_sword_08"
+      "asset_path": "/Game/Art/Icons/icon_sword_08",
+      "source_mesh_path": "Content/Art/SourceModels/sword_08.obj"
     },
     {
       "id": "sword_09",
       "name": "Kieł Poborcy",
       "type": "sword",
       "value": 119,
-      "asset_path": "/Game/Art/Icons/icon_sword_09"
+      "asset_path": "/Game/Art/Icons/icon_sword_09",
+      "source_mesh_path": "Content/Art/SourceModels/sword_09.obj"
     },
     {
       "id": "sword_10",
       "name": "Ostrze Celnika",
       "type": "sword",
       "value": 130,
-      "asset_path": "/Game/Art/Icons/icon_sword_10"
+      "asset_path": "/Game/Art/Icons/icon_sword_10",
+      "source_mesh_path": "Content/Art/SourceModels/sword_10.obj"
     },
     {
       "id": "sword_11",
       "name": "Krawędź Smoły",
       "type": "sword",
       "value": 141,
-      "asset_path": "/Game/Art/Icons/icon_sword_11"
+      "asset_path": "/Game/Art/Icons/icon_sword_11",
+      "source_mesh_path": "Content/Art/SourceModels/sword_11.obj"
     },
     {
       "id": "sword_12",
       "name": "Kord Przypływu",
       "type": "sword",
       "value": 152,
-      "asset_path": "/Game/Art/Icons/icon_sword_12"
+      "asset_path": "/Game/Art/Icons/icon_sword_12",
+      "source_mesh_path": "Content/Art/SourceModels/sword_12.obj"
     },
     {
       "id": "sword_13",
       "name": "Stalowa Modlitwa",
       "type": "sword",
       "value": 163,
-      "asset_path": "/Game/Art/Icons/icon_sword_13"
+      "asset_path": "/Game/Art/Icons/icon_sword_13",
+      "source_mesh_path": "Content/Art/SourceModels/sword_13.obj"
     },
     {
       "id": "sword_14",
       "name": "Wyrzut Sumienia",
       "type": "sword",
       "value": 174,
-      "asset_path": "/Game/Art/Icons/icon_sword_14"
+      "asset_path": "/Game/Art/Icons/icon_sword_14",
+      "source_mesh_path": "Content/Art/SourceModels/sword_14.obj"
     },
     {
       "id": "sword_15",
       "name": "Topór Bez Dzwonu",
       "type": "sword",
       "value": 185,
-      "asset_path": "/Game/Art/Icons/icon_sword_15"
+      "asset_path": "/Game/Art/Icons/icon_sword_15",
+      "source_mesh_path": "Content/Art/SourceModels/sword_15.obj"
     },
     {
       "id": "sword_16",
       "name": "Krzywa Przysięga",
       "type": "sword",
       "value": 196,
-      "asset_path": "/Game/Art/Icons/icon_sword_16"
+      "asset_path": "/Game/Art/Icons/icon_sword_16",
+      "source_mesh_path": "Content/Art/SourceModels/sword_16.obj"
     },
     {
       "id": "sword_17",
       "name": "Czarny Rygiel",
       "type": "sword",
       "value": 207,
-      "asset_path": "/Game/Art/Icons/icon_sword_17"
+      "asset_path": "/Game/Art/Icons/icon_sword_17",
+      "source_mesh_path": "Content/Art/SourceModels/sword_17.obj"
     },
     {
       "id": "sword_18",
       "name": "Miecz Trzcin",
       "type": "sword",
       "value": 218,
-      "asset_path": "/Game/Art/Icons/icon_sword_18"
+      "asset_path": "/Game/Art/Icons/icon_sword_18",
+      "source_mesh_path": "Content/Art/SourceModels/sword_18.obj"
     },
     {
       "id": "sword_19",
       "name": "Sól i Popiół",
       "type": "sword",
       "value": 229,
-      "asset_path": "/Game/Art/Icons/icon_sword_19"
+      "asset_path": "/Game/Art/Icons/icon_sword_19",
+      "source_mesh_path": "Content/Art/SourceModels/sword_19.obj"
     },
     {
       "id": "sword_20",
       "name": "Głos Skały",
       "type": "sword",
       "value": 240,
-      "asset_path": "/Game/Art/Icons/icon_sword_20"
+      "asset_path": "/Game/Art/Icons/icon_sword_20",
+      "source_mesh_path": "Content/Art/SourceModels/sword_20.obj"
     }
   ]
 }

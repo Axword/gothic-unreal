@@ -18,3 +18,7 @@
 - Dodano 72 własne, proceduralne ikony PNG 128×128 oraz wersjonowany generator bez zależności zewnętrznych.
 - Dodano 5 plansz koncepcyjnych dla świata, stworów, pancerzy, broni i UI.
 - Ścieżki assetów w katalogach JSON wskazują teraz importowalne ikony `/Game/Art/Icons/icon_<id>`.
+
+## 2026-07-19 — Iteration 0.3: modele źródłowe
+- Dodano 60 własnych modeli OBJ low-poly i MTL: bronie, pancerze, stwory, rośliny oraz propsy świata.
+- Dodano generator geometrii i instrukcję importu do UE; JSON zawiera ścieżki source mesh dla odpowiednich rekordów.

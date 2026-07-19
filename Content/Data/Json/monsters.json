@@ -5,37 +5,43 @@
       "id": "monster_1",
       "name": "Wilczak solny",
       "biome": "forest",
-      "behavior": "pack"
+      "behavior": "pack",
+      "source_mesh_path": "Content/Art/SourceModels/wilczak_solny.obj"
     },
     {
       "id": "monster_2",
       "name": "Krabnik",
       "biome": "coast",
-      "behavior": "tank"
+      "behavior": "tank",
+      "source_mesh_path": "Content/Art/SourceModels/krabnik.obj"
     },
     {
       "id": "monster_3",
       "name": "Topielec",
       "biome": "swamp",
-      "behavior": "ambush"
+      "behavior": "ambush",
+      "source_mesh_path": "Content/Art/SourceModels/topielec.obj"
     },
     {
       "id": "monster_4",
       "name": "Skalnik",
       "biome": "quarry",
-      "behavior": "melee"
+      "behavior": "melee",
+      "source_mesh_path": "Content/Art/SourceModels/skalnik.obj"
     },
     {
       "id": "monster_5",
       "name": "Mroczek",
       "biome": "night",
-      "behavior": "night"
+      "behavior": "night",
+      "source_mesh_path": "Content/Art/SourceModels/mroczek.obj"
     },
     {
       "id": "monster_6",
       "name": "Plujec bagienny",
       "biome": "swamp",
-      "behavior": "ranged"
+      "behavior": "ranged",
+      "source_mesh_path": "Content/Art/SourceModels/plujec_bagienny.obj"
     }
   ]
 }

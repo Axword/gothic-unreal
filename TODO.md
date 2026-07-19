@@ -8,6 +8,7 @@
 - [ ] UMG HUD/menu/journal/stats, crime witnesses, trainers, skinning.
 - [ ] Wszystkie zadania i dialogi z warunkami/konsekwencjami.
 - [~] Ikony źródłowe PNG i koncepcje są gotowe; zaimportować Texture2D i spiąć z UMG.
-- [ ] Dwie osady i pozostałe biomy, meshe 3D 6 potworów, authored audio/VFX.
+- [~] Modele źródłowe OBJ istnieją; zaimportować jako StaticMesh, przygotować UV/lightmap/collision/LOD i rig potworów.
+- [ ] Dwie osady i pozostałe biomy, authored audio/VFX.
 ## P2
 - [ ] Balans, LOD/HLOD, accessibility/options, full smoke regression and packaged Win64 build.

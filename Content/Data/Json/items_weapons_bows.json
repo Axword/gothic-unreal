@@ -6,70 +6,80 @@
       "name": "Łuk z Leszczyny",
       "type": "bow",
       "value": 31,
-      "asset_path": "/Game/Art/Icons/icon_bow_01"
+      "asset_path": "/Game/Art/Icons/icon_bow_01",
+      "source_mesh_path": "Content/Art/SourceModels/bow_01.obj"
     },
     {
       "id": "bow_02",
       "name": "Łuk Przewoźnika",
       "type": "bow",
       "value": 42,
-      "asset_path": "/Game/Art/Icons/icon_bow_02"
+      "asset_path": "/Game/Art/Icons/icon_bow_02",
+      "source_mesh_path": "Content/Art/SourceModels/bow_02.obj"
     },
     {
       "id": "bow_03",
       "name": "Krzaczasty Łuk",
       "type": "bow",
       "value": 53,
-      "asset_path": "/Game/Art/Icons/icon_bow_03"
+      "asset_path": "/Game/Art/Icons/icon_bow_03",
+      "source_mesh_path": "Content/Art/SourceModels/bow_03.obj"
     },
     {
       "id": "bow_04",
       "name": "Łuk Mokrej Cięciwy",
       "type": "bow",
       "value": 64,
-      "asset_path": "/Game/Art/Icons/icon_bow_04"
+      "asset_path": "/Game/Art/Icons/icon_bow_04",
+      "source_mesh_path": "Content/Art/SourceModels/bow_04.obj"
     },
     {
       "id": "bow_05",
       "name": "Łuk Wartownika",
       "type": "bow",
       "value": 75,
-      "asset_path": "/Game/Art/Icons/icon_bow_05"
+      "asset_path": "/Game/Art/Icons/icon_bow_05",
+      "source_mesh_path": "Content/Art/SourceModels/bow_05.obj"
     },
     {
       "id": "bow_06",
       "name": "Łuk Kłusownika",
       "type": "bow",
       "value": 86,
-      "asset_path": "/Game/Art/Icons/icon_bow_06"
+      "asset_path": "/Game/Art/Icons/icon_bow_06",
+      "source_mesh_path": "Content/Art/SourceModels/bow_06.obj"
     },
     {
       "id": "bow_07",
       "name": "Łuk Złamanego Rogu",
       "type": "bow",
       "value": 97,
-      "asset_path": "/Game/Art/Icons/icon_bow_07"
+      "asset_path": "/Game/Art/Icons/icon_bow_07",
+      "source_mesh_path": "Content/Art/SourceModels/bow_07.obj"
     },
     {
       "id": "bow_08",
       "name": "Łuk Bagnika",
       "type": "bow",
       "value": 108,
-      "asset_path": "/Game/Art/Icons/icon_bow_08"
+      "asset_path": "/Game/Art/Icons/icon_bow_08",
+      "source_mesh_path": "Content/Art/SourceModels/bow_08.obj"
     },
     {
       "id": "bow_09",
       "name": "Łuk Kamiennej Zatoki",
       "type": "bow",
       "value": 119,
-      "asset_path": "/Game/Art/Icons/icon_bow_09"
+      "asset_path": "/Game/Art/Icons/icon_bow_09",
+      "source_mesh_path": "Content/Art/SourceModels/bow_09.obj"
     },
     {
       "id": "bow_10",
       "name": "Cisowy Wyrok",
       "type": "bow",
       "value": 130,
-      "asset_path": "/Game/Art/Icons/icon_bow_10"
+      "asset_path": "/Game/Art/Icons/icon_bow_10",
+      "source_mesh_path": "Content/Art/SourceModels/bow_10.obj"
     }
   ]
 }
