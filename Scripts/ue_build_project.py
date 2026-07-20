@@ -9,14 +9,18 @@ This script is *idempotent*: it can be re-run safely. It will:
   2. Create the player Character Blueprint (BP_PISCharacter) wired to the C++ class.
   3. Create the AI/NPC/Monster Blueprint families.
   4. Create the GameMode Blueprint + GameInstance Blueprint.
-  5. Create the HUD Blueprint and configure HUDClass on the GameMode.
+  5. Create the HUD Blueprint.
   6. Create /Game/Maps/Prototype with a floor, lights and
      all 65 NPCs and 6 monsters placed from world_locations.json.
-  7. Create /Game/Maps/MainMenu (empty level with main menu widget).
-  8. Bind Prototype as default GameMap + EditorStartupMap in DefaultEngine.ini.
+  7. Create /Game/Maps/MainMenu (empty level).
+  8. Bind MainMenu as default GameMap + EditorStartupMap.
 
 After running, the project can be opened with the editor and Play-In-Editor
 launches the vertical slice.
+
+This script is intentionally defensive: it tries multiple Python APIs
+because some factory classes were removed in 5.8 and the API surface
+shifts between minor versions.
 """
 import json
 import os
@@ -32,6 +36,10 @@ def _log(msg):
 
 def _warn(msg):
     unreal.log_warning(f"[PIS] {msg}")
+
+
+def _err(msg):
+    unreal.log_error(f"[PIS] {msg}")
 
 
 def _asset_tools():
@@ -53,7 +61,27 @@ def _ensure_folder(path):
 
 
 def _save(asset):
-    unreal.EditorAssetLibrary.save_loaded_asset(asset)
+    if asset is not None:
+        unreal.EditorAssetLibrary.save_loaded_asset(asset)
+
+
+def _create_asset(asset_class, name, package_path, factory=None):
+    """Wrapper around AssetTools.create_asset that works with or without factory."""
+    full = f"{package_path}/{name}"
+    if unreal.EditorAssetLibrary.does_asset_exist(full):
+        return unreal.EditorAssetLibrary.load_asset(full)
+    tools = _asset_tools()
+    # 5.8+ has create_asset(asset_name, package_path, asset_class, factory=None)
+    try:
+        if factory is not None:
+            return tools.create_asset(name, package_path, asset_class, factory)
+        return tools.create_asset(name, package_path, asset_class)
+    except TypeError:
+        # Older signature: create_asset(name, path, factory, asset_class)
+        if factory is not None:
+            return tools.create_asset(name, package_path, factory, asset_class)
+        # Last resort: try with no factory at all
+        return tools.create_asset(name, package_path, asset_class)
 
 
 # ---------------------------------------------------------------------------
@@ -64,15 +92,14 @@ def create_input_action(name, value_type):
     path = f"{CONTENT_DIR}/Input/IA_{name}"
     if unreal.EditorAssetLibrary.does_asset_exist(path):
         return unreal.EditorAssetLibrary.load_asset(path)
-    factory = unreal.InputActionFactory()
-    action = _asset_tools().create_asset(
-        asset_name=f"IA_{name}",
-        package_path=f"{CONTENT_DIR}/Input",
-        asset_class=unreal.InputAction,
-        factory=factory,
-    )
-    action.set_editor_property("value_type", value_type)
-    _save(action)
+    # Try factory first, fall back to no-factory create.
+    factory = None
+    if hasattr(unreal, "InputActionFactory"):
+        factory = unreal.InputActionFactory()
+    action = _create_asset(unreal.InputAction, f"IA_{name}", f"{CONTENT_DIR}/Input", factory)
+    if action is not None:
+        action.set_editor_property("value_type", value_type)
+        _save(action)
     return action
 
 
@@ -81,15 +108,12 @@ def create_input_context():
     if unreal.EditorAssetLibrary.does_asset_exist(path):
         return unreal.EditorAssetLibrary.load_asset(path)
     _ensure_folder(f"{CONTENT_DIR}/Input")
-    factory = unreal.InputMappingContextFactory()
-    factory.input_mapping_context_class = unreal.InputMappingContext
-    ctx = _asset_tools().create_asset(
-        asset_name="IMC_PISContext",
-        package_path=f"{CONTENT_DIR}/Input",
-        asset_class=unreal.InputMappingContext,
-        factory=factory,
-    )
-    _save(ctx)
+    factory = None
+    if hasattr(unreal, "InputMappingContextFactory"):
+        factory = unreal.InputMappingContextFactory()
+    ctx = _create_asset(unreal.InputMappingContext, "IMC_PISContext", f"{CONTENT_DIR}/Input", factory)
+    if ctx is not None:
+        _save(ctx)
     return ctx
 
 
@@ -129,7 +153,7 @@ def wire_input_context(ctx):
 
 
 # ---------------------------------------------------------------------------
-# 2. Blueprints
+# 2. Blueprints (no BlueprintFactory in 5.8 Python)
 # ---------------------------------------------------------------------------
 
 def create_blueprint(name, parent_class, path):
@@ -137,9 +161,28 @@ def create_blueprint(name, parent_class, path):
     if unreal.EditorAssetLibrary.does_asset_exist(full):
         return unreal.EditorAssetLibrary.load_asset(full)
     _ensure_folder(path)
-    factory = unreal.BlueprintFactory()
-    factory.parent_class = parent_class
-    return _asset_tools().create_asset(asset_name=name, package_path=path, asset_class=unreal.Blueprint, factory=factory)
+    tools = _asset_tools()
+    # Preferred: BlueprintFactory if it exists.
+    factory = None
+    if hasattr(unreal, "BlueprintFactory"):
+        try:
+            factory = unreal.BlueprintFactory()
+            factory.parent_class = parent_class
+        except Exception as exc:
+            _warn(f"BlueprintFactory({parent_class}) failed: {exc}")
+            factory = None
+    if factory is not None:
+        bp = tools.create_asset(name, path, unreal.Blueprint, factory)
+    else:
+        # Fallback: 5.8 create_asset without explicit factory - relies on
+        # the asset_class parameter for the factory selection.
+        try:
+            bp = tools.create_asset(name, path, unreal.Blueprint, parent_class=parent_class)
+        except TypeError:
+            bp = tools.create_asset(name, path, unreal.Blueprint)
+    if bp is None:
+        _err(f"failed to create blueprint {name}")
+    return bp
 
 
 def configure_character_bp(bp, ctx_path):
@@ -165,58 +208,105 @@ def configure_character_bp(bp, ctx_path):
 
 def build_core_blueprints():
     bp_char = create_blueprint("BP_PISCharacter", unreal.PISCharacter, f"{CONTENT_DIR}/Blueprints/Player")
-    configure_character_bp(bp_char, f"{CONTENT_DIR}/Input/IMC_PISContext")
+    if bp_char:
+        configure_character_bp(bp_char, f"{CONTENT_DIR}/Input/IMC_PISContext")
 
     bp_npc = create_blueprint("BP_PISNPC", unreal.PISNPC, f"{CONTENT_DIR}/Blueprints/NPC")
 
     bp_mon = create_blueprint("BP_PISMonster_Wilczak", unreal.PISMonster, f"{CONTENT_DIR}/Blueprints/Monsters")
-    cdo = bp_mon.generated_class().get_default_object()
-    cdo.set_editor_property("monster_id", "monster_1")
+    if bp_mon:
+        cdo = bp_mon.generated_class().get_default_object()
+        cdo.set_editor_property("monster_id", "monster_1")
 
     bp_hud = create_blueprint("BP_PISHUD", unreal.PISHUD, f"{CONTENT_DIR}/Blueprints/UI")
 
     bp_gm = create_blueprint("BP_PISGameMode", unreal.PISGameMode, f"{CONTENT_DIR}/Blueprints")
-    cdo = bp_gm.generated_class().get_default_object()
-    cdo.set_editor_property("default_pawn_class", bp_char.generated_class())
-    cdo.set_editor_property("hud_class", bp_hud.generated_class())
+    if bp_gm and bp_char and bp_hud:
+        cdo = bp_gm.generated_class().get_default_object()
+        cdo.set_editor_property("default_pawn_class", bp_char.generated_class())
+        cdo.set_editor_property("hud_class", bp_hud.generated_class())
 
-    bp_gi = create_blueprint("BP_PISGameInstance", unreal.PISGameInstance, f"{CONTENT_DIR}/Blueprints")
+    create_blueprint("BP_PISGameInstance", unreal.PISGameInstance, f"{CONTENT_DIR}/Blueprints")
 
 
 # ---------------------------------------------------------------------------
 # 3. Maps
 # ---------------------------------------------------------------------------
 
+def _spawn_actor(actor_class, location, rotation=None, label=None):
+    """Spawn an actor in the current level. 5.8 has multiple APIs - try EditorLevelLibrary first."""
+    rotation = rotation or unreal.Rotator(0, 0, 0)
+    if hasattr(unreal, "EditorLevelLibrary"):
+        try:
+            actor = unreal.EditorLevelLibrary.spawn_actor_from_class(actor_class, location, rotation)
+        except Exception as exc:
+            _warn(f"EditorLevelLibrary.spawn_actor_from_class failed: {exc}")
+            actor = None
+    else:
+        actor = None
+    if actor is None and hasattr(unreal, "EditorActorSubsystem"):
+        try:
+            sub = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
+            actor = sub.spawn_actor_from_class(actor_class, location, rotation)
+        except Exception as exc:
+            _warn(f"EditorActorSubsystem failed: {exc}")
+            actor = None
+    if actor is not None and label is not None:
+        try:
+            actor.set_actor_label(label)
+        except Exception:
+            pass
+    return actor
+
+
 def build_prototype_map():
     map_path = f"{CONTENT_DIR}/Maps/Prototype"
     if not unreal.EditorAssetLibrary.does_asset_exist(map_path):
-        factory = unreal.WorldFactory()
-        world = _asset_tools().create_asset("Prototype", f"{CONTENT_DIR}/Maps", unreal.World, factory)
+        factory = None
+        if hasattr(unreal, "WorldFactory"):
+            factory = unreal.WorldFactory()
+        world = _create_asset(unreal.World, "Prototype", f"{CONTENT_DIR}/Maps", factory)
     else:
         world = unreal.EditorAssetLibrary.load_asset(map_path)
+    if world is None:
+        _err("could not create Prototype map")
+        return
+    # Open the world for editing.
+    if hasattr(unreal, "EditorLoadingAndSavingUtils"):
+        try:
+            unreal.EditorLoadingAndSavingUtils.load_map(world)
+        except Exception as exc:
+            _warn(f"load_map(Prototype): {exc}")
 
+    # Floor.
     try:
-        floor = unreal.EditorLevelLibrary.spawn_actor_from_class(unreal.StaticMeshActor, unreal.Vector(0, 0, 0))
-        sm = unreal.EditorAssetLibrary.load_asset("/Engine/BasicShapes/Plane")
-        if sm:
-            floor.static_mesh_component.set_static_mesh(sm)
-            floor.set_actor_scale3d(unreal.Vector(80, 80, 1))
+        floor = _spawn_actor(unreal.StaticMeshActor, unreal.Vector(0, 0, 0), label="PIS_Floor")
+        if floor is not None:
+            sm = unreal.EditorAssetLibrary.load_asset("/Engine/BasicShapes/Plane")
+            if sm:
+                floor.static_mesh_component.set_static_mesh(sm)
+                floor.set_actor_scale3d(unreal.Vector(80, 80, 1))
     except Exception as exc:
-        _warn(f"could not add floor: {exc}")
+        _warn(f"floor: {exc}")
+
+    # NavMeshBoundsVolume.
+    try:
+        nav = _spawn_actor(unreal.NavMeshBoundsVolume, unreal.Vector(0, 0, 200), label="PIS_NavMesh")
+        if nav is not None:
+            nav.set_actor_scale3d(unreal.Vector(60, 75, 5))
+    except Exception as exc:
+        _warn(f"navmesh: {exc}")
 
     # Lighting.
     try:
-        sun = unreal.EditorLevelLibrary.spawn_actor_from_class(unreal.DirectionalLight, unreal.Vector(0, 0, 800))
-        sun.set_actor_rotation(unreal.Rotator(-50, 30, 0))
-        sun.set_actor_label("PIS_Sun")
-        sky = unreal.EditorLevelLibrary.spawn_actor_from_class(unreal.SkyLight, unreal.Vector(0, 0, 1200))
-        sky.set_actor_label("PIS_Sky")
+        sun = _spawn_actor(unreal.DirectionalLight, unreal.Vector(0, 0, 800), unreal.Rotator(-50, 30, 0), "PIS_Sun")
+        sky = _spawn_actor(unreal.SkyLight, unreal.Vector(0, 0, 1200), label="PIS_Sky")
     except Exception as exc:
-        _warn(f"light setup: {exc}")
+        _warn(f"lighting: {exc}")
 
     # Atmospheric fog.
     try:
-        unreal.EditorLevelLibrary.spawn_actor_from_class(unreal.AtmosphericFog, unreal.Vector(0, 0, 200))
+        _spawn_actor(unreal.AtmosphericFog, unreal.Vector(0, 0, 200), label="PIS_Fog")
     except Exception:
         pass
 
@@ -233,71 +323,68 @@ def build_prototype_map():
             by_marker[rid] = r
 
     bp_npc = unreal.EditorAssetLibrary.load_asset(f"{CONTENT_DIR}/Blueprints/NPC/BP_PISNPC")
-    if not bp_npc:
-        _warn("BP_PISNPC not built; run build_core_blueprints first")
-        return
-    npc_class = bp_npc.generated_class()
-
-    for npc in npcs["records"]:
-        npc_id = npc["id"]
-        marker_id = f"marker_bed_{npc_id}"
-        marker = by_marker.get(marker_id)
-        if not marker:
-            continue
-        loc = unreal.Vector(marker.get("x", 0), marker.get("y", 0), marker.get("z", 100))
-        try:
-            actor = unreal.EditorLevelLibrary.spawn_actor_from_class(npc_class, loc)
-            actor.set_actor_label(npc.get("name", npc_id))
-            cdo = actor
-            cdo.set_editor_property("npc_id", npc_id)
-            cdo.set_editor_property("schedule_id", npc.get("schedule_id", f"schedule_{npc_id}"))
-            cdo.set_editor_property("faction", npc.get("faction", "neutralny"))
-            cdo.set_editor_property("role", npc.get("role", "mieszkaniec"))
-            cdo.set_editor_property("attitude", npc.get("attitude", "neutralny"))
-            cdo.set_editor_property("crime_reaction", npc.get("crime_reaction", "warning"))
-            cdo.set_editor_property("dialogue_id", f"dialogue_{npc_id}_intro")
-            cdo.set_editor_property("spawn_marker", marker_id)
-            cdo.tags = ["PIS_NPC"]
-        except Exception as exc:
-            _warn(f"spawn NPC {npc_id}: {exc}")
+    if bp_npc:
+        npc_class = bp_npc.generated_class()
+        for npc in npcs["records"]:
+            npc_id = npc["id"]
+            marker_id = f"marker_bed_{npc_id}"
+            marker = by_marker.get(marker_id)
+            if not marker:
+                continue
+            loc = unreal.Vector(marker.get("x", 0), marker.get("y", 0), marker.get("z", 100))
+            actor = _spawn_actor(npc_class, loc, label=npc.get("name", npc_id))
+            if actor is None:
+                continue
+            try:
+                actor.set_editor_property("npc_id", npc_id)
+                actor.set_editor_property("schedule_id", npc.get("schedule_id", f"schedule_{npc_id}"))
+                actor.set_editor_property("faction", npc.get("faction", "neutralny"))
+                actor.set_editor_property("role", npc.get("role", "mieszkaniec"))
+                actor.set_editor_property("attitude", npc.get("attitude", "neutralny"))
+                actor.set_editor_property("crime_reaction", npc.get("crime_reaction", "warning"))
+                actor.set_editor_property("dialogue_id", f"dialogue_{npc_id}_intro")
+                actor.set_editor_property("spawn_marker", marker_id)
+                actor.tags = ["PIS_NPC"]
+            except Exception as exc:
+                _warn(f"config NPC {npc_id}: {exc}")
 
     monsters = _load_json("monsters.json")
     monster_spawns = _load_json("monster_spawns.json")
     spawn_by_id = {s["id"]: s for s in (monster_spawns or {}).get("records", [])}
     bp_mon = unreal.EditorAssetLibrary.load_asset(f"{CONTENT_DIR}/Blueprints/Monsters/BP_PISMonster_Wilczak")
     if monsters and bp_mon:
+        mon_class = bp_mon.generated_class()
         for m in monsters["records"]:
             spawn_id = f"spawn_{m['id']}"
             spawn = spawn_by_id.get(spawn_id)
             if not spawn:
                 ms = list(spawn_by_id.values())
                 spawn = ms[0] if ms else None
-            if not spawn: continue
+            if not spawn:
+                continue
             loc = unreal.Vector(spawn.get("x", 0), spawn.get("y", 0), spawn.get("z", 110))
+            actor = _spawn_actor(mon_class, loc, label=m.get("name", m["id"]))
+            if actor is None:
+                continue
             try:
-                actor = unreal.EditorLevelLibrary.spawn_actor_from_class(bp_mon.generated_class(), loc)
-                actor.set_actor_label(m.get("name", m["id"]))
-                cdo = actor
-                cdo.set_editor_property("monster_id", m["id"])
-                cdo.tags = ["PIS_Monster"]
+                actor.set_editor_property("monster_id", m["id"])
+                actor.tags = ["PIS_Monster"]
             except Exception as exc:
-                _warn(f"spawn monster {m['id']}: {exc}")
+                _warn(f"config monster {m['id']}: {exc}")
 
     # World clock.
     try:
-        clock = unreal.EditorLevelLibrary.spawn_actor_from_class(unreal.PISWorldClock, unreal.Vector(0, 0, 200))
-        clock.set_actor_label("PIS_Clock")
+        _spawn_actor(unreal.PISWorldClock, unreal.Vector(0, 0, 200), label="PIS_Clock")
     except Exception as exc:
         _warn(f"clock: {exc}")
 
-    # PlayerStart
+    # PlayerStart.
     try:
         spawn = by_marker.get("marker_spawn_arrival", {})
         loc = unreal.Vector(spawn.get("x", 0), spawn.get("y", -4500), spawn.get("z", 200))
-        ps = unreal.EditorLevelLibrary.spawn_actor_from_class(unreal.PlayerStart, loc)
-        ps.set_actor_label("PIS_PlayerStart")
+        _spawn_actor(unreal.PlayerStart, loc, label="PIS_PlayerStart")
     except Exception as exc:
-        _warn(f"player start error: {exc}")
+        _warn(f"player start: {exc}")
 
     unreal.EditorAssetLibrary.save_loaded_asset(world)
 
@@ -305,12 +392,15 @@ def build_prototype_map():
 def build_main_menu_map():
     map_path = f"{CONTENT_DIR}/Maps/MainMenu"
     if not unreal.EditorAssetLibrary.does_asset_exist(map_path):
-        factory = unreal.WorldFactory()
-        world = _asset_tools().create_asset("MainMenu", f"{CONTENT_DIR}/Maps", unreal.World, factory)
+        factory = None
+        if hasattr(unreal, "WorldFactory"):
+            factory = unreal.WorldFactory()
+        world = _create_asset(unreal.World, "MainMenu", f"{CONTENT_DIR}/Maps", factory)
     else:
         world = unreal.EditorAssetLibrary.load_asset(map_path)
-
-    # Default level: no actors; the GameMode injects the main menu widget.
+    if world is None:
+        _err("could not create MainMenu map")
+        return
     unreal.EditorAssetLibrary.save_loaded_asset(world)
 
 
@@ -319,11 +409,14 @@ def build_main_menu_map():
 # ---------------------------------------------------------------------------
 
 def set_default_maps():
-    cfg = unreal.GameMapsSettings
-    cfg.set_editor_property("game_default_map", unreal.SoftObjectPath("/Game/Maps/MainMenu.MainMenu"))
-    cfg.set_editor_property("editor_startup_map", unreal.SoftObjectPath("/Game/Maps/MainMenu.MainMenu"))
-    cfg.set_editor_property("server_default_map", unreal.SoftObjectPath("/Game/Maps/MainMenu.MainMenu"))
-    cfg.set_editor_property("global_default_game_mode", unreal.SoftObjectPath("/Game/Blueprints/BP_PISGameMode.BP_PISGameMode_C"))
+    try:
+        cfg = unreal.GameMapsSettings
+        cfg.set_editor_property("game_default_map", unreal.SoftObjectPath("/Game/Maps/MainMenu.MainMenu"))
+        cfg.set_editor_property("editor_startup_map", unreal.SoftObjectPath("/Game/Maps/MainMenu.MainMenu"))
+        cfg.set_editor_property("server_default_map", unreal.SoftObjectPath("/Game/Maps/MainMenu.MainMenu"))
+        cfg.set_editor_property("global_default_game_mode", unreal.SoftObjectPath("/Game/Blueprints/BP_PISGameMode.BP_PISGameMode_C"))
+    except Exception as exc:
+        _warn(f"set_default_maps: {exc}")
 
 
 # ---------------------------------------------------------------------------
@@ -333,22 +426,35 @@ def set_default_maps():
 def main():
     _log("Building input context...")
     _ensure_folder(f"{CONTENT_DIR}/Input")
-    ctx = create_input_context()
-    wire_input_context(ctx)
+    try:
+        ctx = create_input_context()
+        if ctx is not None:
+            wire_input_context(ctx)
+    except Exception as exc:
+        _err(f"input setup: {exc}")
 
     _log("Building core blueprints...")
-    build_core_blueprints()
+    try:
+        build_core_blueprints()
+    except Exception as exc:
+        _err(f"blueprints: {exc}")
 
     _log("Building map Prototype...")
-    build_prototype_map()
+    try:
+        build_prototype_map()
+    except Exception as exc:
+        _err(f"Prototype map: {exc}")
 
     _log("Building map MainMenu...")
-    build_main_menu_map()
+    try:
+        build_main_menu_map()
+    except Exception as exc:
+        _err(f"MainMenu map: {exc}")
 
     _log("Setting default maps...")
     set_default_maps()
 
-    _log("Done. Save All and Play-In-Editor.")
+    _log("Done. File > Save All, then Play-In-Editor.")
 
 
 if __name__ == "__main__":
