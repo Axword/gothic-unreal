@@ -1,0 +1,31 @@
+# Unreal Engine
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+
+# IDE / generated project files
+.vs/
+.idea/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.xcodeproj
+*.xcworkspace
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local build / packaging
+*.pdb
+*.exe
+*.dll
+*.exp
+*.lib
+*.obj

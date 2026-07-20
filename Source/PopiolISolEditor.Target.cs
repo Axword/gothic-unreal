@@ -1,1 +1,15 @@
-using UnrealBuildTool; public class PopiolISolEditorTarget:TargetRules { public PopiolISolEditorTarget(TargetInfo Target):base(Target){Type=TargetType.Editor;DefaultBuildSettings=BuildSettingsVersion.V5;IncludeOrderVersion=EngineIncludeOrderVersion.Unreal5_4;ExtraModuleNames.Add("PopiolISol");}}
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+using UnrealBuildTool;
+using System.Collections.Generic;
+
+public class PopiolISolEditorTarget : TargetRules
+{
+	public PopiolISolEditorTarget(TargetInfo Target) : base(Target)
+	{
+		Type = TargetType.Editor;
+		DefaultBuildSettings = BuildSettingsVersion.V7;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_8;
+		ExtraModuleNames.Add("PopiolISol");
+	}
+}

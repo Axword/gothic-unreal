@@ -1,5 +1,6 @@
 # Postęp
 ## Ukończone
+- Migracja konfiguracji projektu do **Unreal Engine 5.8** (uproject, Target.cs V7/Unreal5_8, mapy startowe silnika, fix kompilacji pocisku).
 - Struktura projektu, dokumentacja, dane kanoniczne JSON i niezależna walidacja.
 - 65 nazwanych NPC ze slotami praca/jedzenie/patrol/sen; bazowy zegar C++.
 - C++: ID-only inventory, quest state machine, skrzynia z sekwencyjnym zamkiem i pocisk czaru.
