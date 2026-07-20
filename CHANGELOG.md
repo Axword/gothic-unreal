@@ -1,8 +1,16 @@
 # Changelog
+## 2026-07-20 — Iteracja 1: runtime pionowego wycinka
+- **Nowe systemy C++ (kompletny gameplay)**: `APISCharacter` (Enhanced Input, miecz/łuk/magia, skórowanie, interakcja), `APISNPC` + `APISNPCController` (rutyny dzienne z JSON, reakcja na przestępstwa), `APISMonster` + `APISMonsterController` (AI z percepcją, pack, nocturnal, drop loot), `UPISStatsComponent` (XP/HP/PN, reputacja, factions), `UPISDialogueComponent` (interpreter JSON z warunkami i akcjami: flag, quest, item, reputation, skill), `UPISCrimeComponent` (świadkowie, eskalacja), `UPISSaveGameSubsystem` (wersjonowany JSON save/load + migracja), `APISGameMode`/`APISGameInstance`.
+- **Rozbudowa danych**: dialogi dla wszystkich 65 NPC, markery lokacji rozmieszczone w Ryglu i Wolnym Brzegu, loot tables dla 6 stworów + bandytów, statystyki i frakcje potworów, brakujący `food_bread` w `items_misc.json`.
+- **`Scripts/ue_build_project.py`**: skrypt Python Editor Script, który po uruchomieniu w edytorze UE 5.8 tworzy Input Mapping Context, GameMode BP, Character BP, NPC BP, Monster BP, mapę `Prototype` z 65 NPC i 6 potworami rozmieszczonymi z JSON oraz ustawia domyślną mapę.
+- **Nowe testy automatyczne**: `PopiolISol.Quests.FactionBlock`, `PopiolISol.Chest.Lockpick`, `PopiolISol.Stats.Leveling` (`Source/PopiolISol/Private/Tests/PISSaveLoadTests.cpp`).
+- **Build dependencies**: dodano `GameplayTasks` w `PopiolISol.Build.cs` dla `UAISenseConfig_*` i `UAIPerceptionComponent`.
+- **Loader ulepszony**: `UPISJsonDataSubsystem` ma teraz publiczne `GetAllRecords()` potrzebne do iteracji markerów NPC; walidator CLI zaakceptował 412 rekordów.
+
 ## 2026-07-20 — Migracja UE 5.8
 - `EngineAssociation` przestawione z `5.4` na `5.8`.
 - `*.Target.cs`: `BuildSettingsVersion.V7` oraz `EngineIncludeOrderVersion.Unreal5_8`.
-- `DefaultEngine.ini` nie wskazuje już nieistniejącej `/Game/Maps/Prototype` (używa map silnika Entry/Template, żeby edytor otwierał się bez błędu brakującej mapy).
+- `DefaultEngine.ini` nie wskazuje już nieistniejącej `/Game/Maps/Prototype` (używa map silnika Entry/Template, żeby edytor otwierał się bez błędu brakującej mapy). Po uruchomieniu `Scripts/ue_build_project.py` wskazuje na `/Game/Maps/Prototype`.
 - Naprawiono sygnaturę `APISSpellProjectile::OnImpact` pod `FComponentHitSignature` (brak zbędnych parametrów `int32`/`bool`) — poprzednia wersja nie kompilowała się.
 - Włączono plugin Enhanced Input w `.uproject`; dodano `.gitignore` i `DefaultGame.ini`.
 - Uporządkowano źródła C++ (czytelność, `TObjectPtr`, jawne include JSON readera) bez zmiany semantyki API Blueprint.

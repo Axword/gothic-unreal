@@ -40,6 +40,758 @@
       "id": "loc_8",
       "name": "Szczelina Milczącego",
       "type": "region"
+    },
+    {
+      "id": "marker_bed_npc_neu_01",
+      "x": 120,
+      "y": 1700,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_01"
+    },
+    {
+      "id": "marker_bed_npc_neu_02",
+      "x": 240,
+      "y": 1700,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_02"
+    },
+    {
+      "id": "marker_bed_npc_neu_03",
+      "x": 360,
+      "y": 1700,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_03"
+    },
+    {
+      "id": "marker_bed_npc_neu_04",
+      "x": 480,
+      "y": 1700,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_04"
+    },
+    {
+      "id": "marker_bed_npc_neu_05",
+      "x": 0,
+      "y": 1840,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_05"
+    },
+    {
+      "id": "marker_bed_npc_neu_06",
+      "x": 120,
+      "y": 1840,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_06"
+    },
+    {
+      "id": "marker_bed_npc_neu_07",
+      "x": 240,
+      "y": 1840,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_07"
+    },
+    {
+      "id": "marker_bed_npc_neu_08",
+      "x": 360,
+      "y": 1840,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_08"
+    },
+    {
+      "id": "marker_bed_npc_neu_09",
+      "x": 480,
+      "y": 1840,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_09"
+    },
+    {
+      "id": "marker_bed_npc_neu_10",
+      "x": 0,
+      "y": 1980,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_10"
+    },
+    {
+      "id": "marker_bed_npc_neu_11",
+      "x": 120,
+      "y": 1980,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_11"
+    },
+    {
+      "id": "marker_bed_npc_neu_12",
+      "x": 240,
+      "y": 1980,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_12"
+    },
+    {
+      "id": "marker_bed_npc_neu_13",
+      "x": 360,
+      "y": 1980,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_13"
+    },
+    {
+      "id": "marker_bed_npc_neu_14",
+      "x": 480,
+      "y": 1980,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_14"
+    },
+    {
+      "id": "marker_bed_npc_neu_15",
+      "x": 0,
+      "y": 2120,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_15"
+    },
+    {
+      "id": "marker_bed_npc_neu_16",
+      "x": 120,
+      "y": 2120,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_16"
+    },
+    {
+      "id": "marker_bed_npc_neu_17",
+      "x": 240,
+      "y": 2120,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_17"
+    },
+    {
+      "id": "marker_bed_npc_neu_18",
+      "x": 360,
+      "y": 2120,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_18"
+    },
+    {
+      "id": "marker_bed_npc_neu_19",
+      "x": 480,
+      "y": 2120,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_19"
+    },
+    {
+      "id": "marker_bed_npc_neu_20",
+      "x": 0,
+      "y": 2260,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_20"
+    },
+    {
+      "id": "marker_bed_npc_neu_21",
+      "x": 120,
+      "y": 2260,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_21"
+    },
+    {
+      "id": "marker_bed_npc_neu_22",
+      "x": 240,
+      "y": 2260,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_22"
+    },
+    {
+      "id": "marker_bed_npc_neu_23",
+      "x": 360,
+      "y": 2260,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_23"
+    },
+    {
+      "id": "marker_bed_npc_neu_24",
+      "x": 480,
+      "y": 2260,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_24"
+    },
+    {
+      "id": "marker_bed_npc_neu_25",
+      "x": 0,
+      "y": 2400,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_neu_25"
+    },
+    {
+      "id": "marker_bed_npc_now_01",
+      "x": 3020,
+      "y": 700,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_01"
+    },
+    {
+      "id": "marker_bed_npc_now_02",
+      "x": 3140,
+      "y": 700,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_02"
+    },
+    {
+      "id": "marker_bed_npc_now_03",
+      "x": 3260,
+      "y": 700,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_03"
+    },
+    {
+      "id": "marker_bed_npc_now_04",
+      "x": 3380,
+      "y": 700,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_04"
+    },
+    {
+      "id": "marker_bed_npc_now_05",
+      "x": 2900,
+      "y": 840,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_05"
+    },
+    {
+      "id": "marker_bed_npc_now_06",
+      "x": 3020,
+      "y": 840,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_06"
+    },
+    {
+      "id": "marker_bed_npc_now_07",
+      "x": 3140,
+      "y": 840,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_07"
+    },
+    {
+      "id": "marker_bed_npc_now_08",
+      "x": 3260,
+      "y": 840,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_08"
+    },
+    {
+      "id": "marker_bed_npc_now_09",
+      "x": 3380,
+      "y": 840,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_09"
+    },
+    {
+      "id": "marker_bed_npc_now_10",
+      "x": 2900,
+      "y": 980,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_10"
+    },
+    {
+      "id": "marker_bed_npc_now_11",
+      "x": 3020,
+      "y": 980,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_11"
+    },
+    {
+      "id": "marker_bed_npc_now_12",
+      "x": 3140,
+      "y": 980,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_12"
+    },
+    {
+      "id": "marker_bed_npc_now_13",
+      "x": 3260,
+      "y": 980,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_13"
+    },
+    {
+      "id": "marker_bed_npc_now_14",
+      "x": 3380,
+      "y": 980,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_14"
+    },
+    {
+      "id": "marker_bed_npc_now_15",
+      "x": 2900,
+      "y": 1120,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_15"
+    },
+    {
+      "id": "marker_bed_npc_now_16",
+      "x": 3020,
+      "y": 1120,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_16"
+    },
+    {
+      "id": "marker_bed_npc_now_17",
+      "x": 3140,
+      "y": 1120,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_17"
+    },
+    {
+      "id": "marker_bed_npc_now_18",
+      "x": 3260,
+      "y": 1120,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_18"
+    },
+    {
+      "id": "marker_bed_npc_now_19",
+      "x": 3380,
+      "y": 1120,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_19"
+    },
+    {
+      "id": "marker_bed_npc_now_20",
+      "x": 2900,
+      "y": 1260,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_now_20"
+    },
+    {
+      "id": "marker_bed_npc_sta_01",
+      "x": -1380,
+      "y": -1000,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_01"
+    },
+    {
+      "id": "marker_bed_npc_sta_02",
+      "x": -1260,
+      "y": -1000,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_02"
+    },
+    {
+      "id": "marker_bed_npc_sta_03",
+      "x": -1140,
+      "y": -1000,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_03"
+    },
+    {
+      "id": "marker_bed_npc_sta_04",
+      "x": -1020,
+      "y": -1000,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_04"
+    },
+    {
+      "id": "marker_bed_npc_sta_05",
+      "x": -1500,
+      "y": -860,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_05"
+    },
+    {
+      "id": "marker_bed_npc_sta_06",
+      "x": -1380,
+      "y": -860,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_06"
+    },
+    {
+      "id": "marker_bed_npc_sta_07",
+      "x": -1260,
+      "y": -860,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_07"
+    },
+    {
+      "id": "marker_bed_npc_sta_08",
+      "x": -1140,
+      "y": -860,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_08"
+    },
+    {
+      "id": "marker_bed_npc_sta_09",
+      "x": -1020,
+      "y": -860,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_09"
+    },
+    {
+      "id": "marker_bed_npc_sta_10",
+      "x": -1500,
+      "y": -720,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_10"
+    },
+    {
+      "id": "marker_bed_npc_sta_11",
+      "x": -1380,
+      "y": -720,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_11"
+    },
+    {
+      "id": "marker_bed_npc_sta_12",
+      "x": -1260,
+      "y": -720,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_12"
+    },
+    {
+      "id": "marker_bed_npc_sta_13",
+      "x": -1140,
+      "y": -720,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_13"
+    },
+    {
+      "id": "marker_bed_npc_sta_14",
+      "x": -1020,
+      "y": -720,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_14"
+    },
+    {
+      "id": "marker_bed_npc_sta_15",
+      "x": -1500,
+      "y": -580,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_15"
+    },
+    {
+      "id": "marker_bed_npc_sta_16",
+      "x": -1380,
+      "y": -580,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_16"
+    },
+    {
+      "id": "marker_bed_npc_sta_17",
+      "x": -1260,
+      "y": -580,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_17"
+    },
+    {
+      "id": "marker_bed_npc_sta_18",
+      "x": -1140,
+      "y": -580,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_18"
+    },
+    {
+      "id": "marker_bed_npc_sta_19",
+      "x": -1020,
+      "y": -580,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_19"
+    },
+    {
+      "id": "marker_bed_npc_sta_20",
+      "x": -1500,
+      "y": -440,
+      "z": 110,
+      "kind": "bed",
+      "name": "bed_npc_sta_20"
+    },
+    {
+      "id": "marker_brzeg_karczma",
+      "x": 3200,
+      "y": 600,
+      "z": 110,
+      "kind": "landmark",
+      "name": "Karczma 'Pod Solną Latarnią'"
+    },
+    {
+      "id": "marker_brzeg_kryjowka",
+      "x": 3400,
+      "y": 1100,
+      "z": 110,
+      "kind": "landmark",
+      "name": "Kryjówka Weroniki"
+    },
+    {
+      "id": "marker_brzeg_port",
+      "x": 3000,
+      "y": 1000,
+      "z": 110,
+      "kind": "landmark",
+      "name": "Port"
+    },
+    {
+      "id": "marker_brzeg_targ",
+      "x": 2900,
+      "y": 800,
+      "z": 110,
+      "kind": "landmark",
+      "name": "Targ"
+    },
+    {
+      "id": "marker_chest_start",
+      "x": 100,
+      "y": 0,
+      "z": 50,
+      "kind": "interactable",
+      "name": "marker_chest_start"
+    },
+    {
+      "id": "marker_meal_neutralni",
+      "x": 488,
+      "y": -512,
+      "z": 110,
+      "kind": "meal",
+      "name": "meal_neutralni"
+    },
+    {
+      "id": "marker_meal_nowy_brzeg",
+      "x": 3200,
+      "y": 600,
+      "z": 110,
+      "kind": "meal",
+      "name": "meal_nowy_brzeg"
+    },
+    {
+      "id": "marker_meal_stary_porzadek",
+      "x": -1100,
+      "y": -800,
+      "z": 110,
+      "kind": "meal",
+      "name": "meal_stary_porzadek"
+    },
+    {
+      "id": "marker_patrol_neutralni",
+      "x": 731,
+      "y": -269,
+      "z": 110,
+      "kind": "patrol",
+      "name": "patrol_neutralni"
+    },
+    {
+      "id": "marker_patrol_nowy_brzeg",
+      "x": 3000,
+      "y": 1000,
+      "z": 110,
+      "kind": "patrol",
+      "name": "patrol_nowy_brzeg"
+    },
+    {
+      "id": "marker_patrol_stary_porzadek",
+      "x": -1700,
+      "y": -1200,
+      "z": 110,
+      "kind": "patrol",
+      "name": "patrol_stary_porzadek"
+    },
+    {
+      "id": "marker_rygiel_dowodca",
+      "x": -1700,
+      "y": -1200,
+      "z": 110,
+      "kind": "landmark",
+      "name": "Biel - strażnica"
+    },
+    {
+      "id": "marker_rygiel_rymar_smith",
+      "x": -1500,
+      "y": -700,
+      "z": 110,
+      "kind": "landmark",
+      "name": "Rymar - kuźnia"
+    },
+    {
+      "id": "marker_rygiel_sklad",
+      "x": -1100,
+      "y": -800,
+      "z": 110,
+      "kind": "landmark",
+      "name": "Składzik"
+    },
+    {
+      "id": "marker_rygiel_wiezienie",
+      "x": -1900,
+      "y": -900,
+      "z": 110,
+      "kind": "landmark",
+      "name": "Więzienie"
+    },
+    {
+      "id": "marker_spawn_arrival",
+      "x": 0,
+      "y": -4500,
+      "z": 120,
+      "kind": "spawn",
+      "name": "Przybycie (Trakt Popiołu)"
+    },
+    {
+      "id": "marker_work_neutralni",
+      "x": 524,
+      "y": -476,
+      "z": 110,
+      "kind": "work",
+      "name": "work_neutralni"
+    },
+    {
+      "id": "marker_work_nowy_brzeg",
+      "x": 2900,
+      "y": 800,
+      "z": 110,
+      "kind": "work",
+      "name": "work_nowy_brzeg"
+    },
+    {
+      "id": "marker_work_stary_porzadek",
+      "x": -1500,
+      "y": -700,
+      "z": 110,
+      "kind": "work",
+      "name": "work_stary_porzadek"
+    },
+    {
+      "id": "pickup_bread_1",
+      "x": 200,
+      "y": -200,
+      "z": 50,
+      "kind": "interactable",
+      "name": "pickup_bread_1"
+    },
+    {
+      "id": "pickup_lockpick_1",
+      "x": 300,
+      "y": -1900,
+      "z": 50,
+      "kind": "interactable",
+      "name": "pickup_lockpick_1"
+    },
+    {
+      "id": "pickup_lockpick_2",
+      "x": -200,
+      "y": 200,
+      "z": 50,
+      "kind": "interactable",
+      "name": "pickup_lockpick_2"
+    },
+    {
+      "id": "spawn_krabnik_1",
+      "x": 2500,
+      "y": 1700,
+      "z": 110,
+      "kind": "monster_spawn",
+      "name": "Plaża Solna"
+    },
+    {
+      "id": "spawn_mroczek_1",
+      "x": -1500,
+      "y": 100,
+      "z": 110,
+      "kind": "monster_spawn",
+      "name": "Trakt Popiołu"
+    },
+    {
+      "id": "spawn_plujec_1",
+      "x": 0,
+      "y": 2400,
+      "z": 110,
+      "kind": "monster_spawn",
+      "name": "Bagno Szczypca"
+    },
+    {
+      "id": "spawn_sciekacz_1",
+      "x": 1500,
+      "y": 2200,
+      "z": 110,
+      "kind": "monster_spawn",
+      "name": "Bagno Szczypca"
+    },
+    {
+      "id": "spawn_topielec_1",
+      "x": -200,
+      "y": 2000,
+      "z": 110,
+      "kind": "monster_spawn",
+      "name": "Bagno Szczypca"
+    },
+    {
+      "id": "spawn_wilczak_1",
+      "x": 600,
+      "y": -300,
+      "z": 110,
+      "kind": "monster_spawn",
+      "name": "Las Zasłon"
+    },
+    {
+      "id": "spawn_wilczak_2",
+      "x": 800,
+      "y": -100,
+      "z": 110,
+      "kind": "monster_spawn",
+      "name": "Las Zasłon"
     }
   ]
 }

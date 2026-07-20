@@ -10,25 +10,29 @@
 UCLASS()
 class POPIOLISOL_API UPISJsonDataSubsystem : public UGameInstanceSubsystem
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 public:
-	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
+    virtual void Initialize(FSubsystemCollectionBase& Collection) override;
 
-	UFUNCTION(BlueprintCallable, Category = "Data")
-	bool HasId(const FString& Id) const;
+    UFUNCTION(BlueprintCallable, Category = "Data")
+    bool HasId(const FString& Id) const;
 
-	UFUNCTION(BlueprintCallable, Category = "Data")
-	FString GetValidationReport() const { return ValidationReport; }
+    UFUNCTION(BlueprintCallable, Category = "Data")
+    FString GetValidationReport() const { return ValidationReport; }
 
-	UFUNCTION(BlueprintCallable, Category = "Data")
-	bool ReloadAndValidate();
+    UFUNCTION(BlueprintCallable, Category = "Data")
+    bool ReloadAndValidate();
 
-	const TSharedPtr<FJsonObject>* Find(const FString& Id) const { return Records.Find(Id); }
+    const TSharedPtr<FJsonObject>* Find(const FString& Id) const { return Records.Find(Id); }
+
+    /** Iterating accessor for NPC markers and similar flows. */
+    const TArray<TSharedPtr<FJsonValue>>& GetAllRecords() const { return RecordsView; }
 
 private:
-	TMap<FString, TSharedPtr<FJsonObject>> Records;
-	FString ValidationReport;
+    TMap<FString, TSharedPtr<FJsonObject>> Records;
+    TArray<TSharedPtr<FJsonValue>> RecordsView;
+    FString ValidationReport;
 
-	bool LoadFile(const FString& Filename, TArray<FString>& Errors);
+    bool LoadFile(const FString& Filename, TArray<FString>& Errors);
 };

@@ -2,129 +2,100 @@
 #include "PISJsonDataSubsystem.h"
 #include "Misc/FileHelper.h"
 #include "Misc/Paths.h"
+#include "HAL/FileManager.h"
 #include "Serialization/JsonReader.h"
 #include "Serialization/JsonSerializer.h"
-#include "HAL/FileManager.h"
+#include "Dom/JsonObject.h"
+#include "Dom/JsonValue.h"
+
+namespace
+{
+    // Returns true if the JSON file should be loaded as a record source.
+    bool IsLoadableDataFile(const FString& Filename)
+    {
+        // savegame.json is a documentation-only schema sample; skip it at runtime.
+        return !Filename.EndsWith(TEXT("savegame.json"), ESearchCase::IgnoreCase);
+    }
+}
 
 void UPISJsonDataSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
-	Super::Initialize(Collection);
-	ReloadAndValidate();
+    Super::Initialize(Collection);
+    ReloadAndValidate();
 }
 
 bool UPISJsonDataSubsystem::HasId(const FString& Id) const
 {
-	return Records.Contains(Id);
-}
-
-bool UPISJsonDataSubsystem::LoadFile(const FString& Filename, TArray<FString>& Errors)
-{
-	FString Text;
-	if (!FFileHelper::LoadFileToString(Text, *Filename))
-	{
-		Errors.Add(Filename + TEXT(": cannot read"));
-		return false;
-	}
-
-	TSharedPtr<FJsonObject> Root;
-	const TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(Text);
-	if (!FJsonSerializer::Deserialize(Reader, Root) || !Root.IsValid())
-	{
-		Errors.Add(Filename + TEXT(": invalid JSON"));
-		return false;
-	}
-
-	// Documentation-only fixtures (e.g. savegame schema samples) are skipped at runtime.
-	bool bDocumentationOnly = false;
-	if (Root->TryGetBoolField(TEXT("documentation_only"), bDocumentationOnly) && bDocumentationOnly)
-	{
-		return true;
-	}
-
-	const TArray<TSharedPtr<FJsonValue>>* Entries = nullptr;
-	if (!Root->TryGetArrayField(TEXT("records"), Entries) || Entries == nullptr)
-	{
-		Errors.Add(Filename + TEXT(": missing records array"));
-		return false;
-	}
-
-	for (const TSharedPtr<FJsonValue>& Value : *Entries)
-	{
-		if (!Value.IsValid())
-		{
-			Errors.Add(Filename + TEXT(": null record entry"));
-			continue;
-		}
-
-		const TSharedPtr<FJsonObject> Obj = Value->AsObject();
-		FString Id;
-		if (!Obj.IsValid() || !Obj->TryGetStringField(TEXT("id"), Id) || Id.IsEmpty())
-		{
-			Errors.Add(Filename + TEXT(": record without id"));
-			continue;
-		}
-
-		if (Records.Contains(Id))
-		{
-			Errors.Add(Filename + TEXT(": duplicate id ") + Id);
-		}
-		else
-		{
-			Records.Add(Id, Obj);
-		}
-	}
-
-	return true;
+    return Records.Contains(Id);
 }
 
 bool UPISJsonDataSubsystem::ReloadAndValidate()
 {
-	Records.Empty();
-	TArray<FString> Errors;
+    Records.Reset();
+    RecordsView.Reset();
+    TArray<FString> Errors;
 
-	const FString Dir = FPaths::ProjectContentDir() / TEXT("Data/Json");
-	TArray<FString> Files;
-	IFileManager::Get().FindFilesRecursive(Files, *Dir, TEXT("*.json"), true, false);
+    const FString DataDir = FPaths::Combine(FPaths::ProjectContentDir(), TEXT("Data"), TEXT("Json"));
+    TArray<FString> Files;
+    IFileManager::Get().FindFiles(Files, *(DataDir / TEXT("*.json")), true, false);
+    for (const FString& File : Files)
+    {
+        const FString FullPath = FPaths::Combine(DataDir, File);
+        if (!IsLoadableDataFile(FullPath)) { continue; }
+        LoadFile(FullPath, Errors);
+    }
+    ValidationReport = FString::Printf(TEXT("Loaded %d records. %d error(s).\n%s"),
+        Records.Num(), Errors.Num(), *FString::Join(Errors, TEXT("\n")));
+    UE_LOG(LogTemp, Display, TEXT("[PISData] %s"), *ValidationReport);
+    return Errors.Num() == 0;
+}
 
-	for (const FString& File : Files)
-	{
-		LoadFile(File, Errors);
-	}
-
-	// Cross-file references are expressed as "*_id" string fields (and nested objects).
-	for (const TPair<FString, TSharedPtr<FJsonObject>>& Pair : Records)
-	{
-		if (!Pair.Value.IsValid())
-		{
-			continue;
-		}
-
-		for (const TPair<FString, TSharedPtr<FJsonValue>>& Field : Pair.Value->Values)
-		{
-			if (!Field.Key.EndsWith(TEXT("_id")) || !Field.Value.IsValid())
-			{
-				continue;
-			}
-
-			FString Ref;
-			if (Field.Value->TryGetString(Ref) && !Ref.IsEmpty() && !Records.Contains(Ref))
-			{
-				Errors.Add(Pair.Key + TEXT(": missing reference ") + Field.Key + TEXT("=") + Ref);
-			}
-		}
-	}
-
-	if (Errors.Num() > 0)
-	{
-		ValidationReport = FString::Join(Errors, TEXT("\n"));
-		for (const FString& Error : Errors)
-		{
-			UE_LOG(LogTemp, Error, TEXT("JSON data: %s"), *Error);
-		}
-		return false;
-	}
-
-	ValidationReport = FString::Printf(TEXT("OK: %d records"), Records.Num());
-	UE_LOG(LogTemp, Log, TEXT("PIS JSON data: %s"), *ValidationReport);
-	return true;
+bool UPISJsonDataSubsystem::LoadFile(const FString& Filename, TArray<FString>& Errors)
+{
+    FString Text;
+    if (!FFileHelper::LoadFileToString(Text, *Filename))
+    {
+        Errors.Add(FString::Printf(TEXT("Could not read %s"), *Filename));
+        return false;
+    }
+    TSharedPtr<FJsonObject> Root;
+    auto Reader = TJsonReaderFactory<>::Create(Text);
+    if (!FJsonSerializer::Deserialize(Reader, Root) || !Root.IsValid())
+    {
+        Errors.Add(FString::Printf(TEXT("%s: invalid JSON"), *Filename));
+        return false;
+    }
+    int32 SchemaVersion = 0;
+    if (!Root->TryGetNumberField(TEXT("schema_version"), SchemaVersion) || SchemaVersion != 1)
+    {
+        Errors.Add(FString::Printf(TEXT("%s: schema_version!=1"), *Filename));
+        return false;
+    }
+    const TArray<TSharedPtr<FJsonValue>>* RecordsArr = nullptr;
+    if (!Root->TryGetArrayField(TEXT("records"), RecordsArr) || !RecordsArr)
+    {
+        Errors.Add(FString::Printf(TEXT("%s: missing records[]"), *Filename));
+        return false;
+    }
+    int32 Added = 0;
+    for (const TSharedPtr<FJsonValue>& V : *RecordsArr)
+    {
+        const TSharedPtr<FJsonObject> O = V.IsValid() ? V->AsObject() : nullptr;
+        if (!O.IsValid()) { continue; }
+        FString Id;
+        if (!O->TryGetStringField(TEXT("id"), Id) || Id.IsEmpty())
+        {
+            Errors.Add(FString::Printf(TEXT("%s: record without id"), *Filename));
+            continue;
+        }
+        if (Records.Contains(Id))
+        {
+            Errors.Add(FString::Printf(TEXT("%s: duplicate id %s"), *Filename, *Id));
+            continue;
+        }
+        Records.Add(Id, O);
+        RecordsView.Add(MakeShared<FJsonValueObject>(O));
+        ++Added;
+    }
+    return true;
 }
