@@ -6,42 +6,84 @@
       "name": "Wilczak solny",
       "biome": "forest",
       "behavior": "pack",
-      "source_mesh_path": "Content/Art/SourceModels/wilczak_solny.obj"
+      "source_mesh_path": "Content/Art/SourceModels/wilczak_solny.obj",
+      "level": 3,
+      "hp": 60,
+      "damage": 10,
+      "faction": "wild",
+      "pack": true,
+      "aggressive_at_night": false,
+      "trophy_item_id": "trophy_01"
     },
     {
       "id": "monster_2",
       "name": "Krabnik",
       "biome": "coast",
       "behavior": "tank",
-      "source_mesh_path": "Content/Art/SourceModels/krabnik.obj"
+      "source_mesh_path": "Content/Art/SourceModels/krabnik.obj",
+      "level": 5,
+      "hp": 120,
+      "damage": 15,
+      "faction": "wild",
+      "pack": false,
+      "aggressive_at_night": false,
+      "trophy_item_id": "trophy_02"
     },
     {
       "id": "monster_3",
       "name": "Topielec",
       "biome": "swamp",
       "behavior": "ambush",
-      "source_mesh_path": "Content/Art/SourceModels/topielec.obj"
+      "source_mesh_path": "Content/Art/SourceModels/topielec.obj",
+      "level": 4,
+      "hp": 80,
+      "damage": 12,
+      "faction": "wild",
+      "pack": false,
+      "aggressive_at_night": false,
+      "trophy_item_id": "trophy_03"
     },
     {
       "id": "monster_4",
       "name": "Skalnik",
       "biome": "quarry",
       "behavior": "melee",
-      "source_mesh_path": "Content/Art/SourceModels/skalnik.obj"
+      "source_mesh_path": "Content/Art/SourceModels/skalnik.obj",
+      "level": 6,
+      "hp": 140,
+      "damage": 18,
+      "faction": "wild",
+      "pack": false,
+      "aggressive_at_night": false,
+      "trophy_item_id": "trophy_04"
     },
     {
       "id": "monster_5",
       "name": "Mroczek",
       "biome": "night",
       "behavior": "night",
-      "source_mesh_path": "Content/Art/SourceModels/mroczek.obj"
+      "source_mesh_path": "Content/Art/SourceModels/mroczek.obj",
+      "level": 4,
+      "hp": 55,
+      "damage": 14,
+      "faction": "wild",
+      "pack": true,
+      "aggressive_at_night": true,
+      "trophy_item_id": "trophy_05"
     },
     {
       "id": "monster_6",
       "name": "Plujec bagienny",
       "biome": "swamp",
       "behavior": "ranged",
-      "source_mesh_path": "Content/Art/SourceModels/plujec_bagienny.obj"
+      "source_mesh_path": "Content/Art/SourceModels/plujec_bagienny.obj",
+      "level": 5,
+      "hp": 70,
+      "damage": 11,
+      "faction": "wild",
+      "pack": false,
+      "aggressive_at_night": false,
+      "trophy_item_id": "trophy_06"
     }
   ]
 }

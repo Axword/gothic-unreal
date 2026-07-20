@@ -5,12 +5,116 @@
       "id": "loot_prototype_chest",
       "entries": [
         {
-          "item": "sword_01",
+          "count": 1,
+          "item_id": "sword_01"
+        },
+        {
+          "count": 3,
+          "item_id": "lockpick"
+        }
+      ]
+    },
+    {
+      "id": "loot_monster_1",
+      "entries": [
+        {
+          "item_id": "trophy_01",
           "count": 1
         },
         {
-          "item": "lockpick",
-          "count": 3
+          "item_id": "plant_07",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "loot_monster_2",
+      "entries": [
+        {
+          "item_id": "trophy_02",
+          "count": 1
+        },
+        {
+          "item_id": "plant_05",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "loot_monster_3",
+      "entries": [
+        {
+          "item_id": "trophy_03",
+          "count": 1
+        },
+        {
+          "item_id": "potion_01",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "loot_monster_4",
+      "entries": [
+        {
+          "item_id": "trophy_04",
+          "count": 1
+        },
+        {
+          "item_id": "sword_05",
+          "count": 1,
+          "chance": 0.05
+        }
+      ]
+    },
+    {
+      "id": "loot_monster_5",
+      "entries": [
+        {
+          "item_id": "trophy_05",
+          "count": 1
+        },
+        {
+          "item_id": "potion_02",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "loot_monster_6",
+      "entries": [
+        {
+          "item_id": "trophy_06",
+          "count": 1
+        },
+        {
+          "item_id": "plant_09",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "loot_bandit",
+      "entries": [
+        {
+          "item_id": "sword_03",
+          "count": 1,
+          "chance": 0.3
+        },
+        {
+          "item_id": "lockpick",
+          "count": 2,
+          "chance": 0.5
+        },
+        {
+          "item_id": "food_bread",
+          "count": 1,
+          "chance": 0.6
+        },
+        {
+          "item_id": "currency_salt",
+          "count": 20,
+          "chance": 0.8
         }
       ]
     }

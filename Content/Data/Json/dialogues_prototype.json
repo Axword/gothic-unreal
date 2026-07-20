@@ -4,8 +4,8 @@
     {
       "id": "dialogue_biel_intro",
       "speaker_id": "npc_neu_01",
-      "nodes": [
-        {
+      "nodes": {
+        "start": {
           "id": "start",
           "text": "List śmierdzi cudzą ręką. Jak chcesz, pomogę go przeczytać.",
           "choices": [
@@ -37,7 +37,7 @@
             }
           ]
         },
-        {
+        "warning": {
           "id": "warning",
           "text": "Czytaj powoli. Słowa czasem gryzą mocniej niż psy.",
           "choices": [
@@ -62,13 +62,13 @@
             }
           ]
         }
-      ]
+      }
     },
     {
       "id": "dialogue_rymar_trial",
       "speaker_id": "npc_sta_02",
-      "nodes": [
-        {
+      "nodes": {
+        "start": {
           "id": "start",
           "text": "Masz ręce. To już więcej niż większość zesłańców. Chcesz je zatrzymać?",
           "choices": [
@@ -94,7 +94,7 @@
             }
           ]
         },
-        {
+        "terms": {
           "id": "terms",
           "text": "Waga wraca cała. Człowiek od wagi może wrócić w kawałkach.",
           "choices": [
@@ -109,13 +109,13 @@
             }
           ]
         }
-      ]
+      }
     },
     {
       "id": "dialogue_nita_trial",
       "speaker_id": "npc_now_01",
-      "nodes": [
-        {
+      "nodes": {
+        "start": {
           "id": "start",
           "text": "Wolny Brzeg jest wolny, dopóki umiesz biegać szybciej od rachunku.",
           "choices": [
@@ -141,7 +141,7 @@
             }
           ]
         },
-        {
+        "terms": {
           "id": "terms",
           "text": "Przyprowadź łódź. Strażnika nie musisz.",
           "choices": [
@@ -156,7 +156,6052 @@
             }
           ]
         }
-      ]
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_01_intro",
+      "speaker_id": "npc_sta_01",
+      "name": "Warda (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Warda",
+          "text": "Dyscyplina smakuje jak popiół, ale trzyma przy życiu. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Warda",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Warda",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Warda",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_02_intro",
+      "speaker_id": "npc_sta_02",
+      "name": "Rymar (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Rymar",
+          "text": "Bez pozwolenia nie wchodzi się w cień Rygla. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Rymar",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Rymar",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Rymar",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_03_intro",
+      "speaker_id": "npc_sta_03",
+      "name": "Gont (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Gont",
+          "text": "Porządek to nie prawo — to nawyk trzymany strachem. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Gont",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Gont",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Gont",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_04_intro",
+      "speaker_id": "npc_sta_04",
+      "name": "Mira (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Mira",
+          "text": "Biel pozwala, Rymar dyscyplinuje, ja pilnuję, żebyś się nie zgubił. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Mira",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Mira",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Mira",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_05_intro",
+      "speaker_id": "npc_sta_05",
+      "name": "Płosz (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Płosz",
+          "text": "Bez pozwolenia nie wchodzi się w cień Rygla. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Płosz",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Płosz",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Płosz",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_06_intro",
+      "speaker_id": "npc_sta_06",
+      "name": "Kuna (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Kuna",
+          "text": "Dyscyplina smakuje jak popiół, ale trzyma przy życiu. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Kuna",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Kuna",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Kuna",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_07_intro",
+      "speaker_id": "npc_sta_07",
+      "name": "Dzwon (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Dzwon",
+          "text": "Dyscyplina smakuje jak popiół, ale trzyma przy życiu. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Dzwon",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Dzwon",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Dzwon",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_08_intro",
+      "speaker_id": "npc_sta_08",
+      "name": "Sabat (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Sabat",
+          "text": "Słowo? Dopiero gdy sól wyssie z niego kłamstwo. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Sabat",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Sabat",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Sabat",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_09_intro",
+      "speaker_id": "npc_sta_09",
+      "name": "Kreda (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Kreda",
+          "text": "Porządek to nie prawo — to nawyk trzymany strachem. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Kreda",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Kreda",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Kreda",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_10_intro",
+      "speaker_id": "npc_sta_10",
+      "name": "Rost (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Rost",
+          "text": "Słowo? Dopiero gdy sól wyssie z niego kłamstwo. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Rost",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Rost",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Rost",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_11_intro",
+      "speaker_id": "npc_sta_11",
+      "name": "Śluz (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Śluz",
+          "text": "Tu nawet cisza ma służbę. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Śluz",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Śluz",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Śluz",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_12_intro",
+      "speaker_id": "npc_sta_12",
+      "name": "Zimor (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Zimor",
+          "text": "Dyscyplina smakuje jak popiół, ale trzyma przy życiu. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Zimor",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Zimor",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Zimor",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_13_intro",
+      "speaker_id": "npc_sta_13",
+      "name": "Babka (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Babka",
+          "text": "Bez pozwolenia nie wchodzi się w cień Rygla. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Babka",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Babka",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Babka",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_14_intro",
+      "speaker_id": "npc_sta_14",
+      "name": "Klin (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Klin",
+          "text": "Dyscyplina smakuje jak popiół, ale trzyma przy życiu. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Klin",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Klin",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Klin",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_15_intro",
+      "speaker_id": "npc_sta_15",
+      "name": "Wrona (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Wrona",
+          "text": "Mundur nie robi człeka, ale robi posłuszeństwo. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Wrona",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Wrona",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Wrona",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_16_intro",
+      "speaker_id": "npc_sta_16",
+      "name": "Bicz (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Bicz",
+          "text": "Biel pozwala, Rymar dyscyplinuje, ja pilnuję, żebyś się nie zgubił. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Bicz",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Bicz",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Bicz",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_17_intro",
+      "speaker_id": "npc_sta_17",
+      "name": "Oset (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Oset",
+          "text": "Słowo? Dopiero gdy sól wyssie z niego kłamstwo. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Oset",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Oset",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Oset",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_18_intro",
+      "speaker_id": "npc_sta_18",
+      "name": "Pazur (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Pazur",
+          "text": "Mundur nie robi człeka, ale robi posłuszeństwo. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Pazur",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Pazur",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Pazur",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_19_intro",
+      "speaker_id": "npc_sta_19",
+      "name": "Fela (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Fela",
+          "text": "Biel pozwala, Rymar dyscyplinuje, ja pilnuję, żebyś się nie zgubił. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Fela",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Fela",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Fela",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_sta_20_intro",
+      "speaker_id": "npc_sta_20",
+      "name": "Borys (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Borys",
+          "text": "Porządek to nie prawo — to nawyk trzymany strachem. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Borys",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Borys",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Borys",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_01_intro",
+      "speaker_id": "npc_now_01",
+      "name": "Nita (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Nita",
+          "text": "Weronika powie ci, że tu nie ma zasad. Kłamie — ale przyjemnie. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Nita",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Nita",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Nita",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_02_intro",
+      "speaker_id": "npc_now_02",
+      "name": "Kawka (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Kawka",
+          "text": "Nie ufaj rybakowi, który ma czyste ręce. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Kawka",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Kawka",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Kawka",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_03_intro",
+      "speaker_id": "npc_now_03",
+      "name": "Huk (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Huk",
+          "text": "Wolny Brzeg nie obiecuje. Bierze. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Huk",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Huk",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Huk",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_04_intro",
+      "speaker_id": "npc_now_04",
+      "name": "Sarna (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Sarna",
+          "text": "Rygiel trzyma sznur, my trzymamy pętlę. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Sarna",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Sarna",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Sarna",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_05_intro",
+      "speaker_id": "npc_now_05",
+      "name": "Miedź (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Miedź",
+          "text": "Kto nie kłamie, ten pierwszy pada. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Miedź",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Miedź",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Miedź",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_06_intro",
+      "speaker_id": "npc_now_06",
+      "name": "Rdzawy (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Rdzawy",
+          "text": "Nie ufaj rybakowi, który ma czyste ręce. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Rdzawy",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Rdzawy",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Rdzawy",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_07_intro",
+      "speaker_id": "npc_now_07",
+      "name": "Jaga (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Jaga",
+          "text": "Nie ufaj rybakowi, który ma czyste ręce. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Jaga",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Jaga",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Jaga",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_08_intro",
+      "speaker_id": "npc_now_08",
+      "name": "Skiba (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Skiba",
+          "text": "Nie ufaj rybakowi, który ma czyste ręce. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Skiba",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Skiba",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Skiba",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_09_intro",
+      "speaker_id": "npc_now_09",
+      "name": "Gapa (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Gapa",
+          "text": "Tu prawo to nóż, a sprawiedliwość to wiatr. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Gapa",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Gapa",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Gapa",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_10_intro",
+      "speaker_id": "npc_now_10",
+      "name": "Wicher (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Wicher",
+          "text": "Weronika powie ci, że tu nie ma zasad. Kłamie — ale przyjemnie. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Wicher",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Wicher",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Wicher",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_11_intro",
+      "speaker_id": "npc_now_11",
+      "name": "Łata (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Łata",
+          "text": "Kto nie kłamie, ten pierwszy pada. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Łata",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Łata",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Łata",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_12_intro",
+      "speaker_id": "npc_now_12",
+      "name": "Mól (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Mól",
+          "text": "Rygiel trzyma sznur, my trzymamy pętlę. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Mól",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Mól",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Mól",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_13_intro",
+      "speaker_id": "npc_now_13",
+      "name": "Brawa (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Brawa",
+          "text": "Kto nie kłamie, ten pierwszy pada. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Brawa",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Brawa",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Brawa",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_14_intro",
+      "speaker_id": "npc_now_14",
+      "name": "Kłos (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Kłos",
+          "text": "Port zamienia się w targ, targ w bójkę, bójka w układ. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Kłos",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Kłos",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Kłos",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_15_intro",
+      "speaker_id": "npc_now_15",
+      "name": "Dora (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Dora",
+          "text": "Port zamienia się w targ, targ w bójkę, bójka w układ. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Dora",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Dora",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Dora",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_16_intro",
+      "speaker_id": "npc_now_16",
+      "name": "Pikuś (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Pikuś",
+          "text": "Nie ufaj rybakowi, który ma czyste ręce. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Pikuś",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Pikuś",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Pikuś",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_17_intro",
+      "speaker_id": "npc_now_17",
+      "name": "Mara (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Mara",
+          "text": "Port zamienia się w targ, targ w bójkę, bójka w układ. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Mara",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Mara",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Mara",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_18_intro",
+      "speaker_id": "npc_now_18",
+      "name": "Czart (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Czart",
+          "text": "Kto nie kłamie, ten pierwszy pada. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Czart",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Czart",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Czart",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_19_intro",
+      "speaker_id": "npc_now_19",
+      "name": "Bina (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Bina",
+          "text": "Port zamienia się w targ, targ w bójkę, bójka w układ. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Bina",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Bina",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Bina",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_now_20_intro",
+      "speaker_id": "npc_now_20",
+      "name": "Kret (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Kret",
+          "text": "Rygiel trzyma sznur, my trzymamy pętlę. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Kret",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Kret",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Kret",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_01_intro",
+      "speaker_id": "npc_neu_01",
+      "name": "Biel (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Biel",
+          "text": "Handlarz nie jest zły, jest tylko czujny. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Biel",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Biel",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Biel",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_02_intro",
+      "speaker_id": "npc_neu_02",
+      "name": "Kostka (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Kostka",
+          "text": "Handlarz nie jest zły, jest tylko czujny. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Kostka",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Kostka",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Kostka",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_03_intro",
+      "speaker_id": "npc_neu_03",
+      "name": "Żagiel (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Żagiel",
+          "text": "Tu się albo pije, albo kłamie — często jedno i drugie. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Żagiel",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Żagiel",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Żagiel",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_04_intro",
+      "speaker_id": "npc_neu_04",
+      "name": "Oprych (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Oprych",
+          "text": "Sól jest warta tyle, ile powiedzą, że warta. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Oprych",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Oprych",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Oprych",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_05_intro",
+      "speaker_id": "npc_neu_05",
+      "name": "Panna (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Panna",
+          "text": "Kto nie ma strony, ten zwykle przeżyje. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Panna",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Panna",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Panna",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_06_intro",
+      "speaker_id": "npc_neu_06",
+      "name": "Kłosik (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Kłosik",
+          "text": "Kto nie ma strony, ten zwykle przeżyje. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Kłosik",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Kłosik",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Kłosik",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_07_intro",
+      "speaker_id": "npc_neu_07",
+      "name": "Pakuła (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Pakuła",
+          "text": "Handlarz nie jest zły, jest tylko czujny. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Pakuła",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Pakuła",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Pakuła",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_08_intro",
+      "speaker_id": "npc_neu_08",
+      "name": "Grom (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Grom",
+          "text": "Kto nie ma strony, ten zwykle przeżyje. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Grom",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Grom",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Grom",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_09_intro",
+      "speaker_id": "npc_neu_09",
+      "name": "Węgiel (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Węgiel",
+          "text": "Nie pytaj o przysięgę, pytaj o cenę. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Węgiel",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Węgiel",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Węgiel",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_10_intro",
+      "speaker_id": "npc_neu_10",
+      "name": "Syk (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Syk",
+          "text": "Nie mam frakcji. Mam rachunek. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Syk",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Syk",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Syk",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_11_intro",
+      "speaker_id": "npc_neu_11",
+      "name": "Fosa (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Fosa",
+          "text": "Rybak nie wybiera morza, morze wybiera rybaka. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Fosa",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Fosa",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Fosa",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_12_intro",
+      "speaker_id": "npc_neu_12",
+      "name": "Karp (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Karp",
+          "text": "Tu się albo pije, albo kłamie — często jedno i drugie. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Karp",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Karp",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Karp",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_13_intro",
+      "speaker_id": "npc_neu_13",
+      "name": "Miotła (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Miotła",
+          "text": "Kto nie ma strony, ten zwykle przeżyje. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Miotła",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Miotła",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Miotła",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_14_intro",
+      "speaker_id": "npc_neu_14",
+      "name": "Zadra (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Zadra",
+          "text": "Nie pytaj o przysięgę, pytaj o cenę. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Zadra",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Zadra",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Zadra",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_15_intro",
+      "speaker_id": "npc_neu_15",
+      "name": "Lipa (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Lipa",
+          "text": "Słucham plotek, sprzedaje je za sól. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Lipa",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Lipa",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Lipa",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_16_intro",
+      "speaker_id": "npc_neu_16",
+      "name": "Kruk (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Kruk",
+          "text": "Rybak nie wybiera morza, morze wybiera rybaka. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Kruk",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Kruk",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Kruk",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_17_intro",
+      "speaker_id": "npc_neu_17",
+      "name": "Duda (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Duda",
+          "text": "Nie mam frakcji. Mam rachunek. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Duda",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Duda",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Duda",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_18_intro",
+      "speaker_id": "npc_neu_18",
+      "name": "Pazik (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Pazik",
+          "text": "Nie pytaj o przysięgę, pytaj o cenę. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Pazik",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Pazik",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Pazik",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_19_intro",
+      "speaker_id": "npc_neu_19",
+      "name": "Mewa (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Mewa",
+          "text": "Rybak nie wybiera morza, morze wybiera rybaka. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Mewa",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Mewa",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Mewa",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_20_intro",
+      "speaker_id": "npc_neu_20",
+      "name": "Szept (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Szept",
+          "text": "Nie mam frakcji. Mam rachunek. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Szept",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Szept",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Szept",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_21_intro",
+      "speaker_id": "npc_neu_21",
+      "name": "Guz (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Guz",
+          "text": "Kto nie ma strony, ten zwykle przeżyje. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Guz",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Guz",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Guz",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_22_intro",
+      "speaker_id": "npc_neu_22",
+      "name": "Igiełka (kupiec)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Igiełka",
+          "text": "Nie pytaj o przysięgę, pytaj o cenę. Ty pewnie od 'kupiec', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Igiełka",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Igiełka",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Igiełka",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_23_intro",
+      "speaker_id": "npc_neu_23",
+      "name": "Nawóz (robotnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Nawóz",
+          "text": "Kto nie ma strony, ten zwykle przeżyje. Ty pewnie od 'robotnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Nawóz",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Nawóz",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Nawóz",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_24_intro",
+      "speaker_id": "npc_neu_24",
+      "name": "Ropa (nauczyciel)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Ropa",
+          "text": "Rybak nie wybiera morza, morze wybiera rybaka. Ty pewnie od 'nauczyciel', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Ropa",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Ropa",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Ropa",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dialogue_npc_neu_25_intro",
+      "speaker_id": "npc_neu_25",
+      "name": "Ćma (strażnik)",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "speaker": "Ćma",
+          "text": "Nie mam frakcji. Mam rachunek. Ty pewnie od 'strażnik', co?",
+          "choices": [
+            {
+              "id": "chat",
+              "text": "O czym mówisz?",
+              "next": "chat"
+            },
+            {
+              "id": "quest",
+              "text": "Słyszałem, że szukasz pomocy.",
+              "next": "quest_offer",
+              "conditions": [
+                {
+                  "type": "quest",
+                  "quest_id": "main_przybysz",
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "bye",
+              "text": "Trzymaj się.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "chat": {
+          "id": "chat",
+          "speaker": "Ćma",
+          "text": "Ta kraina nie lubi pytających. Jak chcesz przeżyć, nie pytaj o wszystko. Jeśli chcesz kupić coś wartościowego, płać solą albo przysługą. Wybór frakcji też kosztuje — druga strona zamknie przed tobą drzwi.",
+          "choices": [
+            {
+              "id": "rumors",
+              "text": "Jakie wieści?",
+              "next": "rumors"
+            },
+            {
+              "id": "bye",
+              "text": "Dość.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "rumors": {
+          "id": "rumors",
+          "speaker": "Ćma",
+          "text": "Rymar w Ryglu trenuje miecz, ale nie uczy, póki nie dowie się, że wierzysz w porządek. Nita z Wolnego Brzegu uczy kradzieży — nie wierz, że nie zauważy, kiedy próbujesz u niej. Szczelina Milczącego znowu zieje — sen o niej kosztuje wspomnienia.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Zapamiętam.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        },
+        "quest_offer": {
+          "id": "quest_offer",
+          "speaker": "Ćma",
+          "text": "Nie szukam pomocy. Pomagam, jeśli się opłaca. Jeśli masz coś ciekawego — gadaj.",
+          "choices": [
+            {
+              "id": "bye",
+              "text": "Może później.",
+              "actions": [
+                {
+                  "type": "exit"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   ]
 }

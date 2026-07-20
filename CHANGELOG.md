@@ -1,11 +1,33 @@
 # Changelog
+## 2026-07-20 — Iteracja 2: pełne UMG zbudowane w C++
+- **8 nowych klas UMG** (`Source/PopiolISol/Public/`, `Private/`):
+  - `UPISHUDWidget` — HP/Mana bary, level, sól, broń, lokacja, zegar dn./noc, jednorazowa wiadomość.
+  - `UPISInventoryWidget` + `UPISInventoryRowWidget` — ekwipunek z select/Użyj/Ekwipuj, Resolve efektów z JSON.
+  - `UPISJournalWidget` — aktywne/ukończone/nieudane questy z tekstami etapów z JSON.
+  - `UPISDialogueWidget` — pełne UI dialogowe z dynamicznymi wyborami.
+  - `UPISPauseWidget` — zapis/wczytanie + suwaki głośności + opcje.
+  - `UPISMainMenuWidget` — menu główne.
+  - `APISHUD` — most: tworzy widgety, podpina Dialogue, przełącza Inventory/Journal/Pause.
+- **`APISCharacter`**: nowe wejścia I (Inventory) i J (Journal) przez Enhanced Input, handler `OnInventory`/`OnJournal`. Po interakcji z NPC auto-otwiera `UPISDialogueWidget` przez `APISHUD::ShowDialogueFor`.
+- **`APISGameMode`**: HUDClass ustawiony na `APISHUD`; `BeginPlay` wstrzykuje `UPISMainMenuWidget` na mapie `MainMenu`.
+- **`UPISDialogueComponent`**: nowa metoda `ChooseByIndex(int32)` — wygodne wywołanie z UI po indeksie widocznego wyboru.
+- **`Scripts/ue_build_project.py`**: dodano `IA_Inventory` (I), `IA_Journal` (J), tworzenie `BP_PISHUD`, mapy `Maps/MainMenu`, ustawienie `MainMenu` jako `GameDefaultMap`/`EditorStartupMap`.
+- **`Source/PopiolISol/PopiolISol.Build.cs`**: dodano `ApplicationCore` dla bezpieczeństwa linkowania UI.
+
+## 2026-07-20 — Iteracja 1: runtime pionowego wycinka
+- **Nowe systemy C++ (kompletny gameplay)**: `APISCharacter` (Enhanced Input, miecz/łuk/magia, skórowanie, interakcja), `APISNPC` + `APISNPCController` (rutyny dzienne z JSON, reakcja na przestępstwa), `APISMonster` + `APISMonsterController` (AI z percepcją, pack, nocturnal, drop loot), `UPISStatsComponent` (XP/HP/PN, reputacja, factions), `UPISDialogueComponent` (interpreter JSON z warunkami i akcjami: flag, quest, item, reputation, skill), `UPISCrimeComponent` (świadkowie, eskalacja), `UPISSaveGameSubsystem` (wersjonowany JSON save/load + migracja), `APISGameMode`/`APISGameInstance`.
+- **Rozbudowa danych**: dialogi dla wszystkich 65 NPC, markery lokacji rozmieszczone w Ryglu i Wolnym Brzegu, loot tables dla 6 stworów + bandytów, statystyki i frakcje potworów, brakujący `food_bread` w `items_misc.json`.
+- **`Scripts/ue_build_project.py`**: skrypt Python Editor Script, który po uruchomieniu w edytorze UE 5.8 tworzy Input Mapping Context, GameMode BP, Character BP, NPC BP, Monster BP, mapę `Prototype` z 65 NPC i 6 potworami rozmieszczonymi z JSON oraz ustawia domyślną mapę.
+- **Nowe testy automatyczne**: `PopiolISol.Quests.FactionBlock`, `PopiolISol.Chest.Lockpick`, `PopiolISol.Stats.Leveling` (`Source/PopiolISol/Private/Tests/PISSaveLoadTests.cpp`).
+- **Build dependencies**: dodano `GameplayTasks` w `PopiolISol.Build.cs` dla `UAISenseConfig_*` i `UAIPerceptionComponent`.
+- **Loader ulepszony**: `UPISJsonDataSubsystem` ma teraz publiczne `GetAllRecords()` potrzebne do iteracji markerów NPC; walidator CLI zaakceptował 412 rekordów.
+
 ## 2026-07-20 — Migracja UE 5.8
 - `EngineAssociation` przestawione z `5.4` na `5.8`.
 - `*.Target.cs`: `BuildSettingsVersion.V7` oraz `EngineIncludeOrderVersion.Unreal5_8`.
-- `DefaultEngine.ini` nie wskazuje już nieistniejącej `/Game/Maps/Prototype` (używa map silnika Entry/Template, żeby edytor otwierał się bez błędu brakującej mapy).
-- Naprawiono sygnaturę `APISSpellProjectile::OnImpact` pod `FComponentHitSignature` (brak zbędnych parametrów `int32`/`bool`) — poprzednia wersja nie kompilowała się.
+- `DefaultEngine.ini` nie wskazuje już nieistniejącej `/Game/Maps/Prototype` (używa map silnika Entry/Template, żeby edytor otwierał się bez błędu brakującej mapy). Po uruchomieniu `Scripts/ue_build_project.py` wskazuje na `/Game/Maps/MainMenu`.
+- Naprawiono sygnaturę `APISSpellProjectile::OnImpact` pod `FComponentHitSignature`.
 - Włączono plugin Enhanced Input w `.uproject`; dodano `.gitignore` i `DefaultGame.ini`.
-- Uporządkowano źródła C++ (czytelność, `TObjectPtr`, jawne include JSON readera) bez zmiany semantyki API Blueprint.
 
 ## 2026-07-19 — Iteration 0
 - Utworzono projekt UE 5.4 C++ i fundament JSON.
@@ -18,24 +40,5 @@
 - Dodano aktora skrzyni z trzyruchowym zamkiem L/P i kosztem wytrycha oraz pocisk czaru z obrażeniami.
 - Dodano testy automatyczne inventory i przepływu questa.
 
-## 2026-07-19 — Dokumentation audit
-- Sprawdzono komplet obowiązkowych Markdownów i zgodność deklarowanych minimów z JSON.
-- Loader C++ pomija teraz dokumentacyjny `savegame.json`, zgodnie z walidatorem CLI i opisem schematu.
-
-## 2026-07-19 — Iteration 0.2: źródła wizualne
-- Dodano 72 własne, proceduralne ikony PNG 128×128 oraz wersjonowany generator bez zależności zewnętrznych.
-- Dodano 5 plansz koncepcyjnych dla świata, stworów, pancerzy, broni i UI.
-- Ścieżki assetów w katalogach JSON wskazują teraz importowalne ikony `/Game/Art/Icons/icon_<id>`.
-
-## 2026-07-19 — Iteration 0.3: modele źródłowe
-- Dodano 60 własnych modeli OBJ low-poly i MTL: bronie, pancerze, stwory, rośliny oraz propsy świata.
-- Dodano generator geometrii i instrukcję importu do UE; JSON zawiera ścieżki source mesh dla odpowiednich rekordów.
-
-## 2026-07-19 — Audyt zakresu i dokumentacji
-- Rozszerzono README, DATA_SCHEMAS i raport audytu o faktyczny stan importu, danych oraz znane ograniczenia.
-- Skorygowano liczbę questów: 21 (1 + 5 + 5 + 10), nie 22.
-
-## 2026-07-19 — Iteration 0.4: dane grywalnego przepływu
-- Rozbudowano katalog przedmiotów o statystyki i wymagania oraz 21 questów o cele, dziennik, gałęzie, porażki i nagrody.
-- Dodano trzy dialogi z bezpiecznym wyjściem, warunkami i akcjami startu questów.
-- Walidator CLI rekurencyjnie sprawdza teraz zagnieżdżone referencje `item_id` i `quest_id`.
+## 2026-07-19 — Iteration 0.2 / 0.3 / 0.4
+- Źródła wizualne (72 PNG, 60 OBJ/MTL), audyt dokumentacji, dane grywalnego przepływu.

@@ -20,8 +20,10 @@ public class PopiolISol : ModuleRules
 			"JsonUtilities",
 			"AIModule",
 			"NavigationSystem",
+			"GameplayTasks",
 			"Slate",
-			"SlateCore"
+			"SlateCore",
+			"ApplicationCore"
 		});
 	}
 }

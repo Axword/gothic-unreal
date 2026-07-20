@@ -36,6 +36,17 @@
       "name": "odłamek szczeliny",
       "type": "misc",
       "asset_path": "/Game/Art/Icons/icon_quest_shard"
+    },
+    {
+      "id": "food_bread",
+      "name": "Kromka chleba",
+      "type": "food",
+      "asset_path": "/Game/Art/Icons/icon_potion_01",
+      "source_mesh_path": "Content/Art/SourceModels/barrel.obj",
+      "value": 3,
+      "effect": {
+        "heal": 15
+      }
     }
   ]
 }
