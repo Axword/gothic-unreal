@@ -1,5 +1,82 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
 #include "PISInventoryComponent.h"
-bool UPISInventoryComponent::AddItem(const FString& Id,int32 N){if(Id.IsEmpty()||N<=0)return false;for(auto&S:Items)if(S.ItemId==Id){S.Count+=N;return true;} FPISInventoryStack S;S.ItemId=Id;S.Count=N;Items.Add(S);return true;}
-bool UPISInventoryComponent::RemoveItem(const FString& Id,int32 N){if(N<=0)return false;for(int32 i=0;i<Items.Num();++i)if(Items[i].ItemId==Id){if(Items[i].Count<N)return false;Items[i].Count-=N;if(!Items[i].Count)Items.RemoveAt(i);if(EquippedWeaponId==Id&&CountItem(Id)==0)EquippedWeaponId.Empty();return true;}return false;}
-int32 UPISInventoryComponent::CountItem(const FString& Id)const{for(const auto&S:Items)if(S.ItemId==Id)return S.Count;return 0;}
-bool UPISInventoryComponent::EquipWeapon(const FString& Id){if(CountItem(Id)<1)return false;EquippedWeaponId=Id;return true;}
+
+bool UPISInventoryComponent::AddItem(const FString& ItemId, int32 Count)
+{
+	if (ItemId.IsEmpty() || Count <= 0)
+	{
+		return false;
+	}
+
+	for (FPISInventoryStack& Stack : Items)
+	{
+		if (Stack.ItemId == ItemId)
+		{
+			Stack.Count += Count;
+			return true;
+		}
+	}
+
+	FPISInventoryStack NewStack;
+	NewStack.ItemId = ItemId;
+	NewStack.Count = Count;
+	Items.Add(NewStack);
+	return true;
+}
+
+bool UPISInventoryComponent::RemoveItem(const FString& ItemId, int32 Count)
+{
+	if (Count <= 0)
+	{
+		return false;
+	}
+
+	for (int32 Index = 0; Index < Items.Num(); ++Index)
+	{
+		if (Items[Index].ItemId != ItemId)
+		{
+			continue;
+		}
+
+		if (Items[Index].Count < Count)
+		{
+			return false;
+		}
+
+		Items[Index].Count -= Count;
+		if (Items[Index].Count == 0)
+		{
+			Items.RemoveAt(Index);
+		}
+
+		if (EquippedWeaponId == ItemId && CountItem(ItemId) == 0)
+		{
+			EquippedWeaponId.Empty();
+		}
+		return true;
+	}
+
+	return false;
+}
+
+int32 UPISInventoryComponent::CountItem(const FString& ItemId) const
+{
+	for (const FPISInventoryStack& Stack : Items)
+	{
+		if (Stack.ItemId == ItemId)
+		{
+			return Stack.Count;
+		}
+	}
+	return 0;
+}
+
+bool UPISInventoryComponent::EquipWeapon(const FString& ItemId)
+{
+	if (CountItem(ItemId) < 1)
+	{
+		return false;
+	}
+	EquippedWeaponId = ItemId;
+	return true;
+}

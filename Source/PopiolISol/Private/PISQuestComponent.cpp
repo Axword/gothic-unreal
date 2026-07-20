@@ -1,6 +1,81 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
 #include "PISQuestComponent.h"
-static FPISQuestState* Q(TArray<FPISQuestState>& A,const FString& Id){for(auto& X:A)if(X.QuestId==Id)return &X;return nullptr;}
-bool UPISQuestComponent::StartQuest(const FString& Id,const FString& Stage){if(Id.IsEmpty()||Q(States,Id))return false;FPISQuestState S;S.QuestId=Id;S.StageId=Stage;S.Status=EPISQuestStatus::Active;States.Add(S);OnQuestChanged.Broadcast(S);return true;}
-bool UPISQuestComponent::SetStage(const FString& Id,const FString& Stage){FPISQuestState*S=Q(States,Id);if(!S||S->Status!=EPISQuestStatus::Active||Stage.IsEmpty())return false;S->StageId=Stage;OnQuestChanged.Broadcast(*S);return true;}
-bool UPISQuestComponent::FinishQuest(const FString& Id,bool bOK){FPISQuestState*S=Q(States,Id);if(!S||S->Status!=EPISQuestStatus::Active)return false;S->StageId=bOK?TEXT("done"):TEXT("failed");S->Status=bOK?EPISQuestStatus::Completed:EPISQuestStatus::Failed;OnQuestChanged.Broadcast(*S);return true;}
-EPISQuestStatus UPISQuestComponent::GetStatus(const FString& Id)const{for(const auto&S:States)if(S.QuestId==Id)return S.Status;return EPISQuestStatus::Inactive;}
+
+namespace
+{
+	FPISQuestState* FindQuestState(TArray<FPISQuestState>& States, const FString& QuestId)
+	{
+		for (FPISQuestState& State : States)
+		{
+			if (State.QuestId == QuestId)
+			{
+				return &State;
+			}
+		}
+		return nullptr;
+	}
+
+	const FPISQuestState* FindQuestState(const TArray<FPISQuestState>& States, const FString& QuestId)
+	{
+		for (const FPISQuestState& State : States)
+		{
+			if (State.QuestId == QuestId)
+			{
+				return &State;
+			}
+		}
+		return nullptr;
+	}
+}
+
+bool UPISQuestComponent::StartQuest(const FString& QuestId, const FString& StartStage)
+{
+	if (QuestId.IsEmpty() || FindQuestState(States, QuestId) != nullptr)
+	{
+		return false;
+	}
+
+	FPISQuestState State;
+	State.QuestId = QuestId;
+	State.StageId = StartStage;
+	State.Status = EPISQuestStatus::Active;
+	States.Add(State);
+	OnQuestChanged.Broadcast(State);
+	return true;
+}
+
+bool UPISQuestComponent::SetStage(const FString& QuestId, const FString& StageId)
+{
+	FPISQuestState* State = FindQuestState(States, QuestId);
+	if (State == nullptr || State->Status != EPISQuestStatus::Active || StageId.IsEmpty())
+	{
+		return false;
+	}
+
+	State->StageId = StageId;
+	OnQuestChanged.Broadcast(*State);
+	return true;
+}
+
+bool UPISQuestComponent::FinishQuest(const FString& QuestId, bool bSucceeded)
+{
+	FPISQuestState* State = FindQuestState(States, QuestId);
+	if (State == nullptr || State->Status != EPISQuestStatus::Active)
+	{
+		return false;
+	}
+
+	State->StageId = bSucceeded ? TEXT("done") : TEXT("failed");
+	State->Status = bSucceeded ? EPISQuestStatus::Completed : EPISQuestStatus::Failed;
+	OnQuestChanged.Broadcast(*State);
+	return true;
+}
+
+EPISQuestStatus UPISQuestComponent::GetStatus(const FString& QuestId) const
+{
+	if (const FPISQuestState* State = FindQuestState(States, QuestId))
+	{
+		return State->Status;
+	}
+	return EPISQuestStatus::Inactive;
+}

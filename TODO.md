@@ -1,6 +1,6 @@
 # TODO
 ## P0 — bloker grywalności
-- [ ] Użyć UE Editor do stworzenia `/Game/Maps/Prototype`, GameMode, Enhanced Input i postaci.
+- [ ] Użyć UE 5.8 Editor do stworzenia `/Game/Maps/Prototype`, GameMode, Enhanced Input i postaci; potem podmienić `GameDefaultMap`/`EditorStartupMap` w `DefaultEngine.ini`.
 - [~] Inventory/quest state/chest + sekwencyjny lockpick: logika C++ gotowa; brakuje interakcji, lootu, dialog runtime i UMG.
 - [ ] Combat miecz/łuk/magia, AI, NavMesh, 3 NPC routines and 1 monster.
 - [ ] Wersjonowany JSON save/load + test round trip.

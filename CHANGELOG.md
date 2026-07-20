@@ -1,4 +1,12 @@
 # Changelog
+## 2026-07-20 — Migracja UE 5.8
+- `EngineAssociation` przestawione z `5.4` na `5.8`.
+- `*.Target.cs`: `BuildSettingsVersion.V7` oraz `EngineIncludeOrderVersion.Unreal5_8`.
+- `DefaultEngine.ini` nie wskazuje już nieistniejącej `/Game/Maps/Prototype` (używa map silnika Entry/Template, żeby edytor otwierał się bez błędu brakującej mapy).
+- Naprawiono sygnaturę `APISSpellProjectile::OnImpact` pod `FComponentHitSignature` (brak zbędnych parametrów `int32`/`bool`) — poprzednia wersja nie kompilowała się.
+- Włączono plugin Enhanced Input w `.uproject`; dodano `.gitignore` i `DefaultGame.ini`.
+- Uporządkowano źródła C++ (czytelność, `TObjectPtr`, jawne include JSON readera) bez zmiany semantyki API Blueprint.
+
 ## 2026-07-19 — Iteration 0
 - Utworzono projekt UE 5.4 C++ i fundament JSON.
 - Dodano 243 rekordy: 65 nazwanych NPC i harmonogramy, katalog przedmiotów, 6 stworów, questy, lokacje, trenerów i czary.
