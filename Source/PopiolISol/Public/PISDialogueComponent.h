@@ -51,6 +51,10 @@ public:
     UFUNCTION(BlueprintCallable, Category = "Dialogue")
     bool Choose(const FString& ChoiceId);
 
+    /** Choose by visible index in the current node's choices array. */
+    UFUNCTION(BlueprintCallable, Category = "Dialogue")
+    bool ChooseByIndex(int32 Index);
+
     UFUNCTION(BlueprintPure, Category = "Dialogue")
     bool IsOpen() const { return CurrentDialogueId.Len() > 0; }
 

@@ -22,7 +22,8 @@ public class PopiolISol : ModuleRules
 			"NavigationSystem",
 			"GameplayTasks",
 			"Slate",
-			"SlateCore"
+			"SlateCore",
+			"ApplicationCore"
 		});
 	}
 }

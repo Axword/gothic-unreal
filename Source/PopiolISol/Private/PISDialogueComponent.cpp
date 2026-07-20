@@ -50,7 +50,7 @@ void UPISDialogueComponent::BuildNodeView(const FString& NodeId, const TSharedPt
             const TSharedPtr<FJsonObject> C = V.IsValid() ? V->AsObject() : nullptr;
             if (!C.IsValid()) { continue; }
             FPISDialogueChoice Ch;
-            Ch.Id = GetStringField(C, TEXT("id"), FString());
+            Ch.Id = GetStringField(C, TEXT("id"), FString::Printf(TEXT("idx_%d"), Index));
             Ch.Text = GetStringField(C, TEXT("text"), FString());
             Ch.Next = GetStringField(C, TEXT("next"), FString());
             Ch.bIsExit = GetBoolField(C, TEXT("exit"), false);
@@ -170,7 +170,6 @@ bool UPISDialogueComponent::Choose(const FString& ChoiceId)
         if (!C.IsValid()) { continue; }
         if (GetStringField(C, TEXT("id")) != ChoiceId) { continue; }
 
-        // Run actions in order.
         const TArray<TSharedPtr<FJsonValue>>* Acts = nullptr;
         if (C->TryGetArrayField(TEXT("actions"), Acts) && Acts)
         {
@@ -185,7 +184,6 @@ bool UPISDialogueComponent::Choose(const FString& ChoiceId)
             FinishDialogue();
             return true;
         }
-        // Check actions for implicit exit.
         bool bWillExit = false;
         if (Acts)
         {
@@ -208,7 +206,6 @@ bool UPISDialogueComponent::Choose(const FString& ChoiceId)
         const FString Next = GetStringField(C, TEXT("next"), FString());
         if (Next.IsEmpty())
         {
-            // End of branch.
             FinishDialogue();
             return true;
         }
@@ -222,6 +219,15 @@ bool UPISDialogueComponent::Choose(const FString& ChoiceId)
             FinishDialogue();
         }
         return true;
+    }
+    return false;
+}
+
+bool UPISDialogueComponent::ChooseByIndex(int32 Index)
+{
+    if (CurrentNode.Choices.IsValidIndex(Index))
+    {
+        return Choose(CurrentNode.Choices[Index].Id);
     }
     return false;
 }

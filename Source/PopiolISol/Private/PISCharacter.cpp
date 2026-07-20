@@ -8,8 +8,10 @@
 #include "PISLockedChest.h"
 #include "PISSpellProjectile.h"
 #include "PISMonster.h"
+#include "PISNPC.h"
 #include "PISWorldClock.h"
 #include "PISJsonDataSubsystem.h"
+#include "PISHUD.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -107,6 +109,8 @@ void APISCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
         if (IA_Dodge)   EIC->BindAction(IA_Dodge, ETriggerEvent::Started, this, &APISCharacter::OnDodge);
         if (IA_Cast)    EIC->BindAction(IA_Cast, ETriggerEvent::Started, this, &APISCharacter::OnCast);
         if (IA_Pause)   EIC->BindAction(IA_Pause, ETriggerEvent::Started, this, &APISCharacter::OnPause);
+        if (IA_Inventory) EIC->BindAction(IA_Inventory, ETriggerEvent::Started, this, &APISCharacter::OnInventory);
+        if (IA_Journal)   EIC->BindAction(IA_Journal, ETriggerEvent::Started, this, &APISCharacter::OnJournal);
     }
 }
 
@@ -178,11 +182,10 @@ void APISCharacter::InteractWith(AActor* Target)
     }
     if (ACharacter* NPC = Cast<ACharacter>(Target))
     {
-        // The NPC controller (or our own component if it has one) is responsible for starting the dialogue.
-        FString DialogueId;
-        if (Target->ActorHasTag(TEXT("PIS_NPC")))
+        APISNPC* PISNPC = Cast<APISNPC>(Target);
+        FString DialogueId = PISNPC ? PISNPC->DialogueId : FString();
+        if (DialogueId.IsEmpty() && Target->ActorHasTag(TEXT("PIS_NPC")))
         {
-            // Default dialogue id from tag "PIS_Dialogue:<id>" or fall back to ID from npc id.
             for (const FName& Tag : Target->Tags)
             {
                 const FString TS = Tag.ToString();
@@ -193,14 +196,25 @@ void APISCharacter::InteractWith(AActor* Target)
                 }
             }
         }
+        if (DialogueId.IsEmpty() && PISNPC)
+        {
+            DialogueId = FString::Printf(TEXT("dialogue_%s_intro"), *PISNPC->NpcId);
+        }
         if (DialogueId.IsEmpty())
         {
-            // Fall back to actor name -> dialogue_<name>_intro.
-            DialogueId = FString::Printf(TEXT("dialogue_%s_intro"), *Target->GetName().ToLower());
+            DialogueId = TEXT("dialogue_npc_neu_01_intro");
         }
         if (Dialogue)
         {
             Dialogue->OpenDialogue(DialogueId);
+            APlayerController* PC = Cast<APlayerController>(GetController());
+            if (PC)
+            {
+                if (APISHUD* H = Cast<APISHUD>(PC->GetHUD()))
+                {
+                    H->ShowDialogueFor(Target);
+                }
+            }
         }
         return;
     }
@@ -317,7 +331,26 @@ void APISCharacter::OnCast()
 
 void APISCharacter::OnPause()
 {
-    // Delegate to the game instance / UI subsystem. Hook in BP.
+    APlayerController* PC = Cast<APlayerController>(GetController());
+    if (!PC) { return; }
+    AHUD* H = PC->GetHUD();
+    if (APISHUD* MyHud = Cast<APISHUD>(H)) { MyHud->TogglePause(); }
+}
+
+void APISCharacter::OnInventory()
+{
+    APlayerController* PC = Cast<APlayerController>(GetController());
+    if (!PC) { return; }
+    AHUD* H = PC->GetHUD();
+    if (APISHUD* MyHud = Cast<APISHUD>(H)) { MyHud->ToggleInventory(); }
+}
+
+void APISCharacter::OnJournal()
+{
+    APlayerController* PC = Cast<APlayerController>(GetController());
+    if (!PC) { return; }
+    AHUD* H = PC->GetHUD();
+    if (APISHUD* MyHud = Cast<APISHUD>(H)) { MyHud->ToggleJournal(); }
 }
 
 void APISCharacter::CastActiveSpell()

@@ -51,6 +51,8 @@ public:
     UPROPERTY(EditDefaultsOnly, Category = "Input") TObjectPtr<UInputAction> IA_Dodge;
     UPROPERTY(EditDefaultsOnly, Category = "Input") TObjectPtr<UInputAction> IA_Cast;
     UPROPERTY(EditDefaultsOnly, Category = "Input") TObjectPtr<UInputAction> IA_Pause;
+    UPROPERTY(EditDefaultsOnly, Category = "Input") TObjectPtr<UInputAction> IA_Inventory;
+    UPROPERTY(EditDefaultsOnly, Category = "Input") TObjectPtr<UInputAction> IA_Journal;
 
     UPROPERTY(EditDefaultsOnly, Category = "Combat") TSubclassOf<APISSpellProjectile> EmberProjectileClass;
     UPROPERTY(EditDefaultsOnly, Category = "Combat") TSubclassOf<APISSpellProjectile> FrostProjectileClass;
@@ -87,6 +89,8 @@ public:
     UFUNCTION(BlueprintCallable, Category = "Input") void OnDodge();
     UFUNCTION(BlueprintCallable, Category = "Input") void OnCast();
     UFUNCTION(BlueprintCallable, Category = "Input") void OnPause();
+    UFUNCTION(BlueprintCallable, Category = "Input") void OnInventory();
+    UFUNCTION(BlueprintCallable, Category = "Input") void OnJournal();
 
     UFUNCTION(BlueprintCallable, Category = "Combat")
     void SetCombatMode(EPISCombatMode NewMode) { CombatMode = NewMode; }
